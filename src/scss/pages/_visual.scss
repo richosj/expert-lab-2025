@@ -10,7 +10,8 @@
     max-height: 456px;
     padding-top: 100px;
     .frames{
-      background: url("@/assets/images/frame1.png") no-repeat center 0 / cover;
+      background: url("@/assets/images/frame1-mobile.png") no-repeat center 0;
+      background-size: 100% 100%;
       max-width: 690px;
       aspect-ratio: 1 / 1;
       margin: 0 auto;
@@ -18,6 +19,7 @@
       @media (min-width: 1024px) {
         padding-top: 120px;
         max-width: 580px;
+        background-size: cover;
       }
     }
     @media (min-width: 1024px) {
