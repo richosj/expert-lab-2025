@@ -926,12 +926,6 @@ body, html {
   max-height: 456px;
   padding-top: 220px;
 }
-@media (min-width: 1024px) {
-  .visual .visual-slide-1 {
-    max-height: inherit;
-    padding-top: 120px;
-  }
-}
 .visual .visual-slide-1 .frames {
   background: url("../images/frame1.png") no-repeat center 0/cover;
   max-width: 690px;
@@ -941,15 +935,15 @@ body, html {
 }
 @media (min-width: 1024px) {
   .visual .visual-slide-1 .frames {
-    padding-top: 174px;
     padding-top: 120px;
     max-width: 580px;
   }
 }
 @media (min-width: 1024px) {
   .visual .visual-slide-1 {
+    max-height: inherit;
     background-image: url("../images/visual-slide-pc-1.png");
-    padding-top: 174px;
+    padding-top: 135px;
   }
 }
 .visual .visual-slide-2 {
