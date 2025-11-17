@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>AXPERT LAB AI 교육 컨설팅</title>
-    <link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollSmoother.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollToPlugin.min.js"></script>  <script type="module" src="./assets/js/index.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>AXPERT LAB AI 교육 컨설팅</title>
+	<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollSmoother.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollToPlugin.min.js"></script>  <script type="module" src="./assets/js/index.js"></script>
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
-<body>
-<div id="wrap">
-	<header id="header" class="header">
-		<div class="header-container">
-			<h1 class="logo"><a href="/">AXPERT LAB</a></h1>
 
-			<nav id="global-drawer" class="drawer" aria-hidden="true">
-				<div class="drawer-inner">
-					<ul class="gnb">
-						<li><a href="#">AX 성과향상연구소 소개</a></li>
-						<li><a href="#">AX 진단</a></li>
-						<li><a href="#">AX 컨설팅</a></li>
-						<li><a href="#">AI 교육</a></li>
-						<li><a href="#">AX 코치</a></li>
-						<li><a href="#">AX 포커스</a></li>
-					</ul>
+<body>
+	<div id="wrap">
+		<header id="header" class="header">
+			<div class="header-container">
+				<h1 class="logo"><a href="#visual">AXPERT LAB</a></h1>
+
+				<nav id="global-drawer" class="drawer" aria-hidden="true">
+					<div class="drawer-inner">
+						<ul class="gnb">
+							<li><a href="#">AX 성과향상연구소 소개</a></li>
+							<li><a href="#">AX 진단</a></li>
+							<li><a href="#about">AX 컨설팅</a></li>
+							<li><a href="#">AI 교육</a></li>
+							<li><a href="#teachers">AX 코치</a></li>
+							<li><a href="#subscription">AX 포커스</a></li>
+						</ul>
+					</div>
+					<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN"
+						target="_blank" class="link-blank">AXPERT BtoG <i></i></a>
+				</nav>
+				<div class="header-buttons">
+					<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN"
+						target="_blank" class="link-blank">AXPERT BtoG <i></i></a>
+					<button type="button" class="btn-menu" aria-label="메뉴 열기" aria-controls="global-drawer" aria-expanded="false">
+						<span class="hamburger" aria-hidden="true">
+							<span class="line line-1"></span>
+							<span class="line line-2"></span>
+							<span class="line line-3"></span>
+						</span>
+					</button>
 				</div>
-				<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN" target="_blank" class="link-blank">AXPERT BtoG <i></i></a>
-			</nav>
-			<div class="header-buttons">
-				<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN" target="_blank" class="link-blank">AXPERT BtoG <i></i></a>
-				<button type="button" class="btn-menu" aria-label="메뉴 열기" aria-controls="global-drawer" aria-expanded="false">
-					<span class="hamburger" aria-hidden="true">
-						<span class="line line-1"></span>
-						<span class="line line-2"></span>
-						<span class="line line-3"></span>
-					</span>
-				</button>
 			</div>
-		</div>
-	</header>
+		</header>
 		<main id="content" class="content">
 
-			<section class="visual">
+			<section class="visual" id="visual">
 				<div class="visual-slider swiper">
 					<div class="swiper-wrapper">
 						<div class="visual-slide-1 swiper-slide">
@@ -66,11 +70,12 @@
 							<div class="visual-slide-content mobile">
 								<p class="visual-slide-text">AI Master Roadmap 설계의 시작</p>
 								<h2 class="visual-slide-title">AI 스킬 브릿지 진단
-									<div class="mobile-subtext"><img class="mobile-subtext-img" src="./assets/images/vi-txt-m.png" alt=""></div>
+									<div class="mobile-subtext"><img class="mobile-subtext-img" src="./assets/images/vi-txt-m.png" alt="">
+									</div>
 									<div class="pc-subtext"><img class="pc-subtext-img" src="./assets/images/vi-txt-pc.png" alt=""></div>
 								</h2>
-								
-								<div class="visual-slide-links"><a href="#">자세히 보기</a></div>
+
+								<div class="visual-slide-links"><a href="#" onClick="alert('준비중입니다'); return false;">문의하기</a></div>
 							</div>
 						</div>
 					</div>
@@ -82,13 +87,11 @@
 							AX + EXPERT Consulting
 						</p>
 					</div>
-
 					<div class="swiper-pagination"></div>
 				</div>
 			</section>
 			<!-- //visual -->
-
-			<section class="section-about">
+			<section id="about" class="section-about">
 				<div class="container">
 					<div class="about-text">
 						<h2 class="section-title">AI 전문가와 함께<br>맞춤형 AX 컨설팅을 제공합니다</h2>
@@ -131,7 +134,7 @@
 						<!-- top-right -->
 						<div class="node node-2">
 							<div class="node-content">
-							<div class="bubble"><span>AX<br>컨설팅</span></div>
+								<div class="bubble"><span>AX<br>컨설팅</span></div>
 								<div class="dot-line"></div>
 								<p class="node-desc">조직 현황 진단 및 분석을 통해<br>기업 맞춤 AX 솔루션 컨설팅 제공</p>
 							</div>
@@ -157,10 +160,10 @@
 							</div>
 						</div>
 					</div>
-					</div>
+				</div>
 			</section>
 
-			<section class="section-roadmap">
+			<section id="roadmap" class="section-roadmap">
 				<div class="container">
 					<h2 class="section-title">
 						AXPERT LAB의<br>
@@ -174,7 +177,7 @@
 			</section>
 
 
-			<section class="section-teachers">
+			<section id="teachers" class="section-teachers">
 				<div class="container">
 					<h2 class="section-title">강사진
 						<div class="swiper-buttons">
@@ -311,7 +314,7 @@
 								<div class="avatar"><img src="./assets/images/teacher15.png" alt=""></div>
 							</div>
 						</div>
-						
+
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
@@ -331,14 +334,15 @@
 							<span>AI 교육 컨설팅 문의하기</span>
 						</p>
 						<div class="actions">
-							<a href="https://www.excacademy.co.kr/contents/open/common_list" target="_blank" class="btn-primary">CONTACT US</a>
+							<a href="https://www.excacademy.co.kr/contents/open/common_list" target="_blank"
+								class="btn-primary">CONTACT US</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
 
-			<section class="section-subscription">
+			<section id="subscription" class="section-subscription">
 				<div class="container">
 					<div class="newletter">
 						<h2 class="section-title">Newsletter</h2>
@@ -350,7 +354,8 @@
 							</div>
 							<div class="fields">
 								<input type="email" name="email" placeholder="이메일 주소 입력">
-								<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank" class="btn-submit btn-primary">구독신청</a>
+								<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
+									class="btn-submit btn-primary">구독신청</a>
 							</div>
 						</form>
 					</div>
@@ -358,15 +363,16 @@
 						<h2 class="section-title">Contact Us</h2>
 						<p class="section-desc">AX 컨설팅 AXPERT Lab의 AI 전문가와 함께 시작하세요.</p>
 						<div class="actions">
-							<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank" class="btn-primary">문의하기</a>
+							<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
+								class="btn-primary">문의하기</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- //section-subscription -->
 		</main>
-    
-    <footer id="footer" class="footer">
+
+		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="logo">
 					AXPERT LAB
@@ -376,8 +382,10 @@
 					사업자등록번호 116-81-48332<br>
 					본사 서울시 송파구 중대로 121 롯데캐슬파인힐 2F 별관 서울시 <br class="pc-none">
 					송파구 충민로 10, 가든파이브툴 B홀 9층 S09호, S10호(문정동)<br>
-					Tel.<a href="tel:02-538-2221" class="underline">02) 538-2221</a> / Fax. <a href="tel:02-538-6996" class="underline">02) 538-6996</a><br class="pc-none">
-					E-mail : <a href="mailto:help@exc.co.kr" class="underline">help@exc.co.kr</a> / 직업정보제공사업번호 서울 동부 <br class="pc-none">
+					Tel.<a href="tel:02-538-2221" class="underline">02) 538-2221</a> / Fax. <a href="tel:02-538-6996"
+						class="underline">02) 538-6996</a><br class="pc-none">
+					E-mail : <a href="mailto:help@exc.co.kr" class="underline">help@exc.co.kr</a> / 직업정보제공사업번호 서울 동부 <br
+						class="pc-none">
 					제 2022-4호 / 개인정보관리책임자 김세환
 				</div>
 
@@ -387,365 +395,464 @@
 				</div>
 			</div>
 		</footer>
-</div>
-<!-- //wrap -->
-<script src="./lib/home.js"></script>
-<!-- GSAP (다이어그램 애니메이션용) -->
-<script src="./lib/gsap/gsap.min.js"></script>
-<script src="./lib/gsap/ScrollTrigger.min.js"></script>
-<script>
-	// 강사진: 모바일/PC에 따라 옵션 분기
-	(function () {
-		var mq = window.matchMedia('(min-width: 1024px)'); // PC 기준
-		var sliderInstance = null;
+	</div>
+	<!-- //wrap -->
+	<script src="./lib/home.js"></script>
+	<!-- GSAP (다이어그램 애니메이션용) -->
+	<script src="./lib/gsap/gsap.min.js"></script>
+	<script src="./lib/gsap/ScrollTrigger.min.js"></script>
+	<script>
+		// 강사진: 모바일/PC에 따라 옵션 분기
+		(function () {
+			var mq = window.matchMedia('(min-width: 1024px)'); // PC 기준
+			var sliderInstance = null;
 
-		function mount() {
-			var sliderEl = document.querySelector('.teachers-slider');
-			if (!sliderEl) return;
+			function mount() {
+				var sliderEl = document.querySelector('.teachers-slider');
+				if (!sliderEl) return;
 
-			// destroy if exists
-			if (sliderInstance) {
-				sliderInstance.destroy(true, true);
-				sliderInstance = null;
+				// destroy if exists
+				if (sliderInstance) {
+					sliderInstance.destroy(true, true);
+					sliderInstance = null;
+				}
+
+				// controls
+				var paginationEl = sliderEl.querySelector('.swiper-pagination');
+				var prevEl = sliderEl.querySelector('.swiper-button-prev');
+				var nextEl = sliderEl.querySelector('.swiper-button-next');
+
+				if (mq.matches) {
+					// PC: 네비/페이징 표시, 4개 보기
+					if (paginationEl) paginationEl.style.display = '';
+					if (prevEl) prevEl.style.display = '';
+					if (nextEl) nextEl.style.display = '';
+					sliderInstance = new Swiper('.teachers-slider', {
+						slidesPerView: 4,
+						spaceBetween: 20,
+						pagination: false,
+						navigation: {
+							nextEl: '.section-teachers .swiper-button-next',
+							prevEl: '.section-teachers .swiper-button-prev'
+						}
+					});
+				} else {
+					// Mobile: 네비/페이징 숨김, 1.7개 보기
+					if (paginationEl) paginationEl.style.display = 'none';
+					if (prevEl) prevEl.style.display = 'none';
+					if (nextEl) nextEl.style.display = 'none';
+					sliderInstance = new Swiper('.teachers-slider', {
+						slidesPerView: 1.7,
+						spaceBetween: 12
+					});
+				}
 			}
 
-			// controls
-			var paginationEl = sliderEl.querySelector('.swiper-pagination');
-			var prevEl = sliderEl.querySelector('.swiper-button-prev');
-			var nextEl = sliderEl.querySelector('.swiper-button-next');
+			if (mq.addEventListener) {
+				mq.addEventListener('change', mount);
+			} else if (mq.addListener) {
+				// IE 대응
+				mq.addListener(mount);
+			}
+			window.addEventListener('load', mount);
+		})();
 
-			if (mq.matches) {
-				// PC: 네비/페이징 표시, 4개 보기
-				if (paginationEl) paginationEl.style.display = '';
-				if (prevEl) prevEl.style.display = '';
-				if (nextEl) nextEl.style.display = '';
-				sliderInstance = new Swiper('.teachers-slider', {
-					slidesPerView: 4,
-					spaceBetween: 20,
-					pagination: false,
-					navigation: {
-						nextEl: '.section-teachers .swiper-button-next',
-						prevEl: '.section-teachers .swiper-button-prev'
+		// 헤더: 드로어 토글
+		(function () {
+			var btnMenu = document.querySelector('.btn-menu');
+			var btnClose = document.querySelector('.drawer .btn-close');
+			var drawer = document.getElementById('global-drawer');
+			var body = document.body;
+			if (!btnMenu || !drawer) return;
+
+			function open() {
+				body.classList.add('drawer-open');
+				drawer.setAttribute('aria-hidden', 'false');
+				btnMenu.setAttribute('aria-expanded', 'true');
+			}
+			function close() {
+				body.classList.remove('drawer-open');
+				drawer.setAttribute('aria-hidden', 'true');
+				btnMenu.setAttribute('aria-expanded', 'false');
+			}
+			btnMenu.addEventListener('click', function () {
+				if (body.classList.contains('drawer-open')) close(); else open();
+			});
+			if (btnClose) btnClose.addEventListener('click', close);
+			drawer.addEventListener('click', function (e) {
+				if (e.target === drawer) close();
+			});
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape') close();
+			});
+
+			// 모바일에서 데스크탑으로 전환 시 드로어 자동 닫기
+			var mq = window.matchMedia('(min-width: 1024px)');
+			function handleResize() {
+				if (mq.matches && body.classList.contains('drawer-open')) {
+					close();
+				}
+			}
+			if (mq.addEventListener) {
+				mq.addEventListener('change', handleResize);
+			} else if (mq.addListener) {
+				mq.addListener(handleResize);
+			}
+			window.addEventListener('resize', handleResize);
+		})();
+
+		// 메뉴 네비게이션: 스크롤 이동 및 모바일 메뉴 닫기
+		(function () {
+			var menuLinks = document.querySelectorAll('.gnb a[href^="#"]');
+			var logoLink = document.querySelector('.logo a[href^="#"]');
+			var drawer = document.getElementById('global-drawer');
+			var body = document.body;
+			var btnMenu = document.querySelector('.btn-menu');
+
+			function closeDrawer() {
+				if (body.classList.contains('drawer-open')) {
+					body.classList.remove('drawer-open');
+					if (drawer) drawer.setAttribute('aria-hidden', 'true');
+					if (btnMenu) btnMenu.setAttribute('aria-expanded', 'false');
+				}
+			}
+
+			function scrollToSection(hash) {
+				var target = document.querySelector(hash);
+				if (!target) return;
+
+				var header = document.querySelector('.header');
+				var headerHeight = header ? header.offsetHeight : 0;
+				var targetPosition = target.offsetTop - headerHeight;
+
+				// GSAP ScrollToPlugin이 있으면 사용, 없으면 기본 스크롤
+				if (window.gsap && window.ScrollToPlugin) {
+					gsap.to(window, {
+						duration: 0.8,
+						scrollTo: { y: targetPosition, offsetY: headerHeight },
+						ease: 'power2.inOut'
+					});
+				} else {
+					window.scrollTo({
+						top: targetPosition,
+						behavior: 'smooth'
+					});
+				}
+			}
+
+			function handleLinkClick(e, link) {
+				var hash = link.getAttribute('href');
+				
+				e.preventDefault();
+
+				// href가 "#"이거나 없는 경우 준비중 alert
+				if (!hash || hash === '#') {
+					alert('준비중입니다');
+					// 모바일에서 메뉴 닫기
+					var isMobile = window.innerWidth < 1024;
+					if (isMobile) {
+						closeDrawer();
+					}
+					return;
+				}
+
+				// 모바일에서 메뉴 닫기
+				var isMobile = window.innerWidth < 1024;
+				if (isMobile) {
+					closeDrawer();
+					// 메뉴 닫힌 후 스크롤 이동 (약간의 딜레이)
+					setTimeout(function () {
+						scrollToSection(hash);
+					}, 300);
+				} else {
+					scrollToSection(hash);
+				}
+			}
+
+			// 메뉴 링크들
+			menuLinks.forEach(function (link) {
+				link.addEventListener('click', function (e) {
+					handleLinkClick(e, this);
+				});
+			});
+
+			// 로고 링크
+			if (logoLink) {
+				logoLink.addEventListener('click', function (e) {
+					handleLinkClick(e, this);
+				});
+			}
+		})();
+
+		// 비주얼 슬라이더
+		(function () {
+			if (!window.Swiper) return;
+			var visualText = document.querySelector('.visual-text p');
+			if (!visualText) return;
+
+			var textContents = [
+				'AI 기술을 활용하여 우리 조직의 혁신을 이끄는<br>AX + EXPERT Consulting',
+				'AI를 도입하고는 싶은데,<br>어떤 것부터 해야 할지 고민된다면?<br>우리 조직에 맞는 AI 교육과 체계를 만들기 위한 첫 단계!'
+			];
+
+			function updateVisualText(index) {
+				if (!textContents[index]) return;
+
+				// GSAP가 있으면 페이드 효과 사용
+				if (window.gsap) {
+					gsap.to(visualText, {
+						opacity: 0,
+						duration: 0.3,
+						ease: 'power2.in',
+						onComplete: function () {
+							visualText.innerHTML = textContents[index];
+							gsap.to(visualText, {
+								opacity: 1,
+								duration: 0.4,
+								ease: 'power2.out'
+							});
+						}
+					});
+				} else {
+					// GSAP가 없으면 바로 변경
+					visualText.innerHTML = textContents[index];
+				}
+			}
+
+			var swiper = new Swiper('.visual-slider', {
+				loop: true,
+				effect: 'slide',
+				speed: 700,
+				autoplay: { delay: 3000, disableOnInteraction: false },
+				pagination: {
+					el: '.visual-slider .swiper-pagination',
+					clickable: true
+				},
+				on: {
+					slideChange: function () {
+						updateVisualText(this.realIndex);
+					},
+					init: function () {
+						// 초기화 시에는 페이드 없이 바로 표시
+						if (textContents[this.realIndex]) {
+							visualText.innerHTML = textContents[this.realIndex];
+						}
+					}
+				}
+				// navigation: {
+				// 	nextEl: '.visual-slider .swiper-button-next',
+				// 	prevEl: '.visual-slider .swiper-button-prev'
+				// }
+			});
+
+			// 마우스 호버 시 오토플레이 일시정지
+			var sliderEl = document.querySelector('.visual-slider');
+			if (sliderEl && swiper.autoplay) {
+				sliderEl.addEventListener('mouseenter', function() {
+					if (swiper.autoplay.running) {
+						swiper.autoplay.pause();
 					}
 				});
-			} else {
-				// Mobile: 네비/페이징 숨김, 1.7개 보기
-				if (paginationEl) paginationEl.style.display = 'none';
-				if (prevEl) prevEl.style.display = 'none';
-				if (nextEl) nextEl.style.display = 'none';
-				sliderInstance = new Swiper('.teachers-slider', {
-					slidesPerView: 1.7,
-					spaceBetween: 12
+				sliderEl.addEventListener('mouseleave', function() {
+					if (!swiper.autoplay.running) {
+						swiper.autoplay.resume();
+					}
 				});
 			}
-		}
+		})();
 
-		if (mq.addEventListener) {
-			mq.addEventListener('change', mount);
-		} else if (mq.addListener) {
-			// IE 대응
-			mq.addListener(mount);
-		}
-		window.addEventListener('load', mount);
-	})();
+		// 헤더: 비주얼 영역 기준으로 scroll 상태 토글
+		(function () {
+			var header = document.querySelector('.header');
+			var visual = document.querySelector('.visual');
+			if (!header || !visual) return;
 
-	// 헤더: 드로어 토글
-	(function () {
-		var btnMenu = document.querySelector('.btn-menu');
-		var btnClose = document.querySelector('.drawer .btn-close');
-		var drawer = document.getElementById('global-drawer');
-		var body = document.body;
-		if (!btnMenu || !drawer) return;
-
-		function open() {
-			body.classList.add('drawer-open');
-			drawer.setAttribute('aria-hidden', 'false');
-			btnMenu.setAttribute('aria-expanded', 'true');
-		}
-		function close() {
-			body.classList.remove('drawer-open');
-			drawer.setAttribute('aria-hidden', 'true');
-			btnMenu.setAttribute('aria-expanded', 'false');
-		}
-		btnMenu.addEventListener('click', function () {
-			if (body.classList.contains('drawer-open')) close(); else open();
-		});
-		if (btnClose) btnClose.addEventListener('click', close);
-		drawer.addEventListener('click', function (e) {
-			if (e.target === drawer) close();
-		});
-		document.addEventListener('keydown', function (e) {
-			if (e.key === 'Escape') close();
-		});
-
-		// 모바일에서 데스크탑으로 전환 시 드로어 자동 닫기
-		var mq = window.matchMedia('(min-width: 1024px)');
-		function handleResize() {
-			if (mq.matches && body.classList.contains('drawer-open')) {
-				close();
+			function update() {
+				var threshold = visual.offsetHeight - header.offsetHeight;
+				if (window.scrollY > threshold) {
+					header.classList.add('is-scrolled');
+				} else {
+					header.classList.remove('is-scrolled');
+				}
 			}
-		}
-		if (mq.addEventListener) {
-			mq.addEventListener('change', handleResize);
-		} else if (mq.addListener) {
-			mq.addListener(handleResize);
-		}
-		window.addEventListener('resize', handleResize);
-	})();
 
-	// 비주얼 슬라이더
-	(function () {
-		if (!window.Swiper) return;
-		var visualText = document.querySelector('.visual-text p');
-		if (!visualText) return;
+			window.addEventListener('scroll', update, { passive: true });
+			window.addEventListener('resize', update);
+			window.addEventListener('load', update);
+		})();
 
-		var textContents = [
-			'AI 기술을 활용하여 우리 조직의 혁신을 이끄는<br>AX + EXPERT Consulting',
-			'AI를 도입하고는 싶은데,<br>어떤 것부터 해야 할지 고민된다면?<br>우리 조직에 맞는 AI 교육과 체계를 만들기 위한 첫 단계!'
-		];
+		// About 섹션 애니메이션
+		(function () {
+			if (!window.gsap || !window.ScrollTrigger) return;
+			gsap.registerPlugin(ScrollTrigger);
 
-		function updateVisualText(index) {
-			if (!textContents[index]) return;
-			
-			// GSAP가 있으면 페이드 효과 사용
-			if (window.gsap) {
-				gsap.to(visualText, {
+			// About 텍스트 영역
+			var aboutText = document.querySelector('.section-about .about-text');
+			if (aboutText) {
+				gsap.from(aboutText, {
+					scrollTrigger: {
+						trigger: aboutText,
+						start: 'top 80%',
+						once: true
+					},
+					y: 30,
 					opacity: 0,
-					duration: 0.3,
-					ease: 'power2.in',
-					onComplete: function() {
-						visualText.innerHTML = textContents[index];
-						gsap.to(visualText, {
-							opacity: 1,
-							duration: 0.4,
-							ease: 'power2.out'
-						});
+					duration: 0.6,
+					ease: 'power2.out'
+				});
+			}
+
+			// About 카드들 (모바일)
+			var aboutCards = document.querySelectorAll('.section-about .about-card');
+			if (aboutCards.length > 0) {
+				gsap.from(aboutCards, {
+					scrollTrigger: {
+						trigger: '.section-about .about-cards',
+						start: 'top 80%',
+						once: true
+					},
+					y: 30,
+					opacity: 0,
+					duration: 0.5,
+					ease: 'power2.out',
+					stagger: 0.1
+				});
+			}
+
+			// About 다이어그램 애니메이션 (PC)
+			var diagram = document.querySelector('.section-about .about-diagram');
+			if (diagram) {
+				var tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: diagram,
+						start: 'top 70%',
+						once: true
 					}
 				});
-			} else {
-				// GSAP가 없으면 바로 변경
-				visualText.innerHTML = textContents[index];
+
+				tl.from(diagram.querySelector('.ring'), { scale: 0.8, opacity: 0, duration: 0.6, ease: 'power2.out' })
+					.from(diagram.querySelector('.center'), { scale: 0, opacity: 0, duration: 0.5, ease: 'back.out(1.6)' }, '-=0.2')
+					.from(diagram.querySelectorAll('.node'), { y: 20, scale: 0.8, opacity: 0, duration: 0.4, ease: 'power2.out', stagger: 0.15 });
 			}
-		}
+		})();
 
-		var swiper = new Swiper('.visual-slider', {
-			loop: true,
-			effect: 'slide',
-			speed: 700,
-			autoplay: { delay: 3500, disableOnInteraction: false },
-			pagination: {
-				el: '.visual-slider .swiper-pagination',
-				clickable: true
-			},
-			on: {
-				slideChange: function () {
-					updateVisualText(this.realIndex);
-				},
-				init: function () {
-					// 초기화 시에는 페이드 없이 바로 표시
-					if (textContents[this.realIndex]) {
-						visualText.innerHTML = textContents[this.realIndex];
-					}
-				}
+		// 로드맵 섹션 페이드인업 애니메이션
+		(function () {
+			if (!window.gsap || !window.ScrollTrigger) return;
+			gsap.registerPlugin(ScrollTrigger);
+
+			var roadmapContent = document.querySelector('.section-roadmap .roadmap-content');
+			if (roadmapContent) {
+				gsap.from(roadmapContent, {
+					scrollTrigger: {
+						trigger: roadmapContent,
+						start: 'top 80%',
+						once: true
+					},
+					y: 50,
+					opacity: 0,
+					duration: 0.8,
+					ease: 'power2.out'
+				});
 			}
-			// navigation: {
-			// 	nextEl: '.visual-slider .swiper-button-next',
-			// 	prevEl: '.visual-slider .swiper-button-prev'
-			// }
-		});
-	})();
 
-	// 헤더: 비주얼 영역 기준으로 scroll 상태 토글
-	(function () {
-		var header = document.querySelector('.header');
-		var visual = document.querySelector('.visual');
-		if (!header || !visual) return;
-
-		function update() {
-			var threshold = visual.offsetHeight - header.offsetHeight;
-			if (window.scrollY > threshold) {
-				header.classList.add('is-scrolled');
-			} else {
-				header.classList.remove('is-scrolled');
+			var roadmapTitle = document.querySelector('.section-roadmap .section-title');
+			if (roadmapTitle) {
+				gsap.from(roadmapTitle, {
+					scrollTrigger: {
+						trigger: roadmapTitle,
+						start: 'top 80%',
+						once: true
+					},
+					y: 30,
+					opacity: 0,
+					duration: 0.6,
+					ease: 'power2.out'
+				});
 			}
-		}
+		})();
 
-		window.addEventListener('scroll', update, { passive: true });
-		window.addEventListener('resize', update);
-		window.addEventListener('load', update);
-	})();
+		// 강사진 섹션 애니메이션
+		(function () {
+			if (!window.gsap || !window.ScrollTrigger) return;
+			gsap.registerPlugin(ScrollTrigger);
 
-	// About 섹션 애니메이션
-	(function () {
-		if (!window.gsap || !window.ScrollTrigger) return;
-		gsap.registerPlugin(ScrollTrigger);
+			var teachersTitle = document.querySelector('.section-teachers .section-title');
+			if (teachersTitle) {
+				gsap.from(teachersTitle, {
+					scrollTrigger: {
+						trigger: teachersTitle,
+						start: 'top 80%',
+						once: true
+					},
+					y: 30,
+					opacity: 0,
+					duration: 0.6,
+					ease: 'power2.out'
+				});
+			}
 
-		// About 텍스트 영역
-		var aboutText = document.querySelector('.section-about .about-text');
-		if (aboutText) {
-			gsap.from(aboutText, {
-				scrollTrigger: {
-					trigger: aboutText,
-					start: 'top 80%',
-					once: true
-				},
-				y: 30,
-				opacity: 0,
-				duration: 0.6,
-				ease: 'power2.out'
-			});
-		}
+			var teacherCards = document.querySelectorAll('.section-teachers .teacher-card');
+			if (teacherCards.length > 0) {
+				gsap.from(teacherCards, {
+					scrollTrigger: {
+						trigger: '.section-teachers .teachers-slider',
+						start: 'top 80%',
+						once: true
+					},
+					y: 40,
+					opacity: 0,
+					duration: 0.5,
+					ease: 'power2.out',
+					stagger: 0.1
+				});
+			}
+		})();
 
-		// About 카드들 (모바일)
-		var aboutCards = document.querySelectorAll('.section-about .about-card');
-		if (aboutCards.length > 0) {
-			gsap.from(aboutCards, {
-				scrollTrigger: {
-					trigger: '.section-about .about-cards',
-					start: 'top 80%',
-					once: true
-				},
-				y: 30,
-				opacity: 0,
-				duration: 0.5,
-				ease: 'power2.out',
-				stagger: 0.1
-			});
-		}
+		// 배너 섹션 애니메이션
+		(function () {
+			if (!window.gsap || !window.ScrollTrigger) return;
+			gsap.registerPlugin(ScrollTrigger);
 
-		// About 다이어그램 애니메이션 (PC)
-		var diagram = document.querySelector('.section-about .about-diagram');
-		if (diagram) {
-			var tl = gsap.timeline({
-				scrollTrigger: {
-					trigger: diagram,
-					start: 'top 70%',
-					once: true
-				}
-			});
+			var bannerText = document.querySelector('.section-banner .banner-text');
+			if (bannerText) {
+				gsap.from(bannerText, {
+					scrollTrigger: {
+						trigger: bannerText,
+						start: 'top 80%',
+						once: true
+					},
+					y: 40,
+					opacity: 0,
+					duration: 0.7,
+					ease: 'power2.out'
+				});
+			}
+		})();
 
-			tl.from(diagram.querySelector('.ring'), { scale: 0.8, opacity: 0, duration: 0.6, ease: 'power2.out' })
-				.from(diagram.querySelector('.center'), { scale: 0, opacity: 0, duration: 0.5, ease: 'back.out(1.6)' }, '-=0.2')
-				.from(diagram.querySelectorAll('.node'), { y: 20, scale: 0.8, opacity: 0, duration: 0.4, ease: 'power2.out', stagger: 0.15 });
-		}
-	})();
+		// 구독 섹션 애니메이션
+		(function () {
+			if (!window.gsap || !window.ScrollTrigger) return;
+			gsap.registerPlugin(ScrollTrigger);
 
-	// 로드맵 섹션 페이드인업 애니메이션
-	(function () {
-		if (!window.gsap || !window.ScrollTrigger) return;
-		gsap.registerPlugin(ScrollTrigger);
-
-		var roadmapContent = document.querySelector('.section-roadmap .roadmap-content');
-		if (roadmapContent) {
-			gsap.from(roadmapContent, {
-				scrollTrigger: {
-					trigger: roadmapContent,
-					start: 'top 80%',
-					once: true
-				},
-				y: 50,
-				opacity: 0,
-				duration: 0.8,
-				ease: 'power2.out'
-			});
-		}
-
-		var roadmapTitle = document.querySelector('.section-roadmap .section-title');
-		if (roadmapTitle) {
-			gsap.from(roadmapTitle, {
-				scrollTrigger: {
-					trigger: roadmapTitle,
-					start: 'top 80%',
-					once: true
-				},
-				y: 30,
-				opacity: 0,
-				duration: 0.6,
-				ease: 'power2.out'
-			});
-		}
-	})();
-
-	// 강사진 섹션 애니메이션
-	(function () {
-		if (!window.gsap || !window.ScrollTrigger) return;
-		gsap.registerPlugin(ScrollTrigger);
-
-		var teachersTitle = document.querySelector('.section-teachers .section-title');
-		if (teachersTitle) {
-			gsap.from(teachersTitle, {
-				scrollTrigger: {
-					trigger: teachersTitle,
-					start: 'top 80%',
-					once: true
-				},
-				y: 30,
-				opacity: 0,
-				duration: 0.6,
-				ease: 'power2.out'
-			});
-		}
-
-		var teacherCards = document.querySelectorAll('.section-teachers .teacher-card');
-		if (teacherCards.length > 0) {
-			gsap.from(teacherCards, {
-				scrollTrigger: {
-					trigger: '.section-teachers .teachers-slider',
-					start: 'top 80%',
-					once: true
-				},
-				y: 40,
-				opacity: 0,
-				duration: 0.5,
-				ease: 'power2.out',
-				stagger: 0.1
-			});
-		}
-	})();
-
-	// 배너 섹션 애니메이션
-	(function () {
-		if (!window.gsap || !window.ScrollTrigger) return;
-		gsap.registerPlugin(ScrollTrigger);
-
-		var bannerText = document.querySelector('.section-banner .banner-text');
-		if (bannerText) {
-			gsap.from(bannerText, {
-				scrollTrigger: {
-					trigger: bannerText,
-					start: 'top 80%',
-					once: true
-				},
-				y: 40,
-				opacity: 0,
-				duration: 0.7,
-				ease: 'power2.out'
-			});
-		}
-	})();
-
-	// 구독 섹션 애니메이션
-	(function () {
-		if (!window.gsap || !window.ScrollTrigger) return;
-		gsap.registerPlugin(ScrollTrigger);
-
-		var subscriptionItems = document.querySelectorAll('.section-subscription .newletter, .section-subscription .contact');
-		if (subscriptionItems.length > 0) {
-			gsap.from(subscriptionItems, {
-				scrollTrigger: {
-					trigger: '.section-subscription',
-					start: 'top 80%',
-					once: true
-				},
-				y: 40,
-				opacity: 0,
-				duration: 0.6,
-				ease: 'power2.out',
-				stagger: 0.2
-			});
-		}
-	})();
-</script>
+			var subscriptionItems = document.querySelectorAll('.section-subscription .newletter, .section-subscription .contact');
+			if (subscriptionItems.length > 0) {
+				gsap.from(subscriptionItems, {
+					scrollTrigger: {
+						trigger: '.section-subscription',
+						start: 'top 80%',
+						once: true
+					},
+					y: 40,
+					opacity: 0,
+					duration: 0.6,
+					ease: 'power2.out',
+					stagger: 0.2
+				});
+			}
+		})();
+	</script>
 </body>
 
+</html>
 </html>
