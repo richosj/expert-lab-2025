@@ -924,7 +924,7 @@ body, html {
   background: url("../images/visual-slide-1.png") no-repeat center center/cover;
   min-height: 100vh;
   max-height: 456px;
-  padding-top: 220px;
+  padding-top: 100px;
 }
 .visual .visual-slide-1 .frames {
   background: url("../images/frame1.png") no-repeat center 0/cover;
@@ -969,13 +969,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .visual .visual-slide-content .visual-slide-text {
-    font-family: Pretendard;
     font-weight: 500;
-    font-style: Medium;
     font-size: 18px;
-    leading-trim: NONE;
     line-height: 57px;
-    letter-spacing: -2%;
+    letter-spacing: 0.02em;
     text-align: center;
     vertical-align: middle;
   }
@@ -984,13 +981,10 @@ body, html {
   }
 }
 .visual .visual-slide-content .visual-slide-title {
-  font-family: Pretendard;
   font-weight: 700;
-  font-style: Bold;
   font-size: 34px;
-  leading-trim: NONE;
   line-height: 43px;
-  letter-spacing: -2%;
+  letter-spacing: 0.02em;
   text-align: center;
   vertical-align: middle;
   margin-bottom: 30px;
@@ -998,13 +992,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .visual .visual-slide-content .visual-slide-title {
-    font-family: Pretendard;
     font-weight: 700;
-    font-style: Bold;
     font-size: 72px;
-    leading-trim: NONE;
     line-height: 80px;
-    letter-spacing: -2%;
     text-align: center;
     vertical-align: middle;
   }
@@ -1094,7 +1084,7 @@ body, html {
 .visual-text {
   z-index: 2;
   position: absolute;
-  top: calc(100% - 142px - 100px);
+  top: calc(100% - 142px - 50px);
   left: 0;
   right: 0;
   text-align: center;
@@ -1122,7 +1112,6 @@ body, html {
   }
 }
 .visual-text p {
-  font-family: Pretendard;
   font-weight: 500;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
