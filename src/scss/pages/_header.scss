@@ -7,8 +7,7 @@
   z-index: 100;
   border-bottom: 1px solid rgba(124, 124, 124, 0.6);
   transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-
-  /* 비주얼 영역을 벗어나면 활성화 */
+  background-color: transparent;
   &.is-scrolled {
     background: rgba(18, 18, 18, 1);
     border-color: rgba(18, 18, 18, 1);
@@ -22,11 +21,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (min-width: 1024px) {
+      height: calc(78px + 24px);
+    }
   }
   .header-buttons {
     display: flex;
     align-items: center;
     gap: 14px;
+    @media (min-width: 1024px) {
+      display: none;
+      .link-blank{
+        display: none;
+      }
+    }
   }
   .link-blank {
     height: 30px;
@@ -50,12 +58,26 @@
       height: 9px;
       background: url("@/assets/images/blank.png") no-repeat center center / contain;
     }
+    @media (min-width: 1024px) {
+      font-size: 18px;
+      gap:0 10px;
+      height: 44px;
+      width: 181px;
+      i{
+        background-image: url("@/assets/images/blank-big.png");
+        width: 16px;
+        height: 14px;
+      }
+    }
   }
 
   .logo a {
     font-size: 18px;
     color: #fff;
     letter-spacing: -0.02em;
+    @media (min-width: 1024px) {
+      font-size: 36px;
+    }
   }
 
   .btn-menu {
@@ -65,6 +87,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @media (min-width: 1024px) {
+      display: none;
+    }
     .hamburger {
       width: 22px;
       height: 16px;
@@ -91,6 +116,20 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.25s ease;
+    .link-blank{
+      display: none;
+    }
+    @media (min-width: 1024px) {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transition: none;
+      display: flex;
+      gap:0 51px;
+      .link-blank{
+        display: flex;
+      }
+    }
     .drawer-inner {
       position: absolute;
       right: 0;
@@ -103,23 +142,46 @@
       transition: transform 0.25s ease;
       display: flex;
       flex-direction: column;
+      @media (min-width: 1024px) {
+        position: static;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        flex-direction: row;
+        transform: none;
+        align-items: center;
+      }
     }
     .gnb {
       padding-top: 30px;
       li + li {
         margin-top: 35px;
       }
+      @media (min-width: 1024px) {
+        padding-top: 0;
+        display: flex;
+        gap: 0 30px;
+        li + li {
+          margin-top: 0;
+        }
+      }
       a {
-        font-family: Pretendard;
         font-weight: 500;
-        font-style: Medium;
         font-size: 18px;
-        leading-trim: NONE;
         line-height: 33px;
         letter-spacing: -2%;
         text-align: center;
         vertical-align: middle;
         color:rgba(18, 18, 18, 1);
+        @media (min-width: 1024px) {
+          font-size: 18px;
+          line-height: 32px;
+          text-align: left;
+          color: #fff;
+        }
       }
     }
   }

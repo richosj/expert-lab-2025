@@ -15,10 +15,19 @@
     line-height: 139%;
     letter-spacing: -0.02em;
     text-align: center;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      br{
+        display: none;
+      }
+    }
   }
   .roadmap-content{
     position: relative;
     margin-top: 20px;
+    @media (min-width: 1024px) {
+      margin-top: 60px;
+    }
     .image{
       img{
         max-width: 100%;
@@ -34,5 +43,8 @@
     background: rgba(9, 63, 167, 1) url("@/assets/images/icon-zoomin.png") no-repeat center center;
     border-radius: 50%;
     display: flex;
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 }
