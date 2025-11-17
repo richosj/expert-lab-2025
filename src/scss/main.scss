@@ -1,0 +1,16 @@
+@use "abstracts/variables" as *;
+@use "abstracts/functions" as *;
+@use "abstracts/mixins" as *;
+
+@use "base/root";
+@use "base/reset";
+
+@use "pages/footer";
+
+@use "pages/banner";
+@use "pages/subscription";
+@use "pages/about";
+@use "pages/header";
+@use "pages/visual";
+@use "pages/roadmap";
+@use "pages/teachers";

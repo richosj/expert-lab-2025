@@ -1,0 +1,111 @@
+
+/* 강사진 섹션 - 모바일 슬라이드 / PC 그리드 */
+.section-teachers {
+  padding: 60px 0;
+  padding-left: 30px;
+  @media (min-width: 1024px) {
+    padding-top: 137px;
+    padding-bottom: 137px;
+  }
+  .container{
+    max-width: 1370px;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-family: Pretendard;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 139%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .teacher-card {
+    background: #fff;
+    border: 1px solid rgba(218, 218, 218, 1);
+    border-radius: 12px;
+    padding: 24px;
+    height: 256px;
+    .teacher-name {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(218, 218, 218, 1);
+      padding-bottom: 10px;
+    }
+
+    .teacher-desc {
+      li{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 156%;
+        letter-spacing: -0.02em;
+        position: relative;
+        padding-left: 10px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top:7px;
+          width: 2px;
+          height: 2px;
+          background: #111;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .avatar {
+      text-align: right;
+      margin-top: 25px;
+      img{
+        width: 52px;
+        height: 52px;
+        
+      }
+    }
+  }
+
+  /* 기본: 모바일 - 슬라이더 노출 */
+  .teachers-slider {
+    display: block;
+    &.is-hidden {
+      display: none;
+    }
+    .swiper-wrapper {
+      padding-bottom: 24px; /* pagination 공간 */
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #111;
+      opacity: 0.8;
+      &::after {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+    .swiper-pagination-bullet {
+      background: #ccc;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #111;
+    }
+  }
+}
+
+/* PC - 그리드 노출 */
+@media (min-width: 1024px) {
+  .section-teachers {
+    padding: 72px 0;
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 28px;
+    }
+
+  }
+}
