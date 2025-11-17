@@ -943,6 +943,12 @@ body, html {
     background-image: url("../images/frame1.png");
   }
 }
+@media (min-width: 1024px) and (max-height: 850px) {
+  .visual .visual-slide-1 .frames {
+    padding-top: 107px;
+    max-width: 493px;
+  }
+}
 @media (min-width: 1024px) {
   .visual .visual-slide-1 {
     max-height: inherit;
@@ -984,6 +990,11 @@ body, html {
     display: none;
   }
 }
+@media (min-width: 1024px) and (max-height: 850px) {
+  .visual .visual-slide-content .visual-slide-text {
+    font-size: 16px;
+  }
+}
 .visual .visual-slide-content .visual-slide-title {
   font-weight: 700;
   font-size: 34px;
@@ -1001,6 +1012,12 @@ body, html {
     line-height: 80px;
     text-align: center;
     vertical-align: middle;
+  }
+}
+@media (min-width: 1024px) and (max-height: 850px) {
+  .visual .visual-slide-content .visual-slide-title {
+    font-size: 54px;
+    line-height: 60px;
   }
 }
 .visual .visual-slide-content .mobile-subtext {
