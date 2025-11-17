@@ -13,13 +13,15 @@
       background: url("@/assets/images/frame1-mobile.png") no-repeat center 0;
       background-size: 100% 100%;
       max-width: 690px;
-      aspect-ratio: 1 / 1;
+      //aspect-ratio: 1 / 1;
+      aspect-ratio: 375 / 408;
       margin: 0 auto;
       padding-top: 99px;
       @media (min-width: 1024px) {
         padding-top: 120px;
         max-width: 580px;
         background-size: cover;
+        aspect-ratio: 1 / 1;
         background-image: url("@/assets/images/frame1.png");
       }
     }
@@ -125,7 +127,7 @@
 
   .swiper-pagination{
     gap:0 12px;
-    bottom: 60px;
+    bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,10 +159,22 @@
   }
 }
 
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .visual-text{
   z-index: 2;
   position: absolute;
-  top:calc(100% - 142px - 50px);
+  top:calc(100% - 162px);
   left: 0;
   right: 0;
   text-align: center;
@@ -175,6 +189,7 @@
     display: inline-block;
     margin-bottom: 20px;
     vertical-align: top;
+    animation: updown 3s ease-in-out infinite;
     @media (min-width: 1024px) {
       margin-bottom: 27px;
       background-image: url("@/assets/images/Vector2.png");
