@@ -56,7 +56,7 @@
       display: inline-block;
       width: 10px;
       height: 9px;
-      background: url("@/assets/images/blank.png") no-repeat center center / contain;
+      background: url("@/assets/images/home.png") no-repeat center center / contain;
     }
     @media (min-width: 1024px) {
       font-size: 18px;
@@ -64,9 +64,9 @@
       height: 44px;
       width: 181px;
       i{
-        background-image: url("@/assets/images/blank-big.png");
+        background-image: url("@/assets/images/home.png");
         width: 16px;
-        height: 14px;
+        height: 16px;
       }
     }
   }
@@ -75,7 +75,11 @@
     font-size: 18px;
     color: #fff;
     letter-spacing: -0.02em;
+
     @media (min-width: 1024px) {
+      font-size: 24px;
+    }
+    @media (min-width: 1440px) {
       font-size: 36px;
     }
   }
@@ -163,10 +167,13 @@
       @media (min-width: 1024px) {
         padding-top: 0;
         display: flex;
-        gap: 0 30px;
+        gap: 0 28px;
         li + li {
           margin-top: 0;
         }
+      }
+      @media (min-width: 1240px) {
+        gap: 0 48px;
       }
       a {
         font-weight: 500;

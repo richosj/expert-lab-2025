@@ -1,0 +1,151 @@
+.section-solution {
+  padding: 60px 20px;
+  background-color: #F7F7FA;
+  @media (min-width: 1024px) {
+    padding-top: 137px;
+    padding-bottom: 137px;
+    .container {
+      max-width: 1370px;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.24;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      margin-bottom: 60px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    @media (min-width: 1024px) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .mtd-process {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  .process-card {
+    background: #FFFFFF;
+    border: 1px solid #DFDFE8;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    
+    @media (min-width: 768px) {
+      flex: 0 0 calc(50% - 10px);
+    }
+    
+    @media (min-width: 1024px) {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .process-top {
+      padding: 24px 20px;
+      flex: 1;
+      
+      @media (min-width: 1024px) {
+        padding: 30px;
+      }
+
+      .process-number {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        color: #000000;
+        line-height: 1;
+        margin-bottom: 6px;
+        
+        @media (min-width: 1024px) {
+          font-size: 26px;
+        }
+      }
+
+      .process-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 12px;
+        line-height: 146%;
+        white-space: nowrap;
+        @media (min-width: 1024px) {
+          font-size: 23px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .process-question {
+        
+        font-weight: 600;
+        color: #093FA7;
+        font-size: 16px;
+        margin-bottom: 10px;
+        
+        @media (min-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+
+      .process-desc {
+        font-size: 14px;
+        font-weight: 400;
+        color: #949494;
+        line-height: 1.6;
+        
+        @media (min-width: 1024px) {
+          
+        }
+      }
+    }
+
+    .process-bottom {
+      background: #1980DD;
+      padding: 20px;
+      
+      @media (min-width: 1024px) {
+        padding: 24px 30px;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 1.4;
+        margin: 0;
+        + p {
+          margin-top: 4px;
+        }
+        
+        @media (min-width: 1024px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
