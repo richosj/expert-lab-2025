@@ -19,3 +19,82 @@
 @use "pages/teachers";
 @use "pages/subscription";
 
+/* Modal 기본 골격 (닫기까지) */
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1200;
+	padding: 24px;
+}
+
+.modal-overlay[hidden] {
+	display: none;
+}
+
+.modal {
+	background: #fff;
+	width: 100%;
+	max-width: 720px;
+	border-radius: 8px;
+	box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+	outline: none;
+	max-height: 90vh;
+	overflow: auto;
+}
+
+.modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.modal-header h3 {
+	margin: 0;
+	font-size: 1.125rem;
+}
+
+.modal-close {
+	background: transparent;
+	border: 0;
+	font-size: 1.5rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.modal-body {
+	padding: 18px 20px 28px;
+}
+
+.modal-form label {
+	display: block;
+	margin-top: 12px;
+	font-size: 0.9rem;
+}
+
+.modal-form input,
+.modal-form textarea {
+	width: 100%;
+	padding: 10px 12px;
+	margin-top: 6px;
+	border: 1px solid rgba(0,0,0,0.12);
+	border-radius: 4px;
+	font-size: 0.95rem;
+}
+
+.modal-actions {
+	margin-top: 14px;
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+

@@ -28,13 +28,22 @@
   .header-buttons {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     @media (min-width: 1024px) {
       display: none;
       .link-blank{
         display: none;
       }
     }
+  }
+  .util-links{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    &.d-none{
+      display: none;
+    }
+    @media (min-width: 1024px) {}
   }
   .link-blank {
     height: 30px;
@@ -45,29 +54,30 @@
     padding-left: 14px;
     gap: 2px;
     background-color: #000;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    i{
-      display: inline-block;
-      width: 10px;
-      height: 9px;
-      background: url("@/assets/images/home.png") no-repeat center center / contain;
-    }
+    
     @media (min-width: 1024px) {
       font-size: 18px;
       gap:0 10px;
       height: 44px;
       width: 181px;
-      i{
-        background-image: url("@/assets/images/home.png");
-        width: 16px;
-        height: 16px;
-      }
+    }
+  }
+
+  a.home-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("@/assets/images/home.png") no-repeat center center / contain;
+    @media (min-width: 1024px) {
+      width: 16px; 
+      height: 16px;
     }
   }
 
