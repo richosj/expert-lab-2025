@@ -4,15 +4,12 @@ import "@/scss/main.scss";
 (function () {
   var openButtons = document.querySelectorAll("[data-open-modal], .open-modal");
   var overlay = document.querySelector("[data-modal-overlay]");
-  var modal = overlay ? overlay.querySelector(".modal") : null;
-  var closeButtons = overlay
-    ? overlay.querySelectorAll("[data-modal-close]")
-    : [];
   var lastFocused = null;
+  var currentModal = null;
 
-  if (!overlay || !modal) return;
+  if (!overlay) return;
 
-  function trapTabKey(e) {
+  function trapTabKey(e, modal) {
     var focusable = modal.querySelectorAll(
       'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
     );
@@ -37,7 +34,20 @@ import "@/scss/main.scss";
     }
   }
 
-  function openModal() {
+  function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (!modal) return;
+
+    // 모든 모달 숨기기
+    var allModals = overlay.querySelectorAll(".modal");
+    allModals.forEach(function(m) {
+      m.style.display = "none";
+    });
+
+    // 선택한 모달만 표시
+    modal.style.display = "flex";
+    currentModal = modal;
+
     lastFocused = document.activeElement;
     overlay.removeAttribute("hidden");
     document.body.classList.add("modal-open");
@@ -46,11 +56,15 @@ import "@/scss/main.scss";
   }
 
   function closeModal() {
+    if (currentModal) {
+      currentModal.style.display = "none";
+    }
     overlay.setAttribute("hidden", "");
     document.body.classList.remove("modal-open");
     if (lastFocused && typeof lastFocused.focus === "function")
       lastFocused.focus();
     document.removeEventListener("keydown", onKeyDown);
+    currentModal = null;
   }
 
   function onKeyDown(e) {
@@ -58,18 +72,24 @@ import "@/scss/main.scss";
       closeModal();
       return;
     }
-    trapTabKey(e);
+    if (currentModal) {
+      trapTabKey(e, currentModal);
+    }
   }
 
   // open buttons
   openButtons.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
-      openModal();
+      var target = this.getAttribute("data-target");
+      if (target) {
+        openModal(target);
+      }
     });
   });
 
   // close buttons
+  var closeButtons = document.querySelectorAll("[data-modal-close]");
   closeButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       closeModal();
@@ -82,8 +102,10 @@ import "@/scss/main.scss";
   });
 
   // prevent focus leaving modal on click
-  modal.addEventListener("click", function (e) {
-    e.stopPropagation();
+  overlay.addEventListener("click", function (e) {
+    if (e.target.closest(".modal")) {
+      e.stopPropagation();
+    }
   });
 })();
 
@@ -94,13 +116,20 @@ import "@/scss/main.scss";
   if (!sliderEl) return;
   new Swiper(sliderEl, {
     slidesPerView: 1,
+    slidesPerGroup: 1,
     spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
       },
       1024: {
         slidesPerView: 4,
+        slidesPerGroup: 4,
       },
     },
     navigation: {
@@ -162,6 +191,14 @@ import "@/scss/main.scss";
   var drawer = document.getElementById("global-drawer");
   var body = document.body;
   var btnMenu = document.querySelector(".btn-menu");
+  var linkBlank = document.querySelectorAll(".link-blank");
+
+  linkBlank.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      scrollToSection(link.getAttribute("href"));
+    });
+  });
 
   function closeDrawer() {
     if (body.classList.contains("drawer-open")) {
@@ -518,33 +555,33 @@ import "@/scss/main.scss";
   }
 
   // 화살표 애니메이션
-  var arrows = document.querySelectorAll(".section-diagnosis .arrow-down");
-  if (arrows.length > 0) {
-    arrows.forEach(function (arrow, index) {
-      gsap.from(arrow, {
-        scrollTrigger: {
-          trigger: arrow,
-          start: "top 85%",
-          once: true,
-        },
-        y: 20,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        delay: index * 0.2,
-      });
+  // var arrows = document.querySelectorAll(".section-diagnosis .arrow-down");
+  // if (arrows.length > 0) {
+  //   arrows.forEach(function (arrow, index) {
+  //     gsap.from(arrow, {
+  //       scrollTrigger: {
+  //         trigger: arrow,
+  //         start: "top 85%",
+  //         once: true,
+  //       },
+  //       y: 20,
+  //       opacity: 0,
+  //       duration: 0.6,
+  //       ease: "power2.out",
+  //       delay: index * 0.2,
+  //     });
 
-      // 화살표 위아래 흐르는 애니메이션
-      gsap.to(arrow, {
-        y: 10,
-        duration: 1.5,
-        ease: "power1.inOut",
-        repeat: -1,
-        yoyo: true,
-        delay: 0.5 + index * 0.2,
-      });
-    });
-  }
+  //     // 화살표 위아래 흐르는 애니메이션
+  //     gsap.to(arrow, {
+  //       y: 10,
+  //       duration: 1.5,
+  //       ease: "power1.inOut",
+  //       repeat: -1,
+  //       yoyo: true,
+  //       delay: 0.5 + index * 0.2,
+  //     });
+  //   });
+  // }
 })();
 
 // AXPERT LAB 섹션 애니메이션
@@ -596,27 +633,58 @@ import "@/scss/main.scss";
     var swiperEl = content.querySelector(".training-swiper");
     var prevBtn = content.querySelector(".btn-prev");
     var nextBtn = content.querySelector(".btn-next");
+    var sortButtons = content.querySelectorAll(".sort-toggle");
 
     if (!swiperEl) return;
 
-    new Swiper(swiperEl, {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    var swiper = new Swiper(swiperEl, {
+      slidesPerView: 2,
+      spaceBetween: 8,
       breakpoints: {
         768: {
           slidesPerView: 3,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 4,
+          spaceBetween: 20,
         },
         1240: {
           slidesPerView: 5,
+          spaceBetween: 20,
         },
       },
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn,
       },
+    });
+
+    // 소트 버튼 클릭 시 해당 슬라이드로 이동
+    sortButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var sortValue = this.getAttribute("data-sort");
+        if (!sortValue) return;
+
+        // 해당 data-sort를 가진 슬라이드 찾기
+        var slides = swiperEl.querySelectorAll(".swiper-slide");
+        var targetIndex = -1;
+
+        console.log(slides);
+        console.log(sortValue);
+
+        for (var i = 0; i < slides.length; i++) {
+          if (slides[i].getAttribute("data-sort") === sortValue) {
+            targetIndex = i;
+            break;
+          }
+        }
+
+        // 슬라이드 찾았으면 이동
+        if (targetIndex !== -1) {
+          swiper.slideTo(targetIndex);
+        }
+      });
     });
   });
 })();

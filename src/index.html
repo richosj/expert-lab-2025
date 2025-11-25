@@ -2,11 +2,12 @@
 <html lang="ko">
 
 <head>
-	{{> meta}}	
+	{{> meta}}
 	<!--
 		<button type="button" class="btn-primary open-modal" data-open-modal aria-haspopup="dialog">문의하기 (모달)</button>
 	-->
 </head>
+
 <body>
 	<div id="wrap">
 		{{> header}}
@@ -53,7 +54,7 @@
 			{{> diagnosis}}
 
 			{{> teachers}}
-			
+
 			{{> insight}}
 
 			{{> subscription}}
@@ -64,30 +65,683 @@
 	</div>
 	<!-- //wrap -->
 	<!-- Modal markup -->
-	<div id="modal-overlay" class="modal-overlay" data-modal-overlay hidden>
-		<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+	<div id="modal-overlay" class="modal-overlay" data-modal-overlay>
+		<div class="modal" tabindex="-1" id="modal-1">
 			<div class="modal-header">
-				<h3 id="modal-title">문의하기</h3>
-				<button type="button" class="modal-close" aria-label="닫기" data-modal-close>&times;</button>
+				<div class="modal-title-wrap">
+					<h3>AI를 활용한 의사결정과 전사 AI 도입 전략</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
 			</div>
 			<div class="modal-body">
-				<p>모달의 기본 골격입니다. 여기 안에 폼이나 내용을 넣어 사용하세요.</p>
-				<form class="modal-form">
-					<label for="modal-email">이메일</label>
-					<input id="modal-email" type="email" name="email" placeholder="이메일 입력">
-					<label for="modal-msg">문의 내용</label>
-					<textarea id="modal-msg" name="message" rows="4" placeholder="문의 내용을 입력하세요"></textarea>
-					<div class="modal-actions">
-						<button type="button" class="btn-secondary" data-modal-close>닫기</button>
-						<button type="submit" class="btn-primary">전송</button>
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">임원</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
 					</div>
-				</form>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI 모델을 비교하고 실무에 적용할 수 있는 AI 활용법 이해,<br>AI 도입 시 고려해야 할 리스크 등 사례를 통한 실질적인 인사이트 확보, <br>
+								조직 내 AI 기술 적용 방안을 리더로서 고민할 수 있도록 트렌드 분석
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">리더십을 위한<br>AI 트렌드 이해하기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										생성형 AI를 통한 아이스브레이킹<br>
+										생성형 AI의 발전 과정과 현재<br>
+										경영진이 알아야 할 AI 활용 전략
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">생성형 AI의 작동원리와<br>프롬프트 엔지니어링</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										생성형 AI의 작동원리 이해하기<br>
+										프롬프트 엔지니어링 이해하기<br>
+										생성형 AI 체험하기
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">의사결정을 돕는<br>프롬프트 엔지니어링</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 기반 의사결정 실습해보기
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 4</span>
+									<h4 class="step-title">AI 비서 생성</h4>
+								</div>
+								<div class="step-desc">
+									<p>나만의 AI비서 만들기</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- // 임원 -->
+
+		<div class="modal" tabindex="-1" id="modal-2">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3> AI 기반 협업을 위한 의사결정과 변화관리</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀장 및 관리직</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								LLM, RAG, AI 에이전트 등 최신 AI 핵심 기술을 다루어 AI 기술 전반에 대한
+								거시적인 인사이트 습득 및 이해도 증진, 조직 내 AI 적용을 원활하게 추진할 수 있도록 변화 관리 및 대응 방안 마련
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">AI의 핵심 기술과 <br>비즈니스 활용 인사이트</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI의 작동원리와 핵심기술<br>
+										AI의 비즈니스 활용
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">AI 시대에 필요한<br>리더의 의사결정</h4>
+								</div>
+								<div class="step-desc">
+									<p>AI 기반 데이터 활용과 의사결정</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">AI기반의 협업과<br>조직 변화관리 </h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI와 협업하기: 효율적인 팀 관리 인사이트<br>
+										조직 내 AI 도입 전략 및 변화 관리
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 팀장 -->
+
+		<div class="modal" tabindex="-1" id="modal-3">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>AI 시대 신임 팀장 시뮬레이션</h3>
+					<div class="modal-title-desc">: AI시대 리더를 위한 성과 평가/면담 @AI</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀장 및 관리직</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								성과 평가/면담자로서의 역할 인식하고, 기본 개념과 중요성을 이해, 체계적인 성가 평가/면담 프로세스를 이해하고 효과적인 평가/면담 스킬 학습의 중요성을 인식
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">면담의 기초</h4>
+								</div>
+								<div class="step-desc">
+									<p>평가/면담의 이해와 리더의 역할 </p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">면담 시뮬레이션</h4>
+								</div>
+								<div class="step-desc">
+									<p>평가 면담 시뮬레이션 실습</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">개인별 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>학습자 개인별 실습 사례 구성</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 4</span>
+									<h4 class="step-title">AI 피드백</h4>
+								</div>
+								<div class="step-desc">
+									<p>Role-play 및 AI 피드백</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 팀장 -->
+
+		<div class="modal" tabindex="-1" id="modal-4">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>AI 코칭 시뮬레이션을 활용한 브릿지 리더십 코칭과 피드백</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">시니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">5.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								코칭의 기본 개념부터 실전 대화법까지! <br>GROW 코칭모델 기반의 AI 웹 앱으로 코칭/피드백 스킬을 쉽고 빠르게 체화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">코칭의 기본기 다지기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										코칭의 개념과 사례<br>
+										다양한 코칭 모델(AMO, GROW 등)과 실전 대화법
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">코칭 시뮬레이션</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 웹 앱으로 엑코치와 함께하는 GROW 코칭<br>
+										효과적인 코칭 대화의 특징과 적용
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 롤플레이 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI를 통한 실전 평가 면담 롤플레이<br>
+										AI 피드백을 통한 대화 분석과 개선 포인트
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 시니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-5">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 전략 보고서 작성</h3>
+					<div class="modal-title-desc">: 프롬프트로 만드는 데이터 시각화와 스토리텔링 전략 보고서</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">시니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								전략적인 데이터 분석 및 시각화를 위한 프롬프트 엔지니어링 학습, 설득적이고 효과적인 스토리텔링 기반의 전략보고서 작성 실습
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">데이터 기반의 <br>사고력 다지기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 기반 사고력, 왜 중요한가?<br>
+										기초통계, AI를 활용한 데이터 정리/분석
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 시각화와<br>스토리텔링 스킬업</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 시각화에 유용한 이론/프레임/툴<br>
+										AI기반 자동화 툴을 활용한 스토리텔링 작업
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 데이터기반의 <br>전략적 문제해결</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										비즈니스 문제정의와 데이터 사고력 기반의 전략 기획/설계<br>
+										AI 를 통한 데이터 기반의 전략보고서 작성 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 시니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-6">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 문제해결력 강화</h3>
+					<div class="modal-title-desc">: 창의적 문제해결과 전략적 기획 역량 강화</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">미들&주니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								문제해결의 4단계 프로세스에 맞추어 생성형 AI를 활용한 문제정의 및 문제해결에 대한 아이디어 시각화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">문제해결 프로세스와<br>문제 정의</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										문제해결의 4단계 프로세스<br>
+										AI를 활용한 데이터 정리와 인사이트 도출
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 시각화와<br>스토리텔링</h4>
+								</div>
+								<div class="step-desc">
+									<p>AI를 활용한 다양한 데이터 분석 기법 사례와 실습<br>
+										AI를 활용한 분석 결과 시각화, 스토리텔링
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">전략적 기획 역량 강화</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										전략적 기획에 대한 개괄적 이해<br>
+										전략 제시의 다양한 구조화 방안
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 미들 주니어 -->
+		<div class="modal" tabindex="-1" id="modal-7">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 기획 보고서 작성</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">미들&주니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								업계 관련한 빅데이터를 가장 효과적으로 수집/분석할 수 있는 방법론과 생성형 AI를 통한 효과적인 비즈니스 문서 작성의 실제
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">비즈니스 라이팅의 기본</h4>
+								</div>
+								<div class="step-desc">
+									<p>비즈니스 라이팅의 기본 원리, 이론<br>
+										초간단 1Page 보고서 작성 실습
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 기반의 기획</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 기반의 기획에 대한 개념과 프로세스<br>
+										데이터 마이닝 및 데이터 분석기법을 통한 비즈니스 액션
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 기획서 작성 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 스토리텔링<br>우리회사 신사업에 대한 실전 기획서 작성 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 미들 주니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-8">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI로 만드는 업무 효율 향상</h3>
+					<div class="modal-title-desc">: AI를 활용해 팀 업무 효율과 성과를 개선하는 방안 모색 및 계획 구체화</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">신입</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI를 활용하여 팀의 업무 효율과 성과를 개선할 수 있는 실제적 방안에 대한 아이디어 확장 및 계획 구체화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">팀/자신의 업무 점검</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										우리 팀/나의 주요 업무 프로세스 살펴보기<br>
+										업무의 우선순위 평가
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">문제 도출</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										우리 팀/나의 업무 프로세스에서의 Pain Point<br>
+										개선을 위한 요건들
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">AI를 활용한 해결안</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 적용가능 업무 선정, 활용 가능 도구 검토<br>
+										AI 도입을 통한 업무 개선 내용 및 계획 구체화
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 신입 -->
+
+		<div class="modal" tabindex="-1" id="modal-9" style="display: block;">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 문서 작성</h3>
+					<div class="modal-title-desc">: AI를 활용한 문서의 구성과 표현의 업그레이드</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">신입</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI를 활용하여 논리적으로 문서를 신속하게 작성하는 스킬 향상
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">문서작성의 기초</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										효과적인 문서 작성의 대 원칙<br>문서 유형별 구성 요령 및 핵심 스킬
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">AI의 활용방법</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI를 활용한 문서 작성 방법<br>
+										비즈니스 이메일 및 다양한 문서 초안 실습
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">문서 자동화 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										문서 품질 업그레이드 방안 (AI 피드백)<br>
+										문서 자동화 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 신입 -->
+
+
+
+
 	</div>
+
+
 	<script type="module" src="./js/main.js"></script>
 	<script src="./lib/home.js"></script>
 	<script src="./lib/gsap/gsap.min.js"></script>
 	<script src="./lib/gsap/ScrollTrigger.min.js"></script>
 </body>
+
 </html>

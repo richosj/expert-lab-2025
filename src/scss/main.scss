@@ -37,26 +37,51 @@
 
 .modal {
 	background: #fff;
-	width: 100%;
-	max-width: 720px;
-	border-radius: 8px;
-	box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+	width: 880px;
 	outline: none;
 	max-height: 90vh;
-	overflow: auto;
+	display: none;
+	flex-direction: column;
+	
 }
 
 .modal-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 18px 20px;
-	border-bottom: 1px solid rgba(0,0,0,0.06);
+	justify-content: center;
+	background: url('@/assets/images/modal-bg1.png') no-repeat center center / 100% auto;
+	height: 160px;
+	position: relative;
+	text-align: center;
+	
+	&.v2{
+		background-image: url('@/assets/images/modal-bg2.png');
+	}
+	&.v3{
+		background-image: url('@/assets/images/modal-bg3.png');
+	}
+	.modal-close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 32px;
+		height: 32px;
+		background: url('@/assets/images/close.png') no-repeat center center / 100% auto;
+	}
 }
 
-.modal-header h3 {
-	margin: 0;
-	font-size: 1.125rem;
+.modal-header {
+	h3{
+		color: #B9F7FF;
+		font-weight: 600;
+		font-size: 28px;
+		margin-bottom: 6px;
+		line-height: 139%;
+	}
+	.modal-title-desc{
+		color: #fff;
+		font-size: 20px;
+	}
 }
 
 .modal-close {
@@ -68,30 +93,93 @@
 }
 
 .modal-body {
-	padding: 18px 20px 28px;
+	padding: 40px;
+	flex: 1;
+	overflow-y: auto;
 }
 
-.modal-form label {
-	display: block;
-	margin-top: 12px;
-	font-size: 0.9rem;
+.course-detail {
+	.course-info {
+		display: flex;
+		gap: 228px;
+		+.course-info{
+			margin-top: 17px;
+		}
+		.info-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 48px;
+			.info-label {
+				font-size: 18px;
+				font-weight: 600;
+				color: #000000;
+				min-width: 80px;
+			}
+			.info-value {
+				font-size: 16px;
+				color: #696969;
+				line-height: 1.24;
+			}
+		}
+	}
+	
+	
+	.course-steps {
+		margin-top: 30px;
+	}
 }
 
-.modal-form input,
-.modal-form textarea {
-	width: 100%;
-	padding: 10px 12px;
-	margin-top: 6px;
-	border: 1px solid rgba(0,0,0,0.12);
-	border-radius: 4px;
-	font-size: 0.95rem;
+.steps-label {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 20px;
 }
 
-.modal-actions {
-	margin-top: 14px;
+.steps-list {
 	display: flex;
-	gap: 8px;
-	justify-content: flex-end;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.step-card {
+	display: flex;
+	border: 1px solid rgba(223, 223, 232, 1);
+	background: rgba(247, 247, 250, 1);
+	border-radius: 5px;
+	overflow: hidden;
+	.step-header {
+		width: 200px;
+		padding: 20px;
+		background: rgba(9, 63, 167, 0.1);
+		.step-number {
+			font-size: 16px;
+			font-weight: 600;
+			color: #093FA7;
+			display: block;
+			margin-bottom: 2px;
+			line-height: 134%;
+		}
+		
+		.step-title {
+			font-size: 16px;
+			font-weight: 500;
+			color: #000000;
+			line-height: 1.24;
+		}
+	}
+	
+	.step-desc {
+		flex: 1;
+		padding: 30px;
+		font-size: 16px;
+		font-weight: 400;
+		color: #000000;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		line-height: 1.34;
+	}
 }
 
 body.modal-open {
