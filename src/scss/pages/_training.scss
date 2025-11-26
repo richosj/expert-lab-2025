@@ -138,7 +138,11 @@
     height: 84px;
     line-height: 136%;
     padding: 0 20px;
-    
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    br{
+      display: none;
+    }
     @media (min-width: 1024px) {
       font-size: 24px;
       padding: 0 30px;

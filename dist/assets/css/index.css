@@ -878,6 +878,11 @@ body, html {
   height: 84px;
   line-height: 136%;
   padding: 0 20px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.training-card .training-desc br {
+  display: none;
 }
 @media (min-width: 1024px) {
   .training-card .training-desc {
@@ -1654,7 +1659,7 @@ body, html {
   border: 1px solid rgb(218, 218, 218);
   border-radius: 12px;
   padding: 24px;
-  height: 320px;
+  height: 360px;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -1699,10 +1704,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc li {
-    font-size: 18px;
-  }
-  .section-teachers .teacher-card .teacher-desc li br {
-    display: none;
+    font-size: 17px;
   }
   .section-teachers .teacher-card .teacher-desc li::before {
     top: 9px;
@@ -1722,13 +1724,14 @@ body, html {
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
     border-radius: 0 0 24px 24px;
+    height: 209px;
   }
 }
 .section-teachers .teacher-card .teacher-desc2 ul li {
   font-size: 14px;
   font-weight: 500;
   line-height: 156%;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
   padding-left: 10px;
   position: relative;
   color: #676767;
@@ -1746,16 +1749,17 @@ body, html {
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 ul li {
     font-size: 15px;
+    padding-left: 7px;
   }
   .section-teachers .teacher-card .teacher-desc2 ul li::before {
-    top: 8px;
+    top: 10px;
     width: 3px;
     height: 3px;
   }
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
-    padding: 28px 35px;
+    padding: 28px 32px;
   }
 }
 .section-teachers .teacher-card .avatar {
@@ -2021,10 +2025,12 @@ body, html {
   height: 160px;
   position: relative;
   text-align: center;
+  flex-shrink: 0;
 }
 @media (max-width: 900px) {
   .modal-header {
     height: 68px;
+    background-size: cover;
   }
 }
 .modal-header.v2 {
@@ -2157,6 +2163,18 @@ body, html {
   gap: 10px;
 }
 
+.modal:has(.v2) .ste-card .step-header .step-number {
+  color: #1980DD;
+}
+
+.modal:has(.v3) .ste-card .step-header .step-number {
+  color: #07B7D1;
+}
+
+.notic {
+  color: #ff0000;
+}
+
 .step-card {
   display: flex;
   border: 1px solid rgb(223, 223, 232);
@@ -2222,6 +2240,81 @@ body, html {
   }
 }
 
+.chapter-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .chapter-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+.chapter-list .chapter-card {
+  border: 1px solid #DFDFE8;
+  background-color: #F7F7FA;
+  padding: 20px;
+  border-radius: 5px;
+}
+.chapter-list .chapter-card .chapter-header .chapter-number {
+  font-size: 14px;
+  color: #07B7D1;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  line-height: 156%;
+}
+.chapter-list .chapter-card .chapter-header .chapter-title {
+  height: 42px;
+  font-weight: 500;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 100%;
+}
+@media (max-width: 900px) {
+  .chapter-list .chapter-card .chapter-header .chapter-title {
+    height: auto;
+    font-size: 14px;
+  }
+}
+.chapter-list .chapter-card .chapter-content {
+  display: flex;
+  flex-direction: column;
+}
+.chapter-list .chapter-card .chapter-content .content-item {
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border-top: 1px dotted #000;
+}
+.chapter-list .chapter-card .chapter-content .content-item span {
+  background-color: #222;
+  width: 24px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.chapter-list .chapter-card .chapter-content .content-item p {
+  font-size: 14px;
+  color: #696969;
+  line-height: 1.24;
+}
+
+@media (max-width: 1024px) {
+  .br-pc {
+    display: none;
+  }
+}
+
 body.modal-open {
   overflow: hidden;
+  padding-right: var(--scrollbar-width, 0);
 }

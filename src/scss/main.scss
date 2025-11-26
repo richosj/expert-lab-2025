@@ -55,8 +55,10 @@
 	height: 160px;
 	position: relative;
 	text-align: center;
+	flex-shrink: 0;
 	@media (max-width: 900px) {
 		height: 68px;
+		background-size: cover;
 	}
 	&.v2{
 		background-image: url('@/assets/images/modal-bg2.png');
@@ -177,6 +179,31 @@
 	gap: 10px;
 }
 
+.modal:has(.v2){
+	.ste-card{
+		.step-header{
+			.step-number{
+				color: #1980DD;
+			}
+		}
+	}
+	
+}
+.modal:has(.v3){
+	.ste-card{
+		.step-header{
+			.step-number{
+				color: #07B7D1;
+				
+			}
+		}
+	}
+}
+
+.notic{
+	color: #ff0000;
+}
+
 .step-card {
 	display: flex;
 	border: 1px solid rgba(223, 223, 232, 1);
@@ -234,7 +261,79 @@
 	}
 }
 
+.chapter-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 10px;
+	@media (max-width: 900px) {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		gap: 20px;
+	}
+	.chapter-card {
+		border: 1px solid #DFDFE8;
+		background-color: #F7F7FA;
+		padding: 20px;
+		border-radius: 5px;
+		.chapter-header {
+			.chapter-number {
+				font-size: 14px;
+				color: #07B7D1;
+				font-weight: 600;
+				margin-bottom: 6px;
+				display: block;
+				line-height: 156%;
+			}
+			.chapter-title {
+				height: 42px;
+				font-weight: 500;
+				color: #000;
+				font-size: 15px;
+				margin-bottom: 20px;
+				line-height: 100%;
+				@media (max-width: 900px) {
+					height: auto;
+					font-size: 14px;
+				}
+			}
+		}
+		.chapter-content {
+			display: flex;
+			flex-direction: column;
+			.content-item {
+				padding: 10px 0;
+				display: flex;
+				gap: 10px;
+				align-items: flex-start;
+				border-top: 1px dotted #000;
+				span{
+					background-color: #222;
+					width: 24px;
+					height: 17px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #fff;
+					font-size: 12px;
+					font-weight: 600;
+					flex-shrink: 0;
+				}
+				p{
+					font-size: 14px;
+					color: #696969;
+					line-height: 1.24;
+				}
+			}
+		}
+	}
+}
+.br-pc{
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
 body.modal-open {
 	overflow: hidden;
+	padding-right: var(--scrollbar-width, 0);
+
 }
 

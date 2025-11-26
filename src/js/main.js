@@ -45,7 +45,12 @@ import "@/scss/main.scss";
     });
 
     // 선택한 모달만 표시
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    // 현재 스크롤바 너비 계산
+	  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+	
+	  document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+    
     currentModal = modal;
 
     lastFocused = document.activeElement;
@@ -58,6 +63,7 @@ import "@/scss/main.scss";
   function closeModal() {
     if (currentModal) {
       currentModal.style.display = "none";
+      document.documentElement.style.removeProperty('--scrollbar-width');
     }
     overlay.setAttribute("hidden", "");
     document.body.classList.remove("modal-open");
@@ -640,6 +646,9 @@ import "@/scss/main.scss";
     var swiper = new Swiper(swiperEl, {
       slidesPerView: 2,
       spaceBetween: 8,
+      loop: true,
+      loopAdditionalSlides: 2,
+      loopedSlides: 5,
       breakpoints: {
         768: {
           slidesPerView: 3,
@@ -658,6 +667,29 @@ import "@/scss/main.scss";
         nextEl: nextBtn,
         prevEl: prevBtn,
       },
+      on: {
+        init: function() {
+          // swiper 초기화 시 원본 슬라이드의 data-sort와 인덱스 매핑 저장
+          var sortIndexMap = {};
+          var slideIndex = 0;
+          
+          for (var i = 0; i < this.slides.length; i++) {
+            var slide = this.slides[i];
+            if (!slide.classList.contains("swiper-slide-duplicate") && 
+                !slide.classList.contains("swiper-slide-duplicate-prev") &&
+                !slide.classList.contains("swiper-slide-duplicate-next")) {
+              var sortValue = slide.getAttribute("data-sort");
+              if (sortValue) {
+                sortIndexMap[sortValue] = slideIndex;
+              }
+              slideIndex++;
+            }
+          }
+          
+          // swiper 인스턴스에 매핑 저장
+          this.sortIndexMap = sortIndexMap;
+        }
+      }
     });
 
     // 소트 버튼 클릭 시 해당 슬라이드로 이동
@@ -666,23 +698,12 @@ import "@/scss/main.scss";
         var sortValue = this.getAttribute("data-sort");
         if (!sortValue) return;
 
-        // 해당 data-sort를 가진 슬라이드 찾기
-        var slides = swiperEl.querySelectorAll(".swiper-slide");
-        var targetIndex = -1;
-
-        console.log(slides);
-        console.log(sortValue);
-
-        for (var i = 0; i < slides.length; i++) {
-          if (slides[i].getAttribute("data-sort") === sortValue) {
-            targetIndex = i;
-            break;
-          }
-        }
-
-        // 슬라이드 찾았으면 이동
-        if (targetIndex !== -1) {
-          swiper.slideTo(targetIndex);
+        // 저장된 매핑에서 인덱스 찾기
+        var targetIndex = swiper.sortIndexMap && swiper.sortIndexMap[sortValue];
+        
+        if (targetIndex !== undefined && targetIndex !== null) {
+          // loop 모드에서는 slideToLoop 사용
+          swiper.slideToLoop(targetIndex, 600);
         }
       });
     });

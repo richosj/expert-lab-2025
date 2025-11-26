@@ -69,7 +69,9 @@
     allModals.forEach(function(m) {
       m.style.display = "none";
     });
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
     currentModal = modal;
     lastFocused = document.activeElement;
     overlay.removeAttribute("hidden");
@@ -80,6 +82,7 @@
   function closeModal() {
     if (currentModal) {
       currentModal.style.display = "none";
+      document.documentElement.style.removeProperty("--scrollbar-width");
     }
     overlay.setAttribute("hidden", "");
     document.body.classList.remove("modal-open");
@@ -553,6 +556,9 @@
     var swiper = new Swiper(swiperEl, {
       slidesPerView: 2,
       spaceBetween: 8,
+      loop: true,
+      loopAdditionalSlides: 2,
+      loopedSlides: 5,
       breakpoints: {
         768: {
           slidesPerView: 3,
@@ -570,24 +576,32 @@
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn
+      },
+      on: {
+        init: function() {
+          var sortIndexMap = {};
+          var slideIndex = 0;
+          for (var i = 0; i < this.slides.length; i++) {
+            var slide = this.slides[i];
+            if (!slide.classList.contains("swiper-slide-duplicate") && !slide.classList.contains("swiper-slide-duplicate-prev") && !slide.classList.contains("swiper-slide-duplicate-next")) {
+              var sortValue = slide.getAttribute("data-sort");
+              if (sortValue) {
+                sortIndexMap[sortValue] = slideIndex;
+              }
+              slideIndex++;
+            }
+          }
+          this.sortIndexMap = sortIndexMap;
+        }
       }
     });
     sortButtons.forEach(function(btn) {
       btn.addEventListener("click", function() {
         var sortValue = this.getAttribute("data-sort");
         if (!sortValue) return;
-        var slides = swiperEl.querySelectorAll(".swiper-slide");
-        var targetIndex = -1;
-        console.log(slides);
-        console.log(sortValue);
-        for (var i = 0; i < slides.length; i++) {
-          if (slides[i].getAttribute("data-sort") === sortValue) {
-            targetIndex = i;
-            break;
-          }
-        }
-        if (targetIndex !== -1) {
-          swiper.slideTo(targetIndex);
+        var targetIndex = swiper.sortIndexMap && swiper.sortIndexMap[sortValue];
+        if (targetIndex !== void 0 && targetIndex !== null) {
+          swiper.slideToLoop(targetIndex, 600);
         }
       });
     });
