@@ -2157,6 +2157,14 @@ body, html {
   gap: 10px;
 }
 
+.modal:has(.v2) .ste-card .step-header .step-number {
+  color: #1980DD;
+}
+
+.modal:has(.v3) .ste-card .step-header .step-number {
+  color: #07B7D1;
+}
+
 .step-card {
   display: flex;
   border: 1px solid rgb(223, 223, 232);
