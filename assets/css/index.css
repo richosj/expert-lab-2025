@@ -1654,7 +1654,7 @@ body, html {
   border: 1px solid rgb(218, 218, 218);
   border-radius: 12px;
   padding: 24px;
-  height: 320px;
+  height: 360px;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -2236,7 +2236,13 @@ body, html {
 .chapter-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .chapter-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
 }
 .chapter-list .chapter-card {
   border: 1px solid #DFDFE8;
@@ -2258,6 +2264,13 @@ body, html {
   color: #000;
   font-size: 15px;
   margin-bottom: 20px;
+  line-height: 100%;
+}
+@media (max-width: 900px) {
+  .chapter-list .chapter-card .chapter-header .chapter-title {
+    height: auto;
+    font-size: 14px;
+  }
 }
 .chapter-list .chapter-card .chapter-content {
   display: flex;
