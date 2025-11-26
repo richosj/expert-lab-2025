@@ -13,43 +13,50 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollSmoother.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollToPlugin.min.js"></script>  <script type="module" src="./assets/js/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/plugins/ScrollToPlugin.min.js"></script>	<!--
+		<button type="button" class="btn-primary open-modal" data-open-modal aria-haspopup="dialog">문의하기 (모달)</button>
+	-->
+  <script type="module" src="./assets/js/index.js"></script>
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
 	<div id="wrap">
 		<header id="header" class="header">
-			<div class="header-container">
-				<h1 class="logo"><a href="#visual">AXPERT LAB</a></h1>
-
-				<nav id="global-drawer" class="drawer" aria-hidden="true">
-					<div class="drawer-inner">
-						<ul class="gnb">
-							<li><a href="#training">AI 교육</a></li>
-							<li><a href="#solution">AX 컨설팅</a></li>
-							<li><a href="#diagnosis">AX 진단</a></li>
-							<li><a href="#teachers">AX 코치</a></li>
-							<li><a href="#insight">AXPERT LAB소개</a></li>
-						</ul>
-					</div>
-					<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN"
-						target="_blank" class="link-blank">Contact Us <i></i></a>
-				</nav>
-				<div class="header-buttons">
-					<a href="https://www.exc.co.kr/hr_service/pr_bbs/pr_show_info.asp?nt_dcd=bbs-BSZ20250527090603EKN"
-						target="_blank" class="link-blank">Contact Us <i></i></a>
-					<button type="button" class="btn-menu" aria-label="메뉴 열기" aria-controls="global-drawer" aria-expanded="false">
-						<span class="hamburger" aria-hidden="true">
-							<span class="line line-1"></span>
-							<span class="line line-2"></span>
-							<span class="line line-3"></span>
-						</span>
-					</button>
-				</div>
-			</div>
-		</header>
-		<main id="content" class="content">
+		  <div class="header-container">
+		    <h1 class="logo"><a href="#visual">AXPERT LAB</a></h1>
+		
+		    <nav id="global-drawer" class="drawer" aria-hidden="true">
+		      <div class="drawer-inner">
+		        <ul class="gnb">
+		          <li><a href="#training">AI 교육</a></li>
+		          <li><a href="#solution">AX 컨설팅</a></li>
+		          <li><a href="#diagnosis">AX 진단</a></li>
+		          <li><a href="#teachers">AX 코치</a></li>
+		          <li><a href="#insight">AXPERT LAB소개</a></li>
+		        </ul>
+		      </div>
+		      <div class="util-links d-none">
+		        <a href="#subscription" target="_blank" class="link-blank">Contact Us</a>
+		        <a href="https://www.exc.co.kr" target="_blank" class="home-icon"></a>
+		      </div>
+		    </nav>
+		    <div class="header-buttons">
+		      <div class="util-links">
+		        <a href="#subscription" target="_blank" class="link-blank">Contact Us</a>
+		        <a href="https://www.exc.co.kr" target="_blank" class="home-icon"></a>
+		      </div>
+		
+		      <button type="button" class="btn-menu" aria-label="메뉴 열기" aria-controls="global-drawer" aria-expanded="false">
+		        <span class="hamburger" aria-hidden="true">
+		          <span class="line line-1"></span>
+		          <span class="line line-2"></span>
+		          <span class="line line-3"></span>
+		        </span>
+		      </button>
+		    </div>
+		  </div>
+		</header>		<main id="content" class="content">
 
 			<section class="visual" id="visual">
 				<div class="visual-slider swiper">
@@ -82,1336 +89,1931 @@
 			</section>
 			<!-- //visual -->
 
-
 			<section id="roadmap" class="section-roadmap">
-				<div class="container">
-					<h2 class="section-title">
-						AXPERT LAB의<br>
-						AI Master Roadmap
-					</h2>
-					<div class="roadmap-content">
-						<div class="image"><img src="./assets/images/roadmap.png" alt="AI Master Roadmap"></div>
-						<span class="zoomin"></span>
-					</div>
-				</div>
-			</section>
-			<!-- // roadmap -->
+			  <div class="container">
+			    <h2 class="section-title">
+			      AXPERT LAB의<br>
+			      AI Master Roadmap
+			    </h2>
+			    <div class="roadmap-content">
+			      <div class="image"><img src="./assets/images/roadmap.png" alt="AI Master Roadmap"></div>
+			      <span class="zoomin"></span>
+			    </div>
+			  </div>
+			</section>			<!-- // roadmap -->
 
 			<section id="training" class="section-training">
-				<div class="container">
-					<div class="training-content training-content-1">
-						<div class="hgroup">
-							<div class="hgroup-left">
-								<h2 class="hgroup-title">
-									AI 교육
-								</h2>
-								<div class="tag-group">
-									<button type="button">임원</button>
-									<button type="button">팀장</button>
-									<button type="button">시니어</button>
-									<button type="button">미들/주니어</button>
-									<button type="button">신입</button>
-								</div>
-							</div>
-
-							<div class="btn-group">
-								<button type="button" class="btn-prev" aria-label="Prev">
-									<i></i>
-								</button>
-								<button type="button" class="btn-next" aria-label="Next">
-									<i></i>
-								</button>
-							</div>
-						</div>
-
-						<div class="training-carousel">
-							<div class="swiper training-swiper">
-								<div class="swiper-wrapper">
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="training-content training-content-2">
-						<div class="hgroup">
-							<div class="hgroup-left">
-								<h2 class="hgroup-title">
-									AX 조직문화 & 팀빌딩
-								</h2>
-								<div class="tag-group">
-									<button type="button">조직문화</button>
-									<button type="button">부트캠프</button>
-								</div>
-							</div>
-							<div class="btn-group">
-								<button type="button" class="btn-prev" aria-label="Prev">
-									<i></i>
-								</button>
-								<button type="button" class="btn-next" aria-label="Next">
-									<i></i>
-								</button>
-							</div>
-						</div>
-
-						<div class="training-carousel">
-							<div class="swiper training-swiper">
-								<div class="swiper-wrapper">
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="training-content training-content-3">
-						<div class="hgroup">
-							<div class="hgroup-left">
-								<h2 class="hgroup-title">
-									AI 직무 특화 교육
-								</h2>
-								<div class="tag-group">
-									<button type="button">기획&제조</button>
-									<button type="button">경영지원&재무</button>
-									<button type="button">영업&마케팅</button>
-									<button type="button">디자인&영상</button>
-								</div>
-							</div>
-
-							<div class="btn-group">
-								<button type="button" class="btn-prev" aria-label="Prev">
-									<i></i>
-								</button>
-								<button type="button" class="btn-next" aria-label="Next">
-									<i></i>
-								</button>
-							</div>
-						</div>
-
-						<div class="training-carousel">
-							<div class="swiper training-swiper">
-								<div class="swiper-wrapper">
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="training-content training-content-4">
-						<div class="hgroup">
-							<div class="hgroup-left">
-								<h2 class="hgroup-title">
-									AI 스킬 특화 교육
-								</h2>
-								<div class="tag-group">
-									<button type="button">기초/공통</button>
-									<button type="button">중급</button>
-									<button type="button">고급</button>
-									<button type="button">마스터</button>
-								</div>
-							</div>
-
-							<div class="btn-group">
-								<button type="button" class="btn-prev" aria-label="Prev">
-									<i></i>
-								</button>
-								<button type="button" class="btn-next" aria-label="Next">
-									<i></i>
-								</button>
-							</div>
-						</div>
-
-						<div class="training-carousel">
-							<div class="swiper training-swiper">
-								<div class="swiper-wrapper">
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-									<div class="training-card swiper-slide">
-										<h3 class="training-name">임원</h3>
-										<div class="training-desc">
-											AI를 활용한 <br>
-											의사결정과 <br>
-											AI 도입 전략
-										</div>
-										<div class="training-links">
-											<a href="#">과정 상세 <i></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
+			  <div class="container">
+			    <div class="training-content training-content-1">
+			      <div class="hgroup">
+			        <div class="hgroup-left">
+			          <h2 class="hgroup-title">
+			            AI 교육
+			          </h2>
+			          <div class="tag-group">
+			            <button type="button" class="sort-toggle" data-sort="manager">임원</button>
+			            <button type="button" class="sort-toggle" data-sort="team-leader">팀장</button>
+			            <button type="button" class="sort-toggle" data-sort="senior">시니어</button>
+			            <button type="button" class="sort-toggle" data-sort="middle">미들/주니어</button>
+			            <button type="button" class="sort-toggle" data-sort="newbie">신입</button>
+			          </div>
+			        </div>
+			
+			        <div class="btn-group">
+			          <button type="button" class="btn-prev" aria-label="Prev">
+			            <i></i>
+			          </button>
+			          <button type="button" class="btn-next" aria-label="Next">
+			            <i></i>
+			          </button>
+			        </div>
+			      </div>
+			
+			      <div class="training-carousel">
+			        <div class="swiper training-swiper">
+			          <div class="swiper-wrapper">
+			            <div class="training-card swiper-slide" data-sort="manager">
+			              <h3 class="training-name">임원</h3>
+			              <div class="training-desc">
+			                AI를 활용한 <br>
+			                의사결정과 <br>
+			                AI 도입 전략
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-1" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="team-leader">
+			              <h3 class="training-name">팀장</h3>
+			              <div class="training-desc">
+			                AI 기반 협업을 위한 의사결정과 변화관리
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-2" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">팀장</h3>
+			              <div class="training-desc">
+			                AI 시대 신임 팀장 시뮬레이션
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-3" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="senior">
+			              <h3 class="training-name">시니어</h3>
+			              <div class="training-desc">
+			                AI 코칭 시뮬레이션을 활용한
+			                브릿지 리더십 코칭과 피드백
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-4" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">시니어</h3>
+			              <div class="training-desc">
+			                생성형 AI를 활용한 전략 보고서 작성
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-5" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="middle">
+			              <h3 class="training-name">미들&주니어</h3>
+			              <div class="training-desc">
+			                생성형 AI를 활용한 문제해결력 강화
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-6" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">미들&주니어</h3>
+			              <div class="training-desc">
+			                생성형 AI를 활용한 기획 보고서 작성
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-7" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide" data-sort="newbie">
+			              <h3 class="training-name">신입</h3>
+			              <div class="training-desc">
+			                생성형 AI로 만드는 업무 효율 향상
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-8" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">신입</h3>
+			              <div class="training-desc">
+			                생성형 AI를 활용한 문서 작성
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-9" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			          </div>
+			          <!-- //swiper-wrapper -->
+			        </div>
+			      </div>
+			    </div>
+			    <!-- //training-content-1 -->
+			
+			    <div class="training-content training-content-2">
+			      <div class="hgroup">
+			        <div class="hgroup-left">
+			          <h2 class="hgroup-title">
+			            AX 조직문화 & 팀빌딩
+			          </h2>
+			          <div class="tag-group">
+			            <button type="button" class="sort-toggle" data-sort="organization">조직문화</button>
+			            <button type="button" class="sort-toggle" data-sort="bootcamp">부트캠프</button>
+			          </div>
+			        </div>
+			        <div class="btn-group">
+			          <button type="button" class="btn-prev" aria-label="Prev">
+			            <i></i>
+			          </button>
+			          <button type="button" class="btn-next" aria-label="Next">
+			            <i></i>
+			          </button>
+			        </div>
+			      </div>
+			
+			      <div class="training-carousel">
+			        <div class="swiper training-swiper">
+			          <div class="swiper-wrapper">
+			            <div class="training-card swiper-slide" data-sort="organization">
+			              <h3 class="training-name">조직문화</h3>
+			              <div class="training-desc">
+			                AX 비즈니스 혁신 워크숍
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-10" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">조직문화</h3>
+			              <div class="training-desc">
+			                AX  워크플로우 개선 워크숍
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-11" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            
+			            
+			            
+			            
+			            
+			            <div class="training-card swiper-slide" data-sort="bootcamp">
+			              <h3 class="training-name">부트캠프</h3>
+			              <div class="training-desc">
+			                MTP Co-pilot 활용 <br>&lt;팀 비전 정립 워크샵&gt;
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-12" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">부트캠프</h3>
+			              <div class="training-desc">
+			                CultureMAP Analyzer 활용 <br>&lt;팀 문화 진단&gt;
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-13" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">부트캠프</h3>
+			              <div class="training-desc">
+			                Work Way Generator 활용 <br>&lt;팀 일하는 원칙 정립&gt;
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-14" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">부트캠프</h3>
+			              <div class="training-desc">
+			                AAR with AI (AWA) 활용 <br>&lt;팀 학습 시스템 구축하기&gt;
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-15" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			          </div>
+			          <!-- //swiper-wrapper -->
+			        </div>
+			      </div>
+			    </div>
+			    <!-- //training-content-2 -->
+			
+			
+			    <div class="training-content training-content-3">
+			      <div class="hgroup">
+			        <div class="hgroup-left">
+			          <h2 class="hgroup-title">
+			            AI 직무 특화 교육
+			          </h2>
+			          <div class="tag-group">
+			            <button type="button" class="sort-toggle" data-sort="planning">기획&제조</button>
+			            <button type="button" class="sort-toggle" data-sort="management">경영지원&재무</button>
+			            <button type="button" class="sort-toggle" data-sort="sales">영업&마케팅</button>
+			            <button type="button" class="sort-toggle" data-sort="design">디자인&영상</button>
+			            <button type="button" class="sort-toggle" data-sort="research">연구&개발</button>
+			          </div>
+			        </div>
+			
+			        <div class="btn-group">
+			          <button type="button" class="btn-prev" aria-label="Prev">
+			            <i></i>
+			          </button>
+			          <button type="button" class="btn-next" aria-label="Next">
+			            <i></i>
+			          </button>
+			        </div>
+			      </div>
+			
+			      <div class="training-carousel">
+			        <div class="swiper training-swiper">
+			          <div class="swiper-wrapper">
+			            <div class="training-card swiper-slide" data-sort="planning">
+			              <h3 class="training-name">기획&제조</h3>
+			              <div class="training-desc">
+			                AI로 혁신하는 기획·제조 실무 역량 강화 프로그램
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-16" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="management">
+			              <h3 class="training-name">경영지원&재무</h3>
+			              <div class="training-desc">
+			                AI로 혁신하는 기획·제조 실무 역량 강화 프로그램
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-17" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="sales">
+			              <h3 class="training-name">영업&마케팅</h3>
+			              <div class="training-desc">
+			                AI로 혁신하는 영업·마케팅 실무 역량 강화 프로그램
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-18" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="design">
+			              <h3 class="training-name">디자인&영상</h3>
+			              <div class="training-desc">
+			                AI로 혁신하는 디자인·영상 실무 역량 강화 프로그램
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-19" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="research">
+			              <h3 class="training-name">연구&개발</h3>
+			              <div class="training-desc">
+			                AI로 혁신하는 연구·개발 실무 역량 강화 프로그램
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-20" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			          </div>
+			          <!-- //swiper-wrapper -->
+			        </div>
+			      </div>
+			    </div>
+			    <div class="training-content training-content-4">
+			      <div class="hgroup">
+			        <div class="hgroup-left">
+			          <h2 class="hgroup-title">
+			            AI 스킬 특화 교육
+			          </h2>
+			          <div class="tag-group">
+			            <button type="button" class="sort-toggle" data-sort="basic">기초/공통</button>
+			            <button type="button" class="sort-toggle" data-sort="intermediate">중급</button>
+			            <button type="button" class="sort-toggle" data-sort="advanced">고급</button>
+			            <button type="button" class="sort-toggle" data-sort="master">마스터</button>
+			          </div>
+			        </div>
+			
+			        <div class="btn-group">
+			          <button type="button" class="btn-prev" aria-label="Prev">
+			            <i></i>
+			          </button>
+			          <button type="button" class="btn-next" aria-label="Next">
+			            <i></i>
+			          </button>
+			        </div>
+			      </div>
+			
+			      <div class="training-carousel">
+			        <div class="swiper training-swiper">
+			          <!-- swiper-wrapper -->
+			          <div class="swiper-wrapper">
+			            <div class="training-card swiper-slide" data-sort="basic">
+			              <h3 class="training-name">기초/공통</h3>
+			              <div class="training-desc">
+			                생성형 AI 프롬프트 엔지니어링 기초부터 고급까지
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-21" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">기초/공통</h3>
+			              <div class="training-desc">
+			                할루시네이션& 보안대책과 윤리
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-target="modal-22" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide" data-sort="advanced">
+			              <h3 class="training-name">고급</h3>
+			              <div class="training-desc">
+			                LangGraph와 MCP 활용
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-open-modal data-target="modal-23" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">고급</h3>
+			              <div class="training-desc">
+			                sLLM 구축
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-open-modal data-target="modal-24" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			            
+			            <div class="training-card swiper-slide" data-sort="master">
+			              <h3 class="training-name">마스터</h3>
+			              <div class="training-desc">
+			                AI 에이전트 입문과 멀티 AI 에이전트 구축
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-open-modal data-target="modal-25" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">마스터</h3>
+			              <div class="training-desc">
+			                데이터 시각화 분석에서 대시보드 생성까지
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-open-modal data-target="modal-26" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			
+			            <div class="training-card swiper-slide">
+			              <h3 class="training-name">마스터</h3>
+			              <div class="training-desc">
+			                파이썬 기초에서 고급까지
+			              </div>
+			              <div class="training-links">
+			                <a href="#" class="open-modal" data-open-modal data-open-modal data-target="modal-27" aria-haspopup="dialog">과정 상세
+			                  <i></i></a>
+			              </div>
+			            </div>
+			          </div>
+			          <!-- //swiper-wrapper -->
+			        </div>
+			      </div>
+			    </div>
+			
+			  </div>
 			</section>
 			<!-- // training -->
-
 			<section id="solution" class="section-solution">
-				<div class="container">
-					<h2>AX 컨설팅 솔루션, <br class="pc-none">MTD(Mission Task Driven)</h2>
-
-					<h3>MTD 5단계 프로세스</h3>
-
-					<div class="mtd-process">
-						<div class="process-card">
-							<div class="process-top">
-								<span class="process-number">1</span>
-								<h4 class="process-title">Mission Definition</h4>
-								<p class="process-question">무엇을 바꾸려 하는가?</p>
-								<p class="process-desc">교육컨설턴트와 AI 전문가가 함께 변화가 필요한 핵심 영역을 확인합니다.</p>
-							</div>
-							<div class="process-bottom">
-								<p>담당자/경영진 인터뷰</p>
-								<p>AX 성숙도 진단</p>
-							</div>
-						</div>
-						<div class="process-card">
-							<div class="process-top">
-								<span class="process-number">2</span>
-								<h4 class="process-title">Task Insight</h4>
-								<p class="process-question">문제는 어디서 발생하는가?</p>
-								<p class="process-desc">AX전환을 위한 조직환경 (업무흐름, 실제 데이터, 의사결정, 협업구조 등) 조사를 통해 문제를 도출합니다.</p>
-							</div>
-							<div class="process-bottom">
-								<p>팀별 업무 프로세스 병목 진단,</p>
-								<p>직무별 Pain Point List</p>
-							</div>
-						</div>
-						<div class="process-card">
-							<div class="process-top">
-								<span class="process-number">3</span>
-								<h4 class="process-title">Solution Design</h4>
-								<p class="process-question">문제를 해결하는 솔루션 설계</p>
-								<p class="process-desc">Mission Task Driven 기반 맞춤형 교육 설계와 함께 팀별/직무별 AI직 용 과제를 구체화합니다.</p>
-							</div>
-							<div class="process-bottom">
-								<p>프로젝트 기반 교육설계,</p>
-								<p>Job-based AI Kit</p>
-							</div>
-						</div>
-						<div class="process-card">
-							<div class="process-top">
-								<span class="process-number">4</span>
-								<h4 class="process-title">Work Application</h4>
-								<p class="process-question">교육을 현업에 적용</p>
-								<p class="process-desc">교육프로그램과 실무과제를 활용하여 각 분야의 전문가와 함께 솔루션을 적용합니다.</p>
-							</div>
-							<div class="process-bottom">
-								<p>AI 교육/실습, 적용 미션 수행,</p>
-								<p>Best Practice 도출</p>
-							</div>
-						</div>
-						<div class="process-card">
-							<div class="process-top">
-								<span class="process-number">5</span>
-								<h4 class="process-title">Change Scale-Up</h4>
-								<p class="process-question">조직 변화로 확장</p>
-								<p class="process-desc">교육에서 끝나는 것이 아닌 실제 기업의 AX전환을 위한 다음 단계의 도전을 함께 고민하고 실행합니다.</p>
-							</div>
-							<div class="process-bottom">
-								<p>AI 챔피언 육성/BP사례 확산,</p>
-								<p>PoC 파일럿 프로젝트</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
+			  <div class="container">
+			    <h2>AX 컨설팅 솔루션, <br class="pc-none"><span>MTD</span>(Mission Task Driven)</h2>
+			
+			    <h3>MTD 5단계 프로세스</h3>
+			
+			    <div class="mtd-process">
+			      <div class="process-card">
+			        <div class="process-top">
+			          <span class="process-number">1</span>
+			          <h4 class="process-title">Mission Definition</h4>
+			          <p class="process-question">무엇을 바꾸려 하는가?</p>
+			          <p class="process-desc">교육컨설턴트와 AI 전문가가 함께 변화가 필요한 핵심 영역을 확인합니다.</p>
+			        </div>
+			        <div class="process-bottom">
+			          <p>담당자/경영진 인터뷰</p>
+			          <p>AX 성숙도 진단</p>
+			        </div>
+			      </div>
+			      <div class="process-card">
+			        <div class="process-top">
+			          <span class="process-number">2</span>
+			          <h4 class="process-title">Task Insight</h4>
+			          <p class="process-question">문제는 어디서 발생하는가?</p>
+			          <p class="process-desc">AX전환을 위한 조직환경 (업무흐름, 실제 데이터, 의사결정, 협업구조 등) 조사를 통해 문제를 도출합니다.</p>
+			        </div>
+			        <div class="process-bottom">
+			          <p>팀별 업무 프로세스 병목 진단,</p>
+			          <p>직무별 Pain Point List</p>
+			        </div>
+			      </div>
+			      <div class="process-card">
+			        <div class="process-top">
+			          <span class="process-number">3</span>
+			          <h4 class="process-title">Solution Design</h4>
+			          <p class="process-question">문제를 해결하는 솔루션 설계</p>
+			          <p class="process-desc">Mission Task Driven 기반 맞춤형 교육 설계와 함께 팀별/직무별 AI직 용 과제를 구체화합니다.</p>
+			        </div>
+			        <div class="process-bottom">
+			          <p>프로젝트 기반 교육설계,</p>
+			          <p>Job-based AI Kit</p>
+			        </div>
+			      </div>
+			      <div class="process-card">
+			        <div class="process-top">
+			          <span class="process-number">4</span>
+			          <h4 class="process-title">Work Application</h4>
+			          <p class="process-question">교육을 현업에 적용</p>
+			          <p class="process-desc">교육프로그램과 실무과제를 활용하여 각 분야의 전문가와 함께 솔루션을 적용합니다.</p>
+			        </div>
+			        <div class="process-bottom">
+			          <p>AI 교육/실습, 적용 미션 수행,</p>
+			          <p>Best Practice 도출</p>
+			        </div>
+			      </div>
+			      <div class="process-card">
+			        <div class="process-top">
+			          <span class="process-number">5</span>
+			          <h4 class="process-title">Change Scale-Up</h4>
+			          <p class="process-question">조직 변화로 확장</p>
+			          <p class="process-desc">교육에서 끝나는 것이 아닌 실제 기업의 AX전환을 위한 다음 단계의 도전을 함께 고민하고 실행합니다.</p>
+			        </div>
+			        <div class="process-bottom">
+			          <p>AI 챔피언 육성/BP사례 확산,</p>
+			          <p>PoC 파일럿 프로젝트</p>
+			        </div>
+			      </div>
+			    </div>
+			
+			  </div>
 			</section>
-
 			<section id="diagnosis" class="section-diagnosis">
-				<div class="container">
-
-					<header class="title-group">
-						<div class="sub-title">AI 진단 솔루션, MTD 진단</div>
-						<h2>데이터 기반의 체계적인 교육 매칭 <br class="pc-none">및 맞춤형 솔루션 설계</h2>
-						<p class="desc">MTD 진단은 단순히 개인 스킬/역량 진단 차원을 넘어서<br>
-							그 조직에 맞는 AX 솔루션을 도출하기 위한 도구입니다.</p>
-					</header>
-
-					<h2 class="diagnosis-title">3차원의 MTD 진단</h2>
-
-					<div class="diagnosis-top">
-						<img src="./assets/images/diagnosis-top.png" alt="">
-					</div>
-
-					<div class="arrow-down arrow-1">
-						<img src="./assets/images/Union.png" alt="">
-					</div>
-
-					<div class="diagnosis-middle">
-						<h3 class="middle-title">데이터 기반의 체계적인 AX 전략 및 <br class="pc-none">AI 교육 매칭</h3>
-
-						<div class="process-steps">
-							<div class="process-step">
-								<span class="step-number">1</span>
-								<div class="step-content">
-									<h4 class="step-title">조직의 AI에 대한 <br>입장 및 준비도 확인</h4>
-									<p class="step-desc">(전략, 일하는 방식, AX 환경 등)</p>
-								</div>
-							</div>
-							<div class="process-step">
-								<span class="step-number">2</span>
-								<div class="step-content">
-									<h4 class="step-title">팀/개인 단위의 <br>AI 활용 정도 및 <br>교육에 대한 니즈 확인</h4>
-								</div>
-							</div>
-							<div class="process-step">
-								<span class="step-number">3</span>
-								<div class="step-content">
-									<h4 class="step-title">진단 레포트 제공</h4>
-									<p class="step-desc">(현재 상황 및 보완이 필요한 점, <br>GAP 분석 결과 등)</p>
-								</div>
-							</div>
-							<div class="process-step">
-								<span class="step-number">4</span>
-								<div class="step-content">
-									<h4 class="step-title">AX 전략 및 <br>교육 솔루션 연동</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="arrow-down arrow-2">
-						<img src="./assets/images/Union.png" alt="">
-					</div>
-
-					<div class="diagnosis-bottom">
-						<p class="conclusion-text">사전-사후 진단 결과를 통한 교육 효과성 검증 및 <br>차기 교육 프로그램 추천</p>
-						<button type="button" class="btn-inquiry">진단 문의하기</button>
-					</div>
-				</div>
+			  <div class="container">
+			
+			    <header class="title-group">
+			      <div class="sub-title">AI 진단 솔루션, MTD 진단</div>
+			      <h2>데이터 기반의 체계적인 교육 매칭 <br class="pc-none">및 맞춤형 솔루션 설계</h2>
+			      <p class="desc">MTD 진단은 단순히 개인 스킬/역량 진단 차원을 넘어서<br>
+			        그 조직에 맞는 AX 솔루션을 도출하기 위한 도구입니다.</p>
+			    </header>
+			
+			    <h2 class="diagnosis-title">3차원의 MTD 진단</h2>
+			
+			    <div class="diagnosis-top">
+			      <img src="./assets/images/diagnosis-top.png" alt="">
+			    </div>
+			
+			    <div class="arrow-down arrow-1">
+			      <span class="p"><img src="./assets/images/Union.png" alt=""></span>
+			      <span class="m"><img src="./assets/images/Union3.png" alt=""></span>
+			    </div>
+			
+			    <div class="diagnosis-middle">
+			      <h3 class="middle-title">데이터 기반의 체계적인 <br class="pc-none">AX 전략 및 AI 교육 매칭</h3>
+			
+			      <div class="process-steps">
+			        <div class="process-step">
+			          <span class="step-number">1</span>
+			          <div class="step-content">
+			            <h4 class="step-title">조직의 AI에 대한 <br>입장 및 준비도 확인</h4>
+			            <p class="step-desc">(전략, 일하는 방식, AX 환경 등)</p>
+			          </div>
+			        </div>
+			        <div class="process-step">
+			          <span class="step-number">2</span>
+			          <div class="step-content">
+			            <h4 class="step-title">팀/개인 단위의 <br>AI 활용 정도 및 <br>교육에 대한 니즈 확인</h4>
+			          </div>
+			        </div>
+			        <div class="process-step">
+			          <span class="step-number">3</span>
+			          <div class="step-content">
+			            <h4 class="step-title">진단 레포트 제공</h4>
+			            <p class="step-desc">(현재 상황 및 보완이 필요한 점, <br>GAP 분석 결과 등)</p>
+			          </div>
+			        </div>
+			        <div class="process-step">
+			          <span class="step-number">4</span>
+			          <div class="step-content">
+			            <h4 class="step-title">AX 전략 및 <br>교육 솔루션 연동</h4>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			
+			    <div class="arrow-down arrow-2">
+			      <span class="p"><img src="./assets/images/Union.png" alt=""></span>
+			      <span class="m"><img src="./assets/images/Union3.png" alt=""></span>
+			    </div>
+			
+			    <div class="diagnosis-bottom">
+			      <p class="conclusion-text">사전-사후 진단 결과를 통한 교육 효과성 검증 및 <br>차기 교육 프로그램 추천</p>
+			      <button type="button" class="btn-inquiry">진단 문의하기</button>
+			    </div>
+			  </div>
 			</section>
-
-
 			<section id="teachers" class="section-teachers">
-				<div class="container">
-					<h2 class="section-title">강사진
-						<div class="btn-group">
-							<button type="button" class="btn-prev" aria-label="Prev">
-								<i></i>
-							</button>
-							<button type="button" class="btn-next" aria-label="Next">
-								<i></i>
-							</button>
-						</div>
-					</h2>
-
-					<div class="teachers-slider swiper">
-						<div class="swiper-wrapper">
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Rim 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) AI 교육 및 컨설팅 <br>책임 연구원</li>
-									<li>AI융합·데이터사이언스 <br>석박사 졸업</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Lee 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 국내 커머스 스타트업 CCO</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Seob 코치님</h3>
-								<ul class="teacher-desc">
-									<li>전) 의료 AI 연구원</li>
-									<li>전자전기컴퓨터공학 석사 졸업</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Hyun 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) IT 스쿨 전임 강사</li>
-									<li>AI 리더십 저서 집필</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Yoon 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) AI 마케팅 스타트업 CMO</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Young 코치님</h3>
-								<ul class="teacher-desc">
-									<li>AI 기반 마케팅전략/브랜딩 전문 강사</li>
-								</ul>
-								<div class="teacher-desc2">
-									<ul class="teacher-desc-list">
-										<li>
-											제미나이 기초 및 업무효율화 <br>
-											(씨유메디컬)
-										</li>
-										<li>
-											제미나이를 활용한 민원 대응 및 업무 <br>챗봇 실습 (경기도청)
-										</li>
-										<li>
-											제미나이 활용 데이터 분석 및 보고서 작성 <br>(제이씨데코 코리아)
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Won 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 글로벌마케팅교육연구소장</li>
-									<li>AI 조직 변화관리 전문강사</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher7.png" alt=""></div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Hoon 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) AI 교육 스타트업 대표</li>
-									<li>KAIST 석사 졸업</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher8.png" alt=""></div>
-							</div>
-
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Min 코치님</h3>
-								<ul class="teacher-desc">
-									<li>전) T사 AI 전문 연구원</li>
-									<li>포항공과대학교 석사 졸업</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher9.png" alt=""></div>
-							</div>
-
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Ji 코치님</h3>
-								<ul class="teacher-desc">
-									<li>생성형 AI 디지털 활용 강사</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher10.png" alt=""></div>
-							</div>
-
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Jeong 코치님</h3>
-								<ul class="teacher-desc">
-									<li>전) T사 AI 전문 연구원</li>
-									<li>숙명여자대학교 데이터지능연구<br>석사 졸업</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher11.png" alt=""></div>
-							</div>
-
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Cheolyoung 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 엑스퍼트컨설팅 소장</li>
-									<li>고려대학교 기업교육 전공 석사 수료</li>
-									<li>강의 분야 : AI 워크스마트/ <br>AI 전략기획/ AI 문제해결</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher12.png" alt=""></div>
-							</div>
-
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">Youngchul 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 엑스퍼트컨설팅 소장</li>
-									<li>고려대학교 기업교육 전공 석사 졸업</li>
-									<li>강의 분야 : AI 워크스마트/<br>AI 전략기획/ AI 문제해결</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher13.png" alt=""></div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">YooHwan 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 엑스퍼트컨설팅 소장</li>
-									<li>중앙대학교 인적자원개발학 박사 졸업</li>
-									<li>강의 분야 : AI 워크스마트/ <br>AI 전략기획/ AI 문제해결</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher14.png" alt=""></div>
-							</div>
-							<div class="teacher-card swiper-slide">
-								<h3 class="teacher-name">JaeHyun 코치님</h3>
-								<ul class="teacher-desc">
-									<li>현) 엑스퍼트컨설팅 소장</li>
-									<li>한국외국어대학교 경영학 박사 졸업</li>
-									<li>강의 분야 : AI 워크스마트/<br>AI 전략기획/ AI 문제해결</li>
-								</ul>
-								<div class="avatar"><img src="./assets/images/teacher15.png" alt=""></div>
-							</div>
-						</div>
-
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
+			  <div class="container">
+			    <h2 class="section-title">강사진
+			      <div class="btn-group">
+			        <button type="button" class="btn-prev" aria-label="Prev">
+			          <i></i>
+			        </button>
+			        <button type="button" class="btn-next" aria-label="Next">
+			          <i></i>
+			        </button>
+			      </div>
+			    </h2>
+			
+			    <div class="teachers-slider swiper">
+			      <div class="swiper-wrapper">
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Rim 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) AI 교육 및 컨설팅 책임 연구원</li>
+			            <li>AI융합·데이터사이언스 석박사 졸업</li>
+			            <li>저서) 된다! 하루 만에 끝내는<br>
+			              제미나이 활용법 외 다수 </li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>제미나이 기초 및 업무효율화 <br>
+			                (씨유메디컬)</li>
+			              <li>제미나이를 활용한 민원 대응 및 업무<br>
+			                챗봇 실습 (경기도청)</li>
+			              <li>제미나이 활용 데이터 분석 및 보고서 작성 <br>
+			                (제이씨데코 코리아)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Lee 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 국내 커머스 스타트업 CCO</li>
+			            <li>통계학 석박사 졸업</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>데이터가 결정하는 세상, 데이터 인텔리전스 <br>
+			                (GS리테일)</li>
+			              <li>솔루션부문 Data Scientist 양성과정 <br>
+			                (삼성SDS)</li>
+			              <li>AI를 활용한 비즈니스 데이터 전략보고서 <br>
+			                작성 (HL그룹)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Seob 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>전) 의료 AI 연구원</li>
+			            <li>전자전기컴퓨터공학 석사 졸업</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>LLM 기초, 프롬프트 엔지니어링, RAG 기반
+			                챗봇 구현 교육 (삼성화재)</li>
+			              <li>MS Copilot 교육 (길리어드 사이언스)</li>
+			              <li>파이썬 기초, RAG 기반 MCP 구현 교육
+			                (DB inc.)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Hyun 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) IT·AI 전문 전임 강사</li>
+			            <li>AI 리더십 저서 집필</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>AI 시대에 업무 효율화를 AI 활용법 (캄텍)</li>
+			              <li>생성형 AI 문제해결 프로세스 (한국동서발전)</li>
+			              <li>AI 네이티브 직장인 되기 (한국산업인력공단)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Yoon 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) AI 마케팅 스타트업 CMO</li>
+			            <li>전) J그룹 브랜드 본부장</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>Genspark & Canva로 30분만에 PT 보고<br>
+			                자료 끝내기 (인사이터)</li>
+			              <li>2주 걸릴 시장조사 AI로 2시간만에 끝내기<br>
+			                (Lupin Lab)</li>
+			              <li>AI로 브랜드 기획하기 (Lupin Lab)</li>
+			            </ul>
+			          </div>
+			        </div>
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Young 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>AI 기반 마케팅전략/브랜딩 <br>
+			              전문 강사</li>
+			            <li>저서) 나의 첫 생성형 AI 마케팅 수업<br>
+			              등 외 다수 </li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>AI 콘텐츠 기획 및 제작 <br>
+			                (해양경찰청)</li>
+			              <li>AI 활용 B2C 마케팅 (KT)</li>
+			              <li>AI 마케팅 트렌드 (농협)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Won 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 글로벌마케팅교육연구소장</li>
+			            <li>영국 맨체스터 경영대학원 MBA </li>
+			            <li>연세대학교 경영대학원 <br>
+			              금융경제 석사</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li> 생성형 AI를 활용한 사업환경분석 <br>
+			                (한국화이자)</li>
+			              <li>글로벌 마케팅 전략 <br>
+			                (삼성그룹 인개원)</li>
+			              <li>신제품개발 액션러닝 <br>
+			                (현대모비스) </li>
+			            </ul>
+			          </div>
+			        </div>
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Won 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 글로벌마케팅교육연구소장</li>
+			            <li>영국 맨체스터 경영대학원 MBA </li>
+			            <li>연세대학교 경영대학원 <br>
+			              금융경제 석사</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li> 생성형 AI를 활용한 사업환경분석 <br>
+			                (한국화이자)</li>
+			              <li>글로벌 마케팅 전략 <br>
+			                (삼성그룹 인개원)</li>
+			              <li>신제품개발 액션러닝 <br>
+			                (현대모비스) </li>
+			            </ul>
+			          </div>
+			        </div>
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Hoon 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) AI 교육 스타트업 대표</li>
+			            <li>KAIST 석사 졸업</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>Python을 활용한 데이터 분석, <br>
+			                시각화, 업무 자동화 (삼성전자)</li>
+			              <li>LLM을 활용한 우리팀만의 최적화
+			                챗봇 개발 (하나금융그룹)</li>
+			              <li>LangChain과 Streamlit을 <br>
+			                활용한 챗봇 구축 (LG CNS)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Min 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>전) T사 AI 전문 연구원</li>
+			            <li>포항공과대학교 석사 졸업</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>인공지능 및 파이프라인 구축 <br>
+			                (삼성전자)</li>
+			              <li>생성형 AI를 활용한 챗봇 구축 <br>
+			                (LG CNS)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Ji 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>AI 교육 전문 강사</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>비전공자를 위한 ChatGPT <br>
+			                활용 업무 효율화 (웅진)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Jeong 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>전) T사 AI 전문 연구원</li>
+			            <li>숙명여자대학교 데이터지능연구 <br>
+			              석사 졸업</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>데이터 분석: 가설 검증부터 <br>
+			                PoC까지 (HMM)</li>
+			              <li>생성형 AI를 활용한 데이터 분석:<br>
+			                활용부터 검증까지 (서울대학교)</li>
+			              <li>생성형 AI를 활용한 데이터 <br>
+			                분석 및 시각화(삼성화재)</li>
+			
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Cheolyoung 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 엑스퍼트컨설팅 소장</li>
+			            <li>고려대학교 기업교육 전공 <br>
+			              석사 수료 </li>
+			            <li>강의 분야 : AI 워크스마트/ <br>
+			              AI 전략기획/ AI 문제해결</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>데이터 기반 기획력 과정<br>
+			                (금융결제원)</li>
+			              <li>AI 활용 & DT 과정 (CJ 푸드빌)</li>
+			              <li>AI 활용 기획 및 문서작성<br>(에스원) </li>
+			
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">Youngchul 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 엑스퍼트컨설팅 소장</li>
+			            <li>고려대학교 기업교육 전공 <br>
+			              석사 수료 </li>
+			            <li>강의 분야 : AI 워크스마트/ <br>
+			              AI 전략기획/ AI 문제해결</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>AI를 활용한 기획력 향상/공문서
+			                작성 (한국고용노동교육원)</li>
+			              <li>AI를 활용한 디자인 씽킹(with IDEO) (LG경영개발원/인화원)</li>
+			              <li>AI 코칭 시뮬레이션을 활용한 <br>
+			                코칭과 피드백(인하대학교)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">YooHwan 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 엑스퍼트컨설팅 소장</li>
+			            <li>중앙대학교  인적자원개발학 <br>
+			              박사 졸업 </li>
+			            <li>강의 분야 : AI 워크스마트/ <br>
+			              AI 전략기획/ AI 문제해결</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>생성형 AI를 활용한 보고서 작성 <br>
+			                (대한상공회의소)</li>
+			              <li>영업 문제해결: 빅데이터 활용 <br>
+			                영업 전략 수립(동아오츠카)</li>
+			
+			              <li>데이터 기반 문제해결 <br>
+			                (축산물품질평가원)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <div class="teacher-card swiper-slide">
+			          <h3 class="teacher-name">JaeHyun 코치님</h3>
+			          <ul class="teacher-desc">
+			            <li>현) 엑스퍼트컨설팅 소장</li>
+			            <li>한국외국어대학교 경영학 박사 졸업
+			            </li>
+			            <li>강의 분야 : AI 워크스마트/ <br>
+			              AI 전략기획/ AI 문제해결</li>
+			          </ul>
+			          <div class="teacher-desc2">
+			            <ul class="teacher-desc-list">
+			              <li>생성형 AI의 이해와 활용 <br>
+			                (롯데물산)</li>
+			              <li>프롬프트 엔지니어링 기본~심화<br>
+			                (현대그룹)</li>
+			              <li>데이터를 활용한 문제 해결<br>
+			                (BMW Group)</li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			
+			
+			      </div>
+			
+			      <div class="swiper-pagination"></div>
+			    </div>
+			  </div>
 			</section>
-			<!-- //section-teachers -->
-
-
-
 			<section id="insight" class="section-insight">
-				<div class="container">
-					<header class="title-group">
-						<div class="sub-title">AXPERT LAB</div>
-						<h2>AXPERT LAB은 단순한 스킬 전달이 아닌<br>일하는 방식의 변화를 위한 실제적인 <br class="pc-none">AX 교육 솔루션 제공</h2>
-					</header>
-
-					<div class="insight-content">
-						<div class="insight-top">
-							<div class="team-card">
-								<h3 class="team-title">AI 역량 강화팀</h3>
-								<ul class="team-desc">
-									<li>AI 트렌드 및 업무 적용 연구</li>
-									<li>교육 프로그램·도구 개발</li>
-								</ul>
-							</div>
-							<div class="team-card">
-								<h3 class="team-title">AI 강의 & 운영팀</h3>
-								<ul class="team-desc">
-									<li>AI 이해도가 높은 전문 강사진</li>
-									<li>AI 교육 운영 경험이 풍부한 전문 운영진</li>
-								</ul>
-							</div>
-							<div class="team-card">
-								<h3 class="team-title">AX 혁신 지원팀</h3>
-								<ul class="team-desc">
-									<li>AX 기술 자문 및 컨설팅</li>
-									<li>AI 교육 운영 지원</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="insight-connector">
-							<img src="./assets/images/insight-connector.png" alt="">
-						</div>
-
-						<div class="insight-bottom">
-							<div class="service-card">
-								<div class="service-top">
-									<h4 class="service-title">AI 교육 기획 및 개발</h4>
-									<span class="service-badge">(기업/공공)</span>
-								</div>
-								<ul class="service-desc">
-									<li>AI를 활용한 업무역량 향상 프로그램 개발</li>
-								</ul>
-							</div>
-							<div class="service-card">
-								<div class="service-top">
-									<h4 class="service-title">AI 제도 및 정책 연구</h4>
-									<span class="service-badge">(공공)</span>
-								</div>
-								<ul class="service-desc">
-									<li>AI 관련 정부정책 연구</li>
-									<li>AI 역량 강화 사업 운영</li>
-								</ul>
-							</div>
-							<div class="service-card">
-								<div class="service-top">
-									<h4 class="service-title">강의 및 교육 운영</h4>
-								</div>
-								<ul class="service-desc">
-									<li>AI 전문 강사로 구성된 강사풀 활용</li>
-								</ul>
-							</div>
-							<div class="service-card">
-								<div class="service-top">
-									<h4 class="service-title">컨설팅</h4>
-									<span class="service-badge">(진단/평가)</span>
-								</div>
-								<ul class="service-desc">
-									<li>AI 성숙도 진단</li>
-									<li>AX 교육로드맵 설계</li>
-								</ul>
-							</div>
-							<div class="service-card">
-								<div class="service-top">
-									<h4 class="service-title">AI 기술 지원</h4>
-								</div>
-								<ul class="service-desc">
-									<li>AI 교육 기술 자문</li>
-									<li>기술 PoC 프로젝트 지원</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-
-
-				</div>
+			  <div class="container">
+			    <header class="title-group">
+			      <div class="sub-title">AXPERT LAB</div>
+			      <h2>AXPERT LAB은 단순한 스킬 전달이 아닌<br>일하는 방식의 변화를 위한 실제적인 <br class="pc-none">AX 교육 솔루션 제공</h2>
+			    </header>
+			
+			    <div class="insight-content">
+			      <div class="insight-top">
+			        <div class="team-card">
+			          <h3 class="team-title">AI 역량 강화팀</h3>
+			          <ul class="team-desc">
+			            <li>AI 트렌드 및 업무 적용 연구</li>
+			            <li>교육 프로그램·도구 개발</li>
+			          </ul>
+			        </div>
+			        <div class="team-card">
+			          <h3 class="team-title">AI 강의 & 운영팀</h3>
+			          <ul class="team-desc">
+			            <li>AI 이해도가 높은 전문 강사진</li>
+			            <li>AI 교육 운영 경험이 풍부한 전문 운영진</li>
+			          </ul>
+			        </div>
+			        <div class="team-card">
+			          <h3 class="team-title">AX 혁신 지원팀</h3>
+			          <ul class="team-desc">
+			            <li>AX 기술 자문 및 컨설팅</li>
+			            <li>AI 교육 운영 지원</li>
+			          </ul>
+			        </div>
+			      </div>
+			
+			      <div class="insight-connector">
+			        <span class="p"><img src="./assets/images/insight-connector.png" alt=""></span>
+			        <span class="m">
+			          <img src="./assets/images/Union2.png" alt="">
+			        </span>
+			      </div>
+			
+			      <div class="insight-bottom">
+			        <div class="service-card">
+			          <div class="service-top">
+			            <h4 class="service-title">AI 교육 기획 및 개발</h4>
+			            <span class="service-badge">(기업/공공)</span>
+			          </div>
+			          <ul class="service-desc">
+			            <li>AI를 활용한 업무역량 향상 프로그램 개발</li>
+			          </ul>
+			        </div>
+			        <div class="service-card">
+			          <div class="service-top">
+			            <h4 class="service-title">AI 제도 및 정책 연구</h4>
+			            <span class="service-badge">(공공)</span>
+			          </div>
+			          <ul class="service-desc">
+			            <li>AI 관련 정부정책 연구</li>
+			            <li>AI 역량 강화 사업 운영</li>
+			          </ul>
+			        </div>
+			        <div class="service-card">
+			          <div class="service-top">
+			            <h4 class="service-title">강의 및 교육 운영</h4>
+			          </div>
+			          <ul class="service-desc">
+			            <li>AI 전문 강사로 구성된 강사풀 활용</li>
+			          </ul>
+			        </div>
+			        <div class="service-card v2">
+			          <div class="service-top">
+			            <h4 class="service-title">컨설팅</h4>
+			            <span class="service-badge">(진단/평가)</span>
+			          </div>
+			          <ul class="service-desc">
+			            <li>AI 성숙도 진단</li>
+			            <li>AX 교육로드맵 설계</li>
+			          </ul>
+			        </div>
+			        <div class="service-card v2">
+			          <div class="service-top">
+			            <h4 class="service-title">AI 기술 지원</h4>
+			          </div>
+			          <ul class="service-desc">
+			            <li>AI 교육 기술 자문</li>
+			            <li>기술 PoC 프로젝트 지원</li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			
+			
+			
+			  </div>
 			</section>
-
-
-
-
 			<section id="subscription" class="section-subscription">
-				<div class="container">
-					<div class="newletter">
-						<h2 class="section-title">Newsletter</h2>
-						<p class="section-desc">AXPERT Lab의 최신 AX 솔루션을 안내해 드립니다.</p>
-						<form action="#" method="post" class="newsletter-form">
-							<div class="agree">
-								<input type="checkbox" id="agree" name="agree">
-								<label for="agree">개인정보 정책 동의</label>
-							</div>
-							<div class="fields">
-								<input type="email" name="email" placeholder="이메일 주소 입력">
-								<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
-									class="btn-submit btn-primary">구독신청</a>
-							</div>
-						</form>
-					</div>
-					<div class="contact">
-						<h2 class="section-title">Contact Us</h2>
-						<p class="section-desc">AX 컨설팅 AXPERT Lab의 AI 전문가와 함께 시작하세요.</p>
-						<div class="actions">
-							<a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
-								class="btn-primary">문의하기</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- //section-subscription -->
+			  <div class="container">
+			    <div class="newletter">
+			      <h2 class="section-title">Newsletter</h2>
+			      <p class="section-desc">AXPERT Lab의 최신 AX 솔루션을 안내해 드립니다.</p>
+			      <form action="#" method="post" class="newsletter-form">
+			        <div class="agree">
+			          <input type="checkbox" id="agree" name="agree">
+			          <label for="agree">개인정보 정책 동의</label>
+			        </div>
+			        <div class="fields">
+			          <input type="email" name="email" placeholder="이메일 주소 입력">
+			          <a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
+			            class="btn-submit btn-primary">구독신청</a>
+			        </div>
+			      </form>
+			    </div>
+			    <div class="contact">
+			      <h2 class="section-title">Contact Us</h2>
+			      <p class="section-desc">AX 컨설팅 AXPERT Lab의 AI 전문가와 함께 시작하세요.</p>
+			      <div class="actions">
+			        <a href="https://www.exc.co.kr/customer_center/inquiry/make_inquiries.asp" target="_blank"
+			          class="btn-primary">문의하기</a>
+			      </div>
+			    </div>
+			  </div>
+			</section>			<!-- //section-subscription -->
 		</main>
 
 		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="logo">
-					AXPERT LAB
+		  <div class="container">
+		    <div class="logo">
+		      AXPERT LAB
+		    </div>
+		    <div class="footer-info">
+		      <b>(주)엑스퍼트컨설팅</b> 대표이사 김정문 <br class="pc-none">
+		      사업자등록번호 116-81-48332<br>
+		      본사 서울시 송파구 중대로 121 롯데캐슬파인힐 2F 별관 서울시 <br class="pc-none">
+		      송파구 충민로 10, 가든파이브툴 B홀 9층 S09호, S10호(문정동)<br>
+		      Tel.<a href="tel:02-538-2221"><b>02) 538-2221</a> / Fax. <a href="tel:02-538-6996">02) 538-6996</b></a><br
+		        class="pc-none">
+		      E-mail : <a href="mailto:help@exc.co.kr"><b>help@exc.co.kr</b></a>
+		    </div>
+		
+		    <div class="footer-links">
+		      <!-- <a href="#">개인정보 처리방침</a> -->
+		      <div class="copyright">ⓒ2025 엑스퍼트컨설팅 Inc. All Rights Reserved.</div>
+		    </div>
+		  </div>
+		</footer>	</div>
+	<!-- //wrap -->
+	<!-- Modal markup -->
+	<div id="modal-overlay" class="modal-overlay" data-modal-overlay>
+		<div class="modal" tabindex="-1" id="modal-1">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>AI를 활용한 의사결정과 전사 AI 도입 전략</h3>
 				</div>
-				<div class="footer-info">
-					<b>(주)엑스퍼트컨설팅</b> 대표이사 김정문 <br class="pc-none">
-					사업자등록번호 116-81-48332<br>
-					본사 서울시 송파구 중대로 121 롯데캐슬파인힐 2F 별관 서울시 <br class="pc-none">
-					송파구 충민로 10, 가든파이브툴 B홀 9층 S09호, S10호(문정동)<br>
-					Tel.<a href="tel:02-538-2221"><b>02) 538-2221</a> / Fax. <a href="tel:02-538-6996"
-						>02) 538-6996</b></a><br class="pc-none">
-					E-mail : <a href="mailto:help@exc.co.kr"><b>help@exc.co.kr</b></a>
-				</div>
-
-				<div class="footer-links">
-					<!-- <a href="#">개인정보 처리방침</a> -->
-					<div class="copyright">X CONSULTING. ALL Rights Reserved.</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">임원</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI 모델을 비교하고 실무에 적용할 수 있는 AI 활용법 이해,<br>AI 도입 시 고려해야 할 리스크 등 사례를 통한 실질적인 인사이트 확보, <br>
+								조직 내 AI 기술 적용 방안을 리더로서 고민할 수 있도록 트렌드 분석
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">리더십을 위한<br>AI 트렌드 이해하기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										생성형 AI를 통한 아이스브레이킹<br>
+										생성형 AI의 발전 과정과 현재<br>
+										경영진이 알아야 할 AI 활용 전략
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">생성형 AI의 작동원리와<br>프롬프트 엔지니어링</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										생성형 AI의 작동원리 이해하기<br>
+										프롬프트 엔지니어링 이해하기<br>
+										생성형 AI 체험하기
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">의사결정을 돕는<br>프롬프트 엔지니어링</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 기반 의사결정 실습해보기
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 4</span>
+									<h4 class="step-title">AI 비서 생성</h4>
+								</div>
+								<div class="step-desc">
+									<p>나만의 AI비서 만들기</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+		<!-- // 임원 -->
+
+		<div class="modal" tabindex="-1" id="modal-2">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3> AI 기반 협업을 위한 의사결정과 변화관리</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀장 및 관리직</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								LLM, RAG, AI 에이전트 등 최신 AI 핵심 기술을 다루어 AI 기술 전반에 대한
+								거시적인 인사이트 습득 및 이해도 증진, 조직 내 AI 적용을 원활하게 추진할 수 있도록 변화 관리 및 대응 방안 마련
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">AI의 핵심 기술과 <br>비즈니스 활용 인사이트</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI의 작동원리와 핵심기술<br>
+										AI의 비즈니스 활용
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">AI 시대에 필요한<br>리더의 의사결정</h4>
+								</div>
+								<div class="step-desc">
+									<p>AI 기반 데이터 활용과 의사결정</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">AI기반의 협업과<br>조직 변화관리 </h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI와 협업하기: 효율적인 팀 관리 인사이트<br>
+										조직 내 AI 도입 전략 및 변화 관리
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 팀장 -->
+
+		<div class="modal" tabindex="-1" id="modal-3">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>AI 시대 신임 팀장 시뮬레이션</h3>
+					<div class="modal-title-desc">: AI시대 리더를 위한 성과 평가/면담 @AI</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀장 및 관리직</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								성과 평가/면담자로서의 역할 인식하고, 기본 개념과 중요성을 이해, 체계적인 성가 평가/면담 프로세스를 이해하고 효과적인 평가/면담 스킬 학습의 중요성을 인식
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">면담의 기초</h4>
+								</div>
+								<div class="step-desc">
+									<p>평가/면담의 이해와 리더의 역할 </p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">면담 시뮬레이션</h4>
+								</div>
+								<div class="step-desc">
+									<p>평가 면담 시뮬레이션 실습</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">개인별 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>학습자 개인별 실습 사례 구성</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 4</span>
+									<h4 class="step-title">AI 피드백</h4>
+								</div>
+								<div class="step-desc">
+									<p>Role-play 및 AI 피드백</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 팀장 -->
+
+		<div class="modal" tabindex="-1" id="modal-4">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>AI 코칭 시뮬레이션을 활용한 브릿지 리더십 코칭과 피드백</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">시니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">5.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								코칭의 기본 개념부터 실전 대화법까지! <br>GROW 코칭모델 기반의 AI 웹 앱으로 코칭/피드백 스킬을 쉽고 빠르게 체화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">코칭의 기본기 다지기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										코칭의 개념과 사례<br>
+										다양한 코칭 모델(AMO, GROW 등)과 실전 대화법
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">코칭 시뮬레이션</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 웹 앱으로 엑코치와 함께하는 GROW 코칭<br>
+										효과적인 코칭 대화의 특징과 적용
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 롤플레이 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI를 통한 실전 평가 면담 롤플레이<br>
+										AI 피드백을 통한 대화 분석과 개선 포인트
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 시니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-5">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 전략 보고서 작성</h3>
+					<div class="modal-title-desc">: 프롬프트로 만드는 데이터 시각화와 스토리텔링 전략 보고서</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">시니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								전략적인 데이터 분석 및 시각화를 위한 프롬프트 엔지니어링 학습, 설득적이고 효과적인 스토리텔링 기반의 전략보고서 작성 실습
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">데이터 기반의 <br>사고력 다지기</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 기반 사고력, 왜 중요한가?<br>
+										기초통계, AI를 활용한 데이터 정리/분석
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 시각화와<br>스토리텔링 스킬업</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 시각화에 유용한 이론/프레임/툴<br>
+										AI기반 자동화 툴을 활용한 스토리텔링 작업
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 데이터기반의 <br>전략적 문제해결</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										비즈니스 문제정의와 데이터 사고력 기반의 전략 기획/설계<br>
+										AI 를 통한 데이터 기반의 전략보고서 작성 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 시니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-6">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 문제해결력 강화</h3>
+					<div class="modal-title-desc">: 창의적 문제해결과 전략적 기획 역량 강화</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">미들&주니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								문제해결의 4단계 프로세스에 맞추어 생성형 AI를 활용한 문제정의 및 문제해결에 대한 아이디어 시각화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">문제해결 프로세스와<br>문제 정의</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										문제해결의 4단계 프로세스<br>
+										AI를 활용한 데이터 정리와 인사이트 도출
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 시각화와<br>스토리텔링</h4>
+								</div>
+								<div class="step-desc">
+									<p>AI를 활용한 다양한 데이터 분석 기법 사례와 실습<br>
+										AI를 활용한 분석 결과 시각화, 스토리텔링
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">전략적 기획 역량 강화</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										전략적 기획에 대한 개괄적 이해<br>
+										전략 제시의 다양한 구조화 방안
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 미들 주니어 -->
+		<div class="modal" tabindex="-1" id="modal-7">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 기획 보고서 작성</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">미들&주니어</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								업계 관련한 빅데이터를 가장 효과적으로 수집/분석할 수 있는 방법론과 생성형 AI를 통한 효과적인 비즈니스 문서 작성의 실제
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">비즈니스 라이팅의 기본</h4>
+								</div>
+								<div class="step-desc">
+									<p>비즈니스 라이팅의 기본 원리, 이론<br>
+										초간단 1Page 보고서 작성 실습
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">데이터 기반의 기획</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 기반의 기획에 대한 개념과 프로세스<br>
+										데이터 마이닝 및 데이터 분석기법을 통한 비즈니스 액션
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">실전 기획서 작성 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										데이터 스토리텔링<br>우리회사 신사업에 대한 실전 기획서 작성 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 미들 주니어 -->
+
+		<div class="modal" tabindex="-1" id="modal-8">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI로 만드는 업무 효율 향상</h3>
+					<div class="modal-title-desc">: AI를 활용해 팀 업무 효율과 성과를 개선하는 방안 모색 및 계획 구체화</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">신입</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI를 활용하여 팀의 업무 효율과 성과를 개선할 수 있는 실제적 방안에 대한 아이디어 확장 및 계획 구체화
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">팀/자신의 업무 점검</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										우리 팀/나의 주요 업무 프로세스 살펴보기<br>
+										업무의 우선순위 평가
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">문제 도출</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										우리 팀/나의 업무 프로세스에서의 Pain Point<br>
+										개선을 위한 요건들
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">AI를 활용한 해결안</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 적용가능 업무 선정, 활용 가능 도구 검토<br>
+										AI 도입을 통한 업무 개선 내용 및 계획 구체화
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 신입 -->
+
+		<div class="modal" tabindex="-1" id="modal-9">
+			<div class="modal-header">
+				<div class="modal-title-wrap">
+					<h3>생성형 AI를 활용한 문서 작성</h3>
+					<div class="modal-title-desc">: AI를 활용한 문서의 구성과 표현의 업그레이드</div>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">신입</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">4.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI를 활용하여 논리적으로 문서를 신속하게 작성하는 스킬 향상
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 1</span>
+									<h4 class="step-title">문서작성의 기초</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										효과적인 문서 작성의 대 원칙<br>문서 유형별 구성 요령 및 핵심 스킬
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 2</span>
+									<h4 class="step-title">AI의 활용방법</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI를 활용한 문서 작성 방법<br>
+										비즈니스 이메일 및 다양한 문서 초안 실습
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<span class="step-number">Step 3</span>
+									<h4 class="step-title">문서 자동화 실습</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										문서 품질 업그레이드 방안 (AI 피드백)<br>
+										문서 자동화 실습
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 신입 -->
+
+		<div class="modal" tabindex="-1" id="modal-10">
+			<div class="modal-header v2">
+				<div class="modal-title-wrap">
+					<h3>AX 비즈니스 혁신 워크숍</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">대상별 맞춤화</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">5.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								AI를 도구가 아닌 새로운 비즈니스 기회로서 바라보고, 새로운 가치를 창출 할 수 있는 아이디어 도출
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<!-- <span class="step-number">Step 1</span> -->
+									<h4 class="step-title">
+										AX시대의 <br>비즈니스 혁신 <br>패러다임
+									</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										LLM/Generator AI가 바꾼 비즈니스 구조<br>Work Automation vs AI Collaboration
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">고객 경험 심층분석</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										고객 여정 분해, Key Pain Point 도출<br>AI기술 X 고객 문제 매핑
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">PoC 로드맵 설계</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 기반 비즈니스 모델 갠버스 그리기<br>
+										MVP정의 / 실행 계획 도출
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 조직문화 -->
+
+		<div class="modal" tabindex="-1" id="modal-11">
+			<div class="modal-header v2">
+				<div class="modal-title-wrap">
+					<h3>AX  워크플로우 개선 워크숍</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀 단위</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">5.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								우리 팀의 일하는 방식을 분석, 숨은 규칙과 Pain-point를 찾아보고<br>AX 관점에서 개선 아이디어와 실행계획 수립
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<!-- <span class="step-number">Step 1</span> -->
+									<h4 class="step-title">
+										Task 분석
+									</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										하루/주간 업무 리스트, 업무 흐름 그리기 Pain Point 분석
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">AX 환경분석</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										자동화 가능 Task 식별<br>
+										개선된 워크플로우 / 업무 규칙 변경안 구상
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">액션플랜 도출</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 적용 베타 모델 도출<br>
+										파일럿 계획 수립
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 조직문화 -->
+
+		<div class="modal" tabindex="-1" id="modal-12">
+			<div class="modal-header v2">
+				<div class="modal-title-wrap">
+					<h3>AX  워크플로우 개선 워크숍</h3>
+				</div>
+				<button type="button" class="modal-close" data-modal-close></button>
+			</div>
+			<div class="modal-body">
+				<div class="course-detail">
+					<div class="course-info">
+						<div class="info-item">
+							<span class="info-label">추천대상</span>
+							<span class="info-value">팀 단위</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">권장학습시간</span>
+							<span class="info-value">5.0H</span>
+						</div>
+					</div>
+					<div class="course-info">
+						<div class="info-item">
+							<div class="info-label">핵심포인트</div>
+							<div class="info-value">
+								우리 팀의 일하는 방식을 분석, 숨은 규칙과 Pain-point를 찾아보고<br>AX 관점에서 개선 아이디어와 실행계획 수립
+							</div>
+						</div>
+					</div>
+					<div class="course-steps">
+						<div class="steps-label">주요 내용</div>
+						<div class="steps-list">
+							<div class="step-card">
+								<div class="step-header">
+									<!-- <span class="step-number">Step 1</span> -->
+									<h4 class="step-title">
+										Task 분석
+									</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										하루/주간 업무 리스트, 업무 흐름 그리기 Pain Point 분석
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">AX 환경분석</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										자동화 가능 Task 식별<br>
+										개선된 워크플로우 / 업무 규칙 변경안 구상
+									</p>
+								</div>
+							</div>
+							<div class="step-card">
+								<div class="step-header">
+									<h4 class="step-title">액션플랜 도출</h4>
+								</div>
+								<div class="step-desc">
+									<p>
+										AI 적용 베타 모델 도출<br>
+										파일럿 계획 수립
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 부트캠프 -->
+		
 	</div>
-	<!-- //wrap -->
+
+
 	<script src="./lib/home.js"></script>
-	<!-- GSAP (다이어그램 애니메이션용) -->
 	<script src="./lib/gsap/gsap.min.js"></script>
 	<script src="./lib/gsap/ScrollTrigger.min.js"></script>
-	<script>
-		// 강사진: 모바일/PC에 따라 옵션 분기
-		(function () {
-
-			var sliderEl = document.querySelector('.teachers-slider');
-			if (!sliderEl) return;
-			new Swiper(sliderEl, {
-				slidesPerView: 1,
-				spaceBetween: 20,
-				breakpoints: {
-					768: {
-						slidesPerView: 3
-					},
-					1024: {
-						slidesPerView: 4
-					}
-				},
-				navigation: {
-					nextEl: '.section-teachers .btn-next',
-					prevEl: '.section-teachers .btn-prev'
-				}
-			});
-
-		})();
-
-		// 헤더: 드로어 토글
-		(function () {
-			var btnMenu = document.querySelector('.btn-menu');
-			var btnClose = document.querySelector('.drawer .btn-close');
-			var drawer = document.getElementById('global-drawer');
-			var body = document.body;
-			if (!btnMenu || !drawer) return;
-
-			function open() {
-				body.classList.add('drawer-open');
-				drawer.setAttribute('aria-hidden', 'false');
-				btnMenu.setAttribute('aria-expanded', 'true');
-			}
-			function close() {
-				body.classList.remove('drawer-open');
-				drawer.setAttribute('aria-hidden', 'true');
-				btnMenu.setAttribute('aria-expanded', 'false');
-			}
-			btnMenu.addEventListener('click', function () {
-				if (body.classList.contains('drawer-open')) close(); else open();
-			});
-			if (btnClose) btnClose.addEventListener('click', close);
-			drawer.addEventListener('click', function (e) {
-				if (e.target === drawer) close();
-			});
-			document.addEventListener('keydown', function (e) {
-				if (e.key === 'Escape') close();
-			});
-
-			// 모바일에서 데스크탑으로 전환 시 드로어 자동 닫기
-			var mq = window.matchMedia('(min-width: 1024px)');
-			function handleResize() {
-				if (mq.matches && body.classList.contains('drawer-open')) {
-					close();
-				}
-			}
-			if (mq.addEventListener) {
-				mq.addEventListener('change', handleResize);
-			} else if (mq.addListener) {
-				mq.addListener(handleResize);
-			}
-			window.addEventListener('resize', handleResize);
-		})();
-
-		// 메뉴 네비게이션: 스크롤 이동 및 모바일 메뉴 닫기
-		(function () {
-			var menuLinks = document.querySelectorAll('.gnb a[href^="#"]');
-			var logoLink = document.querySelector('.logo a[href^="#"]');
-			var drawer = document.getElementById('global-drawer');
-			var body = document.body;
-			var btnMenu = document.querySelector('.btn-menu');
-
-			function closeDrawer() {
-				if (body.classList.contains('drawer-open')) {
-					body.classList.remove('drawer-open');
-					if (drawer) drawer.setAttribute('aria-hidden', 'true');
-					if (btnMenu) btnMenu.setAttribute('aria-expanded', 'false');
-				}
-			}
-
-			function scrollToSection(hash) {
-				var target = document.querySelector(hash);
-				if (!target) return;
-
-				var header = document.querySelector('.header');
-				var headerHeight = header ? header.offsetHeight : 0;
-				var targetPosition = target.offsetTop - headerHeight;
-
-				// GSAP ScrollToPlugin이 있으면 사용, 없으면 기본 스크롤
-				if (window.gsap && window.ScrollToPlugin) {
-					gsap.to(window, {
-						duration: 0.8,
-						scrollTo: { y: targetPosition, offsetY: headerHeight },
-						ease: 'power2.inOut'
-					});
-				} else {
-					window.scrollTo({
-						top: targetPosition,
-						behavior: 'smooth'
-					});
-				}
-			}
-
-			function handleLinkClick(e, link) {
-				var hash = link.getAttribute('href');
-
-				e.preventDefault();
-
-				// href가 "#"이거나 없는 경우 준비중 alert
-				if (!hash || hash === '#') {
-					alert('준비중입니다');
-					// 모바일에서 메뉴 닫기
-					var isMobile = window.innerWidth < 1024;
-					if (isMobile) {
-						closeDrawer();
-					}
-					return;
-				}
-
-				// 모바일에서 메뉴 닫기
-				var isMobile = window.innerWidth < 1024;
-				if (isMobile) {
-					closeDrawer();
-					// 메뉴 닫힌 후 스크롤 이동 (약간의 딜레이)
-					setTimeout(function () {
-						scrollToSection(hash);
-					}, 300);
-				} else {
-					scrollToSection(hash);
-				}
-			}
-
-			// 메뉴 링크들
-			menuLinks.forEach(function (link) {
-				link.addEventListener('click', function (e) {
-					handleLinkClick(e, this);
-				});
-			});
-
-			// 로고 링크
-			if (logoLink) {
-				logoLink.addEventListener('click', function (e) {
-					handleLinkClick(e, this);
-				});
-			}
-		})();
-
-		// 비주얼 슬라이더
-		(function () {
-			if (!window.Swiper) return;
-			var visualText = document.querySelector('.visual-text p');
-			if (!visualText) return;
-
-			var textContents = [
-				'우리 조직 맞춤형 AI 교육 설계를 원한다면?',
-				'AI를 도입하고 싶은데 어떤 것부터 해야 할지 고민된다면?'
-			];
-
-			function updateVisualText(index) {
-				if (!textContents[index]) return;
-
-				// GSAP가 있으면 페이드 효과 사용
-				if (window.gsap) {
-					gsap.to(visualText, {
-						opacity: 0,
-						duration: 0.3,
-						ease: 'power2.in',
-						onComplete: function () {
-							visualText.innerHTML = textContents[index];
-							gsap.to(visualText, {
-								opacity: 1,
-								duration: 0.4,
-								ease: 'power2.out'
-							});
-						}
-					});
-				} else {
-					// GSAP가 없으면 바로 변경
-					visualText.innerHTML = textContents[index];
-				}
-			}
-
-			var swiper = new Swiper('.visual-slider', {
-				loop: true,
-				effect: 'slide',
-				speed: 700,
-				autoplay: { delay: 3000, disableOnInteraction: false },
-				pagination: {
-					el: '.visual-slider .swiper-pagination',
-					clickable: true
-				},
-				on: {
-					slideChange: function () {
-						updateVisualText(this.realIndex);
-					},
-					init: function () {
-						// 초기화 시에는 페이드 없이 바로 표시
-						if (textContents[this.realIndex]) {
-							visualText.innerHTML = textContents[this.realIndex];
-						}
-					}
-				}
-				// navigation: {
-				// 	nextEl: '.visual-slider .swiper-button-next',
-				// 	prevEl: '.visual-slider .swiper-button-prev'
-				// }
-			});
-
-			// 마우스 호버 시 오토플레이 일시정지
-			var sliderEl = document.querySelector('.visual-slider');
-			if (sliderEl && swiper.autoplay) {
-				sliderEl.addEventListener('mouseenter', function () {
-					if (swiper.autoplay.running) {
-						swiper.autoplay.pause();
-					}
-				});
-				sliderEl.addEventListener('mouseleave', function () {
-					if (!swiper.autoplay.running) {
-						swiper.autoplay.resume();
-					}
-				});
-			}
-		})();
-
-		// 헤더: 비주얼 영역 기준으로 scroll 상태 토글
-		(function () {
-			var header = document.querySelector('.header');
-			var visual = document.querySelector('.visual');
-			if (!header || !visual) return;
-
-			function update() {
-				var threshold = visual.offsetHeight - header.offsetHeight;
-				if (window.scrollY > threshold) {
-					header.classList.add('is-scrolled');
-				} else {
-					header.classList.remove('is-scrolled');
-				}
-			}
-
-			window.addEventListener('scroll', update, { passive: true });
-			window.addEventListener('resize', update);
-			window.addEventListener('load', update);
-		})();
-
-
-		// 로드맵 섹션 페이드인업 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var roadmapContent = document.querySelector('.section-roadmap .roadmap-content');
-			if (roadmapContent) {
-				gsap.from(roadmapContent, {
-					scrollTrigger: {
-						trigger: roadmapContent,
-						start: 'top 80%',
-						once: true
-					},
-					y: 50,
-					opacity: 0,
-					duration: 0.8,
-					ease: 'power2.out'
-				});
-			}
-
-			var roadmapTitle = document.querySelector('.section-roadmap .section-title');
-			if (roadmapTitle) {
-				gsap.from(roadmapTitle, {
-					scrollTrigger: {
-						trigger: roadmapTitle,
-						start: 'top 80%',
-						once: true
-					},
-					y: 30,
-					opacity: 0,
-					duration: 0.6,
-					ease: 'power2.out'
-				});
-			}
-		})();
-
-
-		// 구독 섹션 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var subscriptionItems = document.querySelectorAll('.section-subscription .newletter, .section-subscription .contact');
-			if (subscriptionItems.length > 0) {
-				gsap.from(subscriptionItems, {
-					scrollTrigger: {
-						trigger: '.section-subscription',
-						start: 'top 80%',
-						once: true
-					},
-					y: 40,
-					opacity: 0,
-					duration: 0.6,
-					ease: 'power2.out',
-					stagger: 0.2
-				});
-			}
-		})();
-
-		// AI 교육 섹션 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var trainingContents = document.querySelectorAll('.section-training .training-content');
-			if (trainingContents.length > 0) {
-				gsap.from(trainingContents, {
-					scrollTrigger: {
-						trigger: '.section-training',
-						start: 'top 80%',
-						once: true
-					},
-					y: 50,
-					opacity: 0,
-					duration: 0.8,
-					ease: 'power2.out',
-					stagger: 0.15
-				});
-			}
-		})();
-
-		// MTD 5단계 프로세스 섹션 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var processCards = document.querySelectorAll('.section-solution .process-card');
-			if (processCards.length > 0) {
-				gsap.from(processCards, {
-					scrollTrigger: {
-						trigger: '.section-solution',
-						start: 'top 80%',
-						once: true
-					},
-					y: 40,
-					opacity: 0,
-					duration: 0.7,
-					ease: 'power2.out',
-					stagger: 0.1
-				});
-			}
-
-			var solutionTitle = document.querySelector('.section-solution h2');
-			if (solutionTitle) {
-				gsap.from(solutionTitle, {
-					scrollTrigger: {
-						trigger: solutionTitle,
-						start: 'top 80%',
-						once: true
-					},
-					y: 30,
-					opacity: 0,
-					duration: 0.6,
-					ease: 'power2.out'
-				});
-			}
-		})();
-
-		// 진단 섹션 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var diagnosisTop = document.querySelector('.section-diagnosis .diagnosis-top');
-			if (diagnosisTop) {
-				gsap.from(diagnosisTop, {
-					scrollTrigger: {
-						trigger: diagnosisTop,
-						start: 'top 80%',
-						once: true
-					},
-					scale: 0.8,
-					opacity: 0,
-					duration: 0.8,
-					ease: 'power2.out'
-				});
-			}
-
-			var processSteps = document.querySelectorAll('.section-diagnosis .process-step');
-			if (processSteps.length > 0) {
-				gsap.from(processSteps, {
-					scrollTrigger: {
-						trigger: '.section-diagnosis .process-steps',
-						start: 'top 80%',
-						once: true
-					},
-					x: -30,
-					opacity: 0,
-					duration: 0.7,
-					ease: 'power2.out',
-					stagger: 0.15
-				});
-			}
-
-			var diagnosisBottom = document.querySelector('.section-diagnosis .diagnosis-bottom');
-			if (diagnosisBottom) {
-				gsap.from(diagnosisBottom, {
-					scrollTrigger: {
-						trigger: diagnosisBottom,
-						start: 'top 80%',
-						once: true
-					},
-					y: 40,
-					opacity: 0,
-					duration: 0.8,
-					ease: 'power2.out'
-				});
-			}
-		})();
-
-		// AXPERT LAB 섹션 애니메이션
-		(function () {
-			if (!window.gsap || !window.ScrollTrigger) return;
-			gsap.registerPlugin(ScrollTrigger);
-
-			var teamCards = document.querySelectorAll('.section-insight .team-card');
-			if (teamCards.length > 0) {
-				gsap.from(teamCards, {
-					scrollTrigger: {
-						trigger: '.section-insight .insight-top',
-						start: 'top 80%',
-						once: true
-					},
-					y: 40,
-					opacity: 0,
-					duration: 0.7,
-					ease: 'power2.out',
-					stagger: 0.15
-				});
-			}
-
-			var serviceCards = document.querySelectorAll('.section-insight .service-card');
-			if (serviceCards.length > 0) {
-				gsap.from(serviceCards, {
-					scrollTrigger: {
-						trigger: '.section-insight .insight-bottom',
-						start: 'top 80%',
-						once: true
-					},
-					y: 40,
-					opacity: 0,
-					duration: 0.7,
-					ease: 'power2.out',
-					stagger: 0.1
-				});
-			}
-		})();
-
-		// AI 교육 슬라이드
-		(function () {
-			var trainingContents = document.querySelectorAll('.training-content');
-			if (!trainingContents || trainingContents.length === 0) return;
-
-			trainingContents.forEach(function (content) {
-				var swiperEl = content.querySelector('.training-swiper');
-				var prevBtn = content.querySelector('.btn-prev');
-				var nextBtn = content.querySelector('.btn-next');
-
-				if (!swiperEl) return;
-
-				new Swiper(swiperEl, {
-					slidesPerView: 1,
-					spaceBetween: 20,
-					breakpoints: {
-						768: {
-							slidesPerView: 3
-						},
-						1024: {
-							slidesPerView: 4
-						},
-						1240: {
-							slidesPerView: 5
-						}
-					},
-					navigation: {
-						nextEl: nextBtn,
-						prevEl: prevBtn
-					}
-				});
-			});
-		})();
-	</script>
 </body>
-
-</html>
 
 </html>
