@@ -42,18 +42,22 @@
 	max-height: 90vh;
 	display: none;
 	flex-direction: column;
-	
+	@media (max-width: 900px) {
+		width: 100%;
+	}
 }
 
 .modal-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url('@/assets/images/modal-bg1.png') no-repeat center center / 100% auto;
+	background: url('@/assets/images/modal-bg1.png') no-repeat center center;
 	height: 160px;
 	position: relative;
 	text-align: center;
-	
+	@media (max-width: 900px) {
+		height: 68px;
+	}
 	&.v2{
 		background-image: url('@/assets/images/modal-bg2.png');
 	}
@@ -67,6 +71,12 @@
 		width: 32px;
 		height: 32px;
 		background: url('@/assets/images/close.png') no-repeat center center / 100% auto;
+		@media screen and (max-width: 900px) {
+			width: 27px;
+			height: 27px;
+			right: 13px;
+			top: 13px;
+		}
 	}
 }
 
@@ -77,17 +87,22 @@
 		font-size: 28px;
 		margin-bottom: 6px;
 		line-height: 139%;
+		@media screen and (max-width: 900px) {
+			font-size: 14px;
+		}
 	}
 	.modal-title-desc{
 		color: #fff;
 		font-size: 20px;
+		@media screen and (max-width: 900px) {
+			font-size: 12px;
+		}
 	}
 }
 
 .modal-close {
 	background: transparent;
 	border: 0;
-	font-size: 1.5rem;
 	line-height: 1;
 	cursor: pointer;
 }
@@ -96,12 +111,19 @@
 	padding: 40px;
 	flex: 1;
 	overflow-y: auto;
+	@media screen and (max-width: 900px) {
+		padding: 32px;
+	}
 }
 
 .course-detail {
 	.course-info {
 		display: flex;
 		gap: 228px;
+		@media screen and (max-width: 900px) {
+			gap:18px 0;
+			flex-direction: column;
+		}
 		+.course-info{
 			margin-top: 17px;
 		}
@@ -109,16 +131,26 @@
 			display: flex;
 			align-items: flex-start;
 			gap: 48px;
+			@media screen and (max-width: 900px) {
+				gap:0 18px;
+			}
 			.info-label {
 				font-size: 18px;
 				font-weight: 600;
 				color: #000000;
 				min-width: 80px;
+				@media screen and (max-width: 900px) {
+					font-size: 14px;
+				}
 			}
 			.info-value {
 				font-size: 16px;
 				color: #696969;
 				line-height: 1.24;
+				flex: 1;
+				@media screen and (max-width: 900px) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -126,6 +158,9 @@
 	
 	.course-steps {
 		margin-top: 30px;
+		@media screen and (max-width: 900px) {
+			margin-top: 12px;
+		}
 	}
 }
 
@@ -148,10 +183,17 @@
 	background: rgba(247, 247, 250, 1);
 	border-radius: 5px;
 	overflow: hidden;
+	@media screen and (max-width: 900px) {
+		flex-direction: column;
+	}
 	.step-header {
 		width: 200px;
 		padding: 20px;
 		background: rgba(9, 63, 167, 0.1);
+		@media screen and (max-width: 900px) {
+			width: 100%;
+			padding: 15px;
+		}
 		.step-number {
 			font-size: 16px;
 			font-weight: 600;
@@ -159,6 +201,9 @@
 			display: block;
 			margin-bottom: 2px;
 			line-height: 134%;
+			@media screen and (max-width: 900px) {
+				font-size: 14px;
+			}
 		}
 		
 		.step-title {
@@ -166,6 +211,9 @@
 			font-weight: 500;
 			color: #000000;
 			line-height: 1.24;
+			@media screen and (max-width: 900px) {
+				font-size: 14px;
+			}
 		}
 	}
 	
@@ -179,6 +227,10 @@
 		display: flex;
 		align-items: center;
 		line-height: 1.34;
+		@media screen and (max-width: 900px) {
+			padding: 15px;
+			font-size: 14px;
+		}
 	}
 }
 

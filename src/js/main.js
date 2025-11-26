@@ -45,7 +45,7 @@ import "@/scss/main.scss";
     });
 
     // 선택한 모달만 표시
-    modal.style.display = "flex";
+    modal.style.display = "block";
     currentModal = modal;
 
     lastFocused = document.activeElement;
