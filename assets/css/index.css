@@ -878,6 +878,11 @@ body, html {
   height: 84px;
   line-height: 136%;
   padding: 0 20px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.training-card .training-desc br {
+  display: none;
 }
 @media (min-width: 1024px) {
   .training-card .training-desc {
@@ -2020,10 +2025,12 @@ body, html {
   height: 160px;
   position: relative;
   text-align: center;
+  flex-shrink: 0;
 }
 @media (max-width: 900px) {
   .modal-header {
     height: 68px;
+    background-size: cover;
   }
 }
 .modal-header.v2 {
@@ -2309,4 +2316,5 @@ body, html {
 
 body.modal-open {
   overflow: hidden;
+  padding-right: var(--scrollbar-width, 0);
 }

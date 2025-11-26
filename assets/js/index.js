@@ -70,6 +70,8 @@
       m.style.display = "none";
     });
     modal.style.display = "flex";
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
     currentModal = modal;
     lastFocused = document.activeElement;
     overlay.removeAttribute("hidden");
@@ -80,6 +82,7 @@
   function closeModal() {
     if (currentModal) {
       currentModal.style.display = "none";
+      document.documentElement.style.removeProperty("--scrollbar-width");
     }
     overlay.setAttribute("hidden", "");
     document.body.classList.remove("modal-open");
