@@ -13,7 +13,7 @@
     +.training-content{
       margin-top: 50px;
       @media (min-width: 1024px) {
-        margin-top: 90px;
+        margin-top: 120px;
       }
     }
     .hgroup{
@@ -46,10 +46,12 @@
       display: flex;
       align-items: center;
       gap: 3px;
+      
       @media (min-width: 1024px) {
         gap: 6px;
       }
       button{
+        transition: all 0.3s ease;
         padding: 6px 10px;
         border-radius: 25px;
         background-color: #fff;
@@ -201,6 +203,13 @@
     }
     .training-links a{
       background-color: #7892C5;
+    }
+  }
+  .sort-toggle{
+    &:hover{
+      font-weight: 700 !important;
+      border-color: #093FA7 !important;
+      color: #093FA7 !important;
     }
   }
 }
