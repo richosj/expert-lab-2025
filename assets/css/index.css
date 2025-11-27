@@ -251,7 +251,7 @@ body, html {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   border-bottom: 1px solid rgba(124, 124, 124, 0.6);
   transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
@@ -1181,10 +1181,14 @@ body, html {
 .section-solution .process-card .process-bottom {
   background: #1980DD;
   padding: 20px;
+  display: flex;
+  gap: 10px;
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-bottom {
     padding: 24px 30px;
+    flex-direction: column;
+    gap: 0;
   }
 }
 .section-solution .process-card .process-bottom p {
@@ -1194,12 +1198,12 @@ body, html {
   line-height: 1.4;
   margin: 0;
 }
-.section-solution .process-card .process-bottom p + p {
-  margin-top: 4px;
-}
 @media (min-width: 1024px) {
   .section-solution .process-card .process-bottom p {
     font-size: 16px;
+  }
+  .section-solution .process-card .process-bottom p + p {
+    margin-top: 4px;
   }
 }
 
@@ -1761,6 +1765,14 @@ body, html {
   max-width: 1370px;
   margin: 0 auto;
 }
+.section-teachers .teachers-slider {
+  padding-right: 20px;
+}
+@media (min-width: 1024px) {
+  .section-teachers .teachers-slider {
+    padding-right: 0;
+  }
+}
 .section-teachers .section-title {
   font-family: Pretendard;
   font-weight: 600;
@@ -1768,6 +1780,15 @@ body, html {
   line-height: 139%;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
+}
+.section-teachers .section-title .btn-group {
+  display: flex;
+  right: 20px;
+}
+@media (min-width: 1024px) {
+  .section-teachers .section-title .btn-group {
+    right: 0;
+  }
 }
 .section-teachers .teacher-card {
   background: #fff;
@@ -2176,7 +2197,6 @@ body, html {
   color: #B9F7FF;
   font-weight: 600;
   font-size: 28px;
-  margin-bottom: 6px;
   line-height: 139%;
 }
 @media screen and (max-width: 900px) {
@@ -2187,6 +2207,7 @@ body, html {
 .modal-header .modal-title-desc {
   color: #fff;
   font-size: 20px;
+  margin-top: 6px;
 }
 @media screen and (max-width: 900px) {
   .modal-header .modal-title-desc {
@@ -2451,6 +2472,11 @@ body.modal-open {
   padding-top: 40px;
   text-align: center;
 }
+@media (max-width: 900px) {
+  .modal-footer {
+    padding-top: 32px;
+  }
+}
 
 .btn-detail {
   width: 100%;
@@ -2466,7 +2492,9 @@ body.modal-open {
 }
 @media (max-width: 900px) {
   .btn-detail {
-    max-width: 302px;
-    height: 59px;
+    max-width: 168px;
+    height: 46px;
+    border-radius: 16px;
+    font-size: 16px;
   }
 }
