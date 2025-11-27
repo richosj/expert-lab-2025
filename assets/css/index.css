@@ -1438,6 +1438,10 @@ body, html {
     height: 164px;
     padding: 0;
   }
+  .section-insight .service-card .service-top.v2 {
+    background: rgba(15, 141, 255, 0.1);
+    border: 1px solid rgba(25, 128, 221, 0.4);
+  }
 }
 .section-insight .service-card .service-badge {
   font-size: 14px;
@@ -1590,6 +1594,16 @@ body, html {
     border: 0;
     border-radius: 0;
     background: url("../images/diagnosis-step-bg.png") no-repeat center center;
+    display: none;
+  }
+}
+.section-diagnosis .diagnosis-middle .process-steps-pc {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .section-diagnosis .diagnosis-middle .process-steps-pc {
+    display: block;
+    text-align: center;
   }
 }
 .section-diagnosis .diagnosis-middle .process-step {
@@ -2265,14 +2279,20 @@ body, html {
   gap: 10px;
 }
 
-.modal:has(.v2) .ste-card .step-header .step-number {
+.modal:has(.v2) .step-card .step-header {
+  background: rgba(25, 128, 221, 0.1);
+}
+.modal:has(.v2) .step-card .step-header .step-number {
   color: #1980DD;
 }
 .modal:has(.v2) .btn-detail {
   background-color: #1980DD;
 }
 
-.modal:has(.v3) .ste-card .step-header .step-number {
+.modal:has(.v3) .step-card .step-header {
+  background: rgba(7, 183, 209, 0.1);
+}
+.modal:has(.v3) .step-card .step-header .step-number {
   color: #07B7D1;
 }
 .modal:has(.v3) .btn-detail {
