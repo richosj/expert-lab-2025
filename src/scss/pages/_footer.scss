@@ -1,10 +1,11 @@
+@use "../abstracts/functions" as *;
 
 #footer {
   padding: 40px 20px;
   background: #222;
 	@media (min-width: 1024px) {
-		padding-top: 50px;
-		padding-bottom: 70px;
+		padding-top: scale85(50px);
+		padding-bottom: scale85(70px);
 		.container{
 			max-width: 1370px;
 			margin: 0 auto;
@@ -20,8 +21,8 @@
 		color: rgba(148, 148, 148, 1);
 		margin-bottom: 10px;
 		@media (min-width: 1024px) {
-			font-size: 36px;
-			line-height: 76px;
+			font-size: scale85(36px);
+			line-height: scale85(76px);
 			color: #fff;
 		}
 	}
@@ -34,8 +35,8 @@
       text-decoration: underline;
     }
 		@media (min-width: 1024px) {
-			font-size: 16px;
-			line-height: 32px;
+			font-size: scale85(16px);
+			line-height: scale85(32px);
 		}
   }
   &-links{
@@ -65,16 +66,16 @@
 			padding-top: 0;
 			text-align: right;
 			a{
-				font-size: 16px;
-				height: 34px;
-				line-height: 32px;
+				font-size: scale85(16px);
+				height: scale85(34px);
+				line-height: scale85(32px);
 				width: auto;
-				padding: 0 8px;
+				padding: 0 scale85(8px);
 				text-align: center;
 			}
 			.copyright{
-				padding-top: 8px;
-				font-size: 16px;
+				padding-top: scale85(8px);
+				font-size: scale85(16px);
 			}
 		}
   }

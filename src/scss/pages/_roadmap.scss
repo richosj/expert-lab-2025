@@ -1,9 +1,11 @@
+@use "../abstracts/functions" as *;
+
 .section-roadmap{
   background: rgba(247, 247, 250, 1);
   padding: 60px 20px;
   @media (min-width: 1024px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: scale85(120px);
+    padding-bottom: scale85(120px);
     .container{
       max-width: 1370px;
       margin: 0 auto;
@@ -16,7 +18,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     @media (min-width: 1024px) {
-      font-size: 50px;
+      font-size: scale85(50px);
       br{
         display: none;
       }
@@ -26,7 +28,7 @@
     position: relative;
     margin-top: 20px;
     @media (min-width: 1024px) {
-      margin-top: 60px;
+      margin-top: scale85(60px);
     }
     .image{
       img{

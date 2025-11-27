@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 비주얼 파일 제외 목록
-const excludeFiles = ['_visual.scss'];
+const excludeFiles = ['_visual.scss', 'main.scss'];
 
 // SCSS 파일들이 있는 디렉토리
 const scssDir = path.join(__dirname, 'src', 'scss', 'pages');

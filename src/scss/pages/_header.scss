@@ -1,3 +1,5 @@
+@use "../abstracts/functions" as *;
+
 /* Header & Drawer */
 .header {
   position: fixed;
@@ -22,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     @media (min-width: 1024px) {
-      height: calc(78px + 24px);
+      height: calc(scale85(78px) + scale85(24px));
     }
   }
   .header-buttons {
@@ -44,7 +46,7 @@
       display: none;
     }
     @media (min-width: 1024px) {
-      gap: 0 20px;
+      gap: 0 scale85(20px);
       &.d-none{
         display: flex;
       }
@@ -68,10 +70,10 @@
     white-space: nowrap;
     
     @media (min-width: 1024px) {
-      font-size: 18px;
-      gap:0 10px;
-      height: 44px;
-      width: 140px;
+      font-size: scale85(18px);
+      gap:0 scale85(10px);
+      height: scale85(44px);
+      width: scale85(140px);
     }
   }
 
@@ -81,8 +83,8 @@
     height: 15px;
     background: url("@/assets/images/home.png") no-repeat center center / contain;
     @media (min-width: 1024px) {
-      width: 16px; 
-      height: 16px;
+      width: scale85(16px); 
+      height: scale85(16px);
     }
   }
 
@@ -92,10 +94,10 @@
     letter-spacing: -0.02em;
 
     @media (min-width: 1024px) {
-      font-size: 24px;
+      font-size: scale85(24px);
     }
     @media (min-width: 1440px) {
-      font-size: 36px;
+      font-size: scale85(36px);
     }
   }
 
@@ -138,13 +140,13 @@
     .link-blank{
       display: none;
     }
-    @media (min-width: 1024px) {
+      @media (min-width: 1024px) {
       position: static;
       opacity: 1;
       visibility: visible;
       transition: none;
       display: flex;
-      gap:0 51px;
+      gap:0 scale85(51px);
       .link-blank{
         display: flex;
       }
@@ -182,13 +184,13 @@
       @media (min-width: 1024px) {
         padding-top: 0;
         display: flex;
-        gap: 0 28px;
+        gap: 0 scale85(28px);
         li + li {
           margin-top: 0;
         }
       }
       @media (min-width: 1240px) {
-        gap: 0 48px;
+        gap: 0 scale85(48px);
       }
       a {
         font-weight: 500;
@@ -199,8 +201,8 @@
         vertical-align: middle;
         color:rgba(18, 18, 18, 1);
         @media (min-width: 1024px) {
-          font-size: 18px;
-          line-height: 32px;
+          font-size: scale85(18px);
+          line-height: scale85(32px);
           text-align: left;
           color: #fff;
         }

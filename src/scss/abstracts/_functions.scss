@@ -1,3 +1,8 @@
 @function rem($px) {
   @return $px / 16 * 1rem;
 }
+
+@function scale85($px) {
+  @return $px * 0.85;
+}
+
