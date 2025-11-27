@@ -128,9 +128,9 @@
   var sliderEl = document.querySelector(".teachers-slider");
   if (!sliderEl) return;
   new Swiper(sliderEl, {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     slidesPerGroup: 1,
-    spaceBetween: 20,
+    spaceBetween: 11,
     autoplay: {
       delay: 5e3,
       disableOnInteraction: false
@@ -138,7 +138,8 @@
     breakpoints: {
       768: {
         slidesPerView: 3,
-        slidesPerGroup: 3
+        slidesPerGroup: 3,
+        spaceBetween: 20
       },
       1024: {
         slidesPerView: 4,
@@ -200,8 +201,24 @@
   var linkBlank = document.querySelectorAll(".link-blank");
   linkBlank.forEach(function(link) {
     link.addEventListener("click", function(e) {
-      e.preventDefault();
-      scrollToSection(link.getAttribute("href"));
+      var href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        var isMobile = window.innerWidth < 1024;
+        if (isMobile) {
+          closeDrawer();
+          setTimeout(function() {
+            scrollToSection(href);
+          }, 300);
+        } else {
+          scrollToSection(href);
+        }
+      } else {
+        var isMobile = window.innerWidth < 1024;
+        if (isMobile) {
+          closeDrawer();
+        }
+      }
     });
   });
   function closeDrawer() {
@@ -554,7 +571,7 @@
     var sortButtons = content.querySelectorAll(".sort-toggle");
     if (!swiperEl) return;
     var swiper = new Swiper(swiperEl, {
-      slidesPerView: 2,
+      slidesPerView: 2.4,
       spaceBetween: 8,
       loop: true,
       loopAdditionalSlides: 2,

@@ -15,6 +15,24 @@
   --font-family-primary: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+.m-br {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .m-br {
+    display: block;
+  }
+}
+
+.p-br {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .p-br {
+    display: block;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -280,6 +298,9 @@ body, html {
   display: none;
 }
 @media (min-width: 1024px) {
+  .header .util-links {
+    gap: 0 20px;
+  }
   .header .util-links.d-none {
     display: flex;
   }
@@ -306,7 +327,7 @@ body, html {
     font-size: 18px;
     gap: 0 10px;
     height: 44px;
-    width: 181px;
+    width: 140px;
   }
 }
 .header a.home-icon {
@@ -468,6 +489,9 @@ body, html {
 .drawer-open .header {
   background: rgb(18, 18, 18);
 }
+.drawer-open .header-buttons {
+  z-index: 5;
+}
 .drawer-open .header-buttons .link-blank {
   border: 1px solid #fff;
 }
@@ -564,11 +588,18 @@ body, html {
   font-weight: 700;
 }
 .visual .visual-slide-content .visual-slide-title {
+  line-height: 120%;
   font-weight: 700;
   color: #fff;
   text-align: center;
-  font-size: 32px;
+  font-size: 34px;
   padding: 30px 0 15px;
+}
+@media (max-width: 1023px) {
+  .visual .visual-slide-content .visual-slide-title span {
+    display: block;
+    font-size: 24px;
+  }
 }
 .visual .visual-slide-content .visual-slide-text-2 {
   font-size: 14px;
@@ -727,6 +758,7 @@ body, html {
 
 .section-training {
   padding: 60px 20px;
+  padding-right: 0;
 }
 @media (min-width: 1024px) {
   .section-training {
@@ -743,7 +775,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .training-content + .training-content {
-    margin-top: 90px;
+    margin-top: 120px;
   }
 }
 .section-training .training-content .hgroup {
@@ -772,6 +804,7 @@ body, html {
 }
 .section-training .training-content .hgroup-title {
   font-size: 24px;
+  white-space: nowrap;
 }
 @media (min-width: 1024px) {
   .section-training .training-content .hgroup-title {
@@ -782,6 +815,12 @@ body, html {
   display: flex;
   align-items: center;
   gap: 3px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: calc(100vw - 40px);
+  min-width: 0;
 }
 @media (min-width: 1024px) {
   .section-training .training-content .tag-group {
@@ -789,12 +828,15 @@ body, html {
   }
 }
 .section-training .training-content .tag-group button {
+  flex-shrink: 0;
+  transition: all 0.3s ease;
   padding: 6px 10px;
   border-radius: 25px;
   background-color: #fff;
   font-weight: 500;
   font-size: 11px;
   border: 1px solid #DFDFE8;
+  white-space: nowrap;
 }
 @media (min-width: 1024px) {
   .section-training .training-content .tag-group button {
@@ -815,6 +857,12 @@ body, html {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .btn-group {
+    display: flex;
+  }
 }
 .btn-group button {
   border-radius: 50%;
@@ -948,6 +996,11 @@ body, html {
 .training-content-1 .training-card .training-links a {
   background-color: #7892C5;
 }
+.training-content-1 .sort-toggle:hover {
+  font-weight: 700 !important;
+  border-color: #093FA7 !important;
+  color: #093FA7 !important;
+}
 
 .training-content-2 .training-card {
   background: linear-gradient(180deg, rgba(25, 128, 221, 0.15) 0%, rgba(25, 128, 221, 0.08) 20%, rgba(25, 128, 221, 0.03) 35%, #FFFFFF 40%, #FFFFFF 100%);
@@ -957,6 +1010,11 @@ body, html {
 }
 .training-content-2 .training-card .training-links a {
   background-color: #669ED0;
+}
+.training-content-2 .sort-toggle:hover {
+  font-weight: 700 !important;
+  border-color: #1980DD !important;
+  color: #1980DD !important;
 }
 
 .training-content-3 .training-card {
@@ -968,6 +1026,11 @@ body, html {
 .training-content-3 .training-card .training-links a {
   background-color: #6FC1CD;
 }
+.training-content-3 .sort-toggle:hover {
+  font-weight: 700 !important;
+  border-color: #07B7D1 !important;
+  color: #07B7D1 !important;
+}
 
 .training-content-4 .training-card {
   background: linear-gradient(180deg, rgba(7, 183, 209, 0.15) 0%, rgba(7, 183, 209, 0.08) 20%, rgba(7, 183, 209, 0.03) 35%, #FFFFFF 40%, #FFFFFF 100%);
@@ -977,6 +1040,11 @@ body, html {
 }
 .training-content-4 .training-card .training-links a {
   background-color: #6FC1CD;
+}
+.training-content-4 .sort-toggle:hover {
+  font-weight: 700 !important;
+  border-color: #07B7D1 !important;
+  color: #07B7D1 !important;
 }
 
 .section-solution {
@@ -1203,7 +1271,6 @@ body, html {
 
 .section-insight {
   padding: 60px 20px;
-  background-color: #F7F7FA;
 }
 @media (min-width: 1024px) {
   .section-insight {
@@ -1332,6 +1399,9 @@ body, html {
     border: 1px solid #DFDFE8;
     background-color: #fff;
     min-height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .section-insight .service-card.v2 {
     background: rgba(15, 141, 255, 0.1);
@@ -1505,11 +1575,14 @@ body, html {
   margin: 0 auto;
   max-width: 1261px;
   border: 1px solid #DFDFE8;
-  border-radius: 24px;
   padding: 20px;
+  background: rgb(247, 247, 250);
+  padding-left: 0px;
+  padding-right: 0;
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .process-steps {
+    border-radius: 24px;
     flex-direction: row;
     flex-wrap: wrap;
     border: 0;
@@ -1521,6 +1594,7 @@ body, html {
   gap: 16px;
   flex: 1;
   min-width: 0;
+  text-align: center;
 }
 .section-diagnosis .diagnosis-middle .process-step:not(:first-child) {
   border-top: 1px solid #DFDFE8;
@@ -1560,7 +1634,7 @@ body, html {
   flex: 1;
 }
 .section-diagnosis .diagnosis-middle .process-step .step-content .step-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #000000;
   margin-bottom: 8px;
@@ -1591,7 +1665,6 @@ body, html {
   font-size: 16px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 20px;
   line-height: 1.3;
 }
 @media (min-width: 768px) {
@@ -1601,28 +1674,52 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-bottom .conclusion-text {
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 26px;
   }
 }
-.section-diagnosis .diagnosis-bottom .btn-inquiry {
+.section-diagnosis .diagnosis-bottom .diagnosis-bottom-content {
+  padding-top: 22px;
+  margin-top: 22px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 169%;
+}
+.section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p b {
+  display: block;
+  font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content {
+    padding-top: 48px;
+    margin-top: 54px;
+  }
+  .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p {
+    font-size: 24px;
+  }
+  .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p b {
+    font-size: 32px;
+  }
+}
+.section-diagnosis .btn-diagnosis {
   display: inline-block;
-  width: 120px;
-  height: 35px;
+  margin-top: 20px;
+  width: 194px;
+  height: 46px;
   background: #093FA7;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
 }
-.section-diagnosis .diagnosis-bottom .btn-inquiry:hover {
-  background: #082d7a;
-}
 @media (min-width: 1024px) {
-  .section-diagnosis .diagnosis-bottom .btn-inquiry {
+  .section-diagnosis .btn-diagnosis {
     padding: 0;
     width: 220px;
     height: 70px;
@@ -1634,6 +1731,7 @@ body, html {
 /* 강사진 섹션 - 모바일 슬라이드 / PC 그리드 */
 .section-teachers {
   padding: 60px 20px;
+  padding-right: 0;
   background-color: #F7F7FA;
 }
 @media (min-width: 1024px) {
@@ -1659,7 +1757,7 @@ body, html {
   border: 1px solid rgb(218, 218, 218);
   border-radius: 12px;
   padding: 24px;
-  height: 360px;
+  height: 430px;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -1720,6 +1818,7 @@ body, html {
   padding: 14px 15px;
   background: #E8F3FC;
   border-radius: 0 0 12px 12px;
+  height: 194px;
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
@@ -2166,9 +2265,15 @@ body, html {
 .modal:has(.v2) .ste-card .step-header .step-number {
   color: #1980DD;
 }
+.modal:has(.v2) .btn-detail {
+  background-color: #1980DD;
+}
 
 .modal:has(.v3) .ste-card .step-header .step-number {
   color: #07B7D1;
+}
+.modal:has(.v3) .btn-detail {
+  background-color: #07B7D1;
 }
 
 .notic {
@@ -2317,4 +2422,28 @@ body, html {
 body.modal-open {
   overflow: hidden;
   padding-right: var(--scrollbar-width, 0);
+}
+
+.modal-footer {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.btn-detail {
+  width: 100%;
+  max-width: 280px;
+  height: 67px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -2%;
+  text-align: center;
+  background: #093FA7;
+  border-radius: 12px;
+}
+@media (max-width: 900px) {
+  .btn-detail {
+    max-width: 302px;
+    height: 59px;
+  }
 }
