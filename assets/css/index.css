@@ -764,6 +764,8 @@ body, html {
   .section-training {
     padding-top: 120px;
     padding-bottom: 120px;
+    overflow: hidden;
+    padding-right: 20px;
   }
 }
 .section-training .container {
@@ -1738,6 +1740,7 @@ body, html {
   .section-teachers {
     padding-top: 120px;
     padding-bottom: 120px;
+    padding-right: 20px;
   }
 }
 .section-teachers .container {
