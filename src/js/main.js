@@ -121,9 +121,9 @@ import "@/scss/main.scss";
   var sliderEl = document.querySelector(".teachers-slider");
   if (!sliderEl) return;
   new Swiper(sliderEl, {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     slidesPerGroup: 1,
-    spaceBetween: 20,
+    spaceBetween: 11,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -132,6 +132,7 @@ import "@/scss/main.scss";
       768: {
         slidesPerView: 3,
         slidesPerGroup: 3,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 4,
@@ -201,8 +202,27 @@ import "@/scss/main.scss";
 
   linkBlank.forEach(function (link) {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
-      scrollToSection(link.getAttribute("href"));
+      var href = link.getAttribute("href");
+      // 외부 링크가 아니면 스크롤 이동
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        // 모바일에서 메뉴 닫기
+        var isMobile = window.innerWidth < 1024;
+        if (isMobile) {
+          closeDrawer();
+          setTimeout(function () {
+            scrollToSection(href);
+          }, 300);
+        } else {
+          scrollToSection(href);
+        }
+      } else {
+        // 외부 링크는 모바일에서만 메뉴 닫기
+        var isMobile = window.innerWidth < 1024;
+        if (isMobile) {
+          closeDrawer();
+        }
+      }
     });
   });
 
@@ -644,7 +664,7 @@ import "@/scss/main.scss";
     if (!swiperEl) return;
 
     var swiper = new Swiper(swiperEl, {
-      slidesPerView: 2,
+      slidesPerView: 2.4,
       spaceBetween: 8,
       loop: true,
       loopAdditionalSlides: 2,

@@ -3,7 +3,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   border-bottom: 1px solid rgba(124, 124, 124, 0.6);
   transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
@@ -218,6 +218,7 @@
     }
   }
   .header-buttons{
+    z-index: 5;
     .link-blank{
       border: 1px solid #fff;
     }

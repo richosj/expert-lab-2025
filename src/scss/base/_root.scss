@@ -16,3 +16,17 @@
   --font-family-primary: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;  ;
 
 }
+
+.m-br{
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.p-br{
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}

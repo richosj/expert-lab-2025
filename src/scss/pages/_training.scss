@@ -1,8 +1,11 @@
 .section-training{
   padding: 60px 20px;
+  padding-right: 0;
   @media (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 120px;
+    overflow: hidden;
+    padding-right: 20px;
     
   }
   .container{
@@ -38,6 +41,7 @@
     }
     .hgroup-title{
       font-size: 24px;
+      white-space: nowrap;
       @media (min-width: 1024px) {
         font-size: 40px;
       }
@@ -46,11 +50,18 @@
       display: flex;
       align-items: center;
       gap: 3px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      width: calc(100vw - 40px);
+      min-width: 0;
       
       @media (min-width: 1024px) {
         gap: 6px;
       }
       button{
+        flex-shrink: 0;
         transition: all 0.3s ease;
         padding: 6px 10px;
         border-radius: 25px;
@@ -58,6 +69,7 @@
         font-weight: 500;
         font-size: 11px;
         border: 1px solid #DFDFE8;
+        white-space: nowrap;
       }
       @media (min-width: 1024px) {
         button{
@@ -81,6 +93,10 @@
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
   button{
     border-radius: 50%;
     border: 1px solid #000;
@@ -224,6 +240,13 @@
       background-color: #669ED0;
     }
   }
+  .sort-toggle{
+    &:hover{
+      font-weight: 700 !important;
+      border-color: #1980DD !important;
+      color: #1980DD !important;
+    }
+  }
 } 
 
 .training-content-3{
@@ -236,6 +259,13 @@
       background-color: #6FC1CD;
     }
   }
+  .sort-toggle{
+    &:hover{
+      font-weight: 700 !important;
+      border-color: #07B7D1 !important;
+      color: #07B7D1 !important;
+    }
+  }
 } 
 
 .training-content-4{
@@ -246,6 +276,13 @@
     }
     .training-links a{
       background-color: #6FC1CD;
+    }
+  }
+  .sort-toggle{
+    &:hover{
+      font-weight: 700 !important;
+      border-color: #07B7D1 !important;
+      color: #07B7D1 !important;
     }
   }
 } 

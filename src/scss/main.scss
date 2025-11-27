@@ -87,7 +87,6 @@
 		color: #B9F7FF;
 		font-weight: 600;
 		font-size: 28px;
-		margin-bottom: 6px;
 		line-height: 139%;
 		@media screen and (max-width: 900px) {
 			font-size: 14px;
@@ -96,6 +95,7 @@
 	.modal-title-desc{
 		color: #fff;
 		font-size: 20px;
+		margin-top: 6px;
 		@media screen and (max-width: 900px) {
 			font-size: 12px;
 		}
@@ -180,23 +180,30 @@
 }
 
 .modal:has(.v2){
-	.ste-card{
+	.step-card{
 		.step-header{
+			background: rgba(25, 128, 221, 0.1);
 			.step-number{
 				color: #1980DD;
 			}
 		}
 	}
-	
+	.btn-detail{
+		background-color: #1980DD;
+	}
 }
 .modal:has(.v3){
-	.ste-card{
+	.step-card{
 		.step-header{
+			background: rgba(7, 183, 209, 0.1);
 			.step-number{
 				color: #07B7D1;
 				
 			}
 		}
+	}
+	.btn-detail{
+		background-color: #07B7D1;
 	}
 }
 
@@ -337,3 +344,28 @@ body.modal-open {
 
 }
 
+.modal-footer{
+	padding-top: 40px;
+	text-align: center;
+	@media (max-width: 900px) {
+		padding-top: 32px;
+	}
+}
+.btn-detail{
+	width: 100%;
+	max-width:280px;
+	height: 67px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 22px;
+	letter-spacing: -2%;
+	text-align: center;
+	background: #093FA7;
+	border-radius: 12px;
+	@media (max-width: 900px) {
+		max-width:168px;
+		height: 46px;
+		border-radius: 16px;
+		font-size: 16px;
+	}
+}

@@ -70,11 +70,18 @@
       }
     }
     .visual-slide-title{
+      line-height: 120%;
       font-weight: 700;
       color: #fff;
       text-align: center;
-      font-size: 32px;
+      font-size: 34px;
       padding: 30px 0 15px;
+      span{
+        @media (max-width: 1023px) {
+        display: block;
+        font-size: 24px;
+        }
+      }
     }
     .visual-slide-text-2{
       font-size: 14px;
