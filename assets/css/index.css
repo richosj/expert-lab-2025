@@ -164,8 +164,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   #footer {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 42.5px;
+    padding-bottom: 59.5px;
   }
   #footer .container {
     max-width: 1370px;
@@ -183,8 +183,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .footer .logo {
-    font-size: 36px;
-    line-height: 76px;
+    font-size: 30.6px;
+    line-height: 64.6px;
     color: #fff;
   }
 }
@@ -199,8 +199,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .footer-info {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 13.6px;
+    line-height: 27.2px;
   }
 }
 .footer-links {
@@ -233,16 +233,16 @@ body, html {
     text-align: right;
   }
   .footer-links a {
-    font-size: 16px;
-    height: 34px;
-    line-height: 32px;
+    font-size: 13.6px;
+    height: 28.9px;
+    line-height: 27.2px;
     width: auto;
-    padding: 0 8px;
+    padding: 0 6.8px;
     text-align: center;
   }
   .footer-links .copyright {
-    padding-top: 8px;
-    font-size: 16px;
+    padding-top: 6.8px;
+    font-size: 13.6px;
   }
 }
 
@@ -273,7 +273,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .header-container {
-    height: 102px;
+    height: 86.7px;
   }
 }
 .header .header-buttons {
@@ -299,7 +299,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .util-links {
-    gap: 0 20px;
+    gap: 0 17px;
   }
   .header .util-links.d-none {
     display: flex;
@@ -324,10 +324,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .link-blank {
-    font-size: 18px;
-    gap: 0 10px;
-    height: 44px;
-    width: 140px;
+    font-size: 15.3px;
+    gap: 0 8.5px;
+    height: 37.4px;
+    width: 119px;
   }
 }
 .header a.home-icon {
@@ -338,8 +338,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header a.home-icon {
-    width: 16px;
-    height: 16px;
+    width: 13.6px;
+    height: 13.6px;
   }
 }
 .header .logo a {
@@ -349,12 +349,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .logo a {
-    font-size: 24px;
+    font-size: 20.4px;
   }
 }
 @media (min-width: 1440px) {
   .header .logo a {
-    font-size: 36px;
+    font-size: 30.6px;
   }
 }
 .header .btn-menu {
@@ -411,7 +411,7 @@ body, html {
     visibility: visible;
     transition: none;
     display: flex;
-    gap: 0 51px;
+    gap: 0 43.35px;
   }
   .header .drawer .link-blank {
     display: flex;
@@ -454,7 +454,7 @@ body, html {
   .header .drawer .gnb {
     padding-top: 0;
     display: flex;
-    gap: 0 28px;
+    gap: 0 23.8px;
   }
   .header .drawer .gnb li + li {
     margin-top: 0;
@@ -462,7 +462,7 @@ body, html {
 }
 @media (min-width: 1240px) {
   .header .drawer .gnb {
-    gap: 0 48px;
+    gap: 0 40.8px;
   }
 }
 .header .drawer .gnb a {
@@ -476,8 +476,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .drawer .gnb a {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 15.3px;
+    line-height: 27.2px;
     text-align: left;
     color: #fff;
   }
@@ -705,11 +705,11 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-roadmap {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 102px;
+    padding-bottom: 102px;
   }
   .section-roadmap .container {
-    max-width: 1370px;
+    max-width: 1164.5px;
     margin: 0 auto;
   }
 }
@@ -722,7 +722,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-roadmap .section-title {
-    font-size: 50px;
+    font-size: 42.5px;
   }
   .section-roadmap .section-title br {
     display: none;
@@ -734,7 +734,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-roadmap .roadmap-content {
-    margin-top: 60px;
+    margin-top: 51px;
   }
 }
 .section-roadmap .roadmap-content .image img {
@@ -762,8 +762,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 102px;
+    padding-bottom: 102px;
     overflow: hidden;
     padding-right: 20px;
   }
@@ -772,12 +772,17 @@ body, html {
   max-width: 1370px;
   margin: 0 auto;
 }
+@media (min-width: 1024px) {
+  .section-training .container {
+    max-width: 1164.5px;
+  }
+}
 .section-training .training-content + .training-content {
   margin-top: 50px;
 }
 @media (min-width: 1024px) {
   .section-training .training-content + .training-content {
-    margin-top: 120px;
+    margin-top: 102px;
   }
 }
 .section-training .training-content .hgroup {
@@ -789,7 +794,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .training-content .hgroup {
-    margin-bottom: 45px;
+    margin-bottom: 38.25px;
   }
 }
 .section-training .training-content .hgroup-left {
@@ -801,7 +806,7 @@ body, html {
   .section-training .training-content .hgroup-left {
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 34px;
   }
 }
 .section-training .training-content .hgroup-title {
@@ -810,7 +815,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .training-content .hgroup-title {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 .section-training .training-content .tag-group {
@@ -826,7 +831,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .training-content .tag-group {
-    gap: 6px;
+    gap: 5.1px;
   }
 }
 .section-training .training-content .tag-group button {
@@ -842,14 +847,14 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .training-content .tag-group button {
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 11.9px;
+    padding: 5.1px 8.5px;
   }
 }
 @media (min-width: 1400px) {
   .section-training .training-content .tag-group button {
-    font-size: 18px;
-    padding: 14px 20px;
+    font-size: 15.3px;
+    padding: 11.9px 17px;
   }
 }
 
@@ -883,9 +888,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .btn-group button {
-    width: 50px;
-    height: 50px;
-    background-size: 10px auto;
+    width: 42.5px;
+    height: 42.5px;
+    background-size: 8.5px auto;
   }
 }
 .btn-group .btn-prev {
@@ -918,8 +923,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card .training-name {
-    font-size: 18px;
-    padding: 28px 30px 12px;
+    font-size: 15.3px;
+    padding: 23.8px 25.5px 10.2px;
   }
 }
 .training-card .training-desc {
@@ -936,9 +941,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card .training-desc {
-    font-size: 24px;
-    padding: 0 30px;
-    height: 100px;
+    font-size: 20.4px;
+    padding: 0 25.5px;
+    height: 85px;
   }
 }
 .training-card .training-links {
@@ -947,7 +952,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card .training-links {
-    padding: 0 30px 30px;
+    padding: 0 25.5px 25.5px;
   }
 }
 .training-card .training-links a {
@@ -968,8 +973,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card .training-links a {
-    padding: 2px 4px 2px 10px;
-    font-size: 18px;
+    padding: 2px 3.4px 2px 8.5px;
+    font-size: 15.3px;
   }
 }
 .training-card .training-links a i {
@@ -983,8 +988,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card .training-links a i {
-    width: 16px;
-    height: 14px;
+    width: 13.6px;
+    height: 11.9px;
     background-size: auto;
   }
 }
@@ -1055,11 +1060,11 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 102px;
+    padding-bottom: 102px;
   }
   .section-solution .container {
-    max-width: 1370px;
+    max-width: 1164.5px;
     margin: 0 auto;
   }
 }
@@ -1075,8 +1080,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution h2 {
-    font-size: 50px;
-    margin-bottom: 60px;
+    font-size: 42.5px;
+    margin-bottom: 51px;
   }
 }
 .section-solution h3 {
@@ -1087,8 +1092,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution h3 {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 27.2px;
+    margin-bottom: 34px;
     font-weight: 600;
   }
 }
@@ -1131,7 +1136,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-top {
-    padding: 30px;
+    padding: 25.5px;
   }
 }
 .section-solution .process-card .process-top .process-number {
@@ -1144,7 +1149,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-top .process-number {
-    font-size: 26px;
+    font-size: 22.1px;
   }
 }
 .section-solution .process-card .process-top .process-title {
@@ -1157,8 +1162,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-top .process-title {
-    font-size: 23px;
-    margin-bottom: 16px;
+    font-size: 19.55px;
+    margin-bottom: 13.6px;
   }
 }
 .section-solution .process-card .process-top .process-question {
@@ -1169,7 +1174,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-top .process-question {
-    font-size: 17px;
+    font-size: 14.45px;
   }
 }
 .section-solution .process-card .process-top .process-desc {
@@ -1186,7 +1191,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-bottom {
-    padding: 24px 30px;
+    padding: 20.4px 25.5px;
     flex-direction: column;
     gap: 0;
   }
@@ -1200,10 +1205,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-solution .process-card .process-bottom p {
-    font-size: 16px;
+    font-size: 13.6px;
   }
   .section-solution .process-card .process-bottom p + p {
-    margin-top: 4px;
+    margin-top: 3.4px;
   }
 }
 
@@ -1231,7 +1236,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .title-group {
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
 }
 .title-group .sub-title {
@@ -1242,8 +1247,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .title-group .sub-title {
-    font-size: 24px;
-    margin-bottom: 18px;
+    font-size: 20.4px;
+    margin-bottom: 15.3px;
   }
 }
 .title-group h2 {
@@ -1258,7 +1263,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .title-group h2 {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 .title-group .desc {
@@ -1270,8 +1275,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .title-group .desc {
-    margin-top: 24px;
-    font-size: 20px;
+    margin-top: 20.4px;
+    font-size: 17px;
   }
 }
 
@@ -1280,12 +1285,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight {
-    padding-top: 137px;
-    padding-bottom: 137px;
+    padding-top: 116.45px;
+    padding-bottom: 116.45px;
     background-color: #fff;
   }
   .section-insight .container {
-    max-width: 1370px;
+    max-width: 1164.5px;
     margin: 0 auto;
   }
 }
@@ -1302,7 +1307,7 @@ body, html {
 @media (min-width: 1024px) {
   .section-insight .insight-top {
     flex-direction: row;
-    gap: 30px;
+    gap: 25.5px;
   }
 }
 .section-insight .team-card {
@@ -1314,8 +1319,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .team-card {
-    padding: 32px 28px;
-    border-radius: 20px;
+    padding: 27.2px 23.8px;
+    border-radius: 17px;
   }
 }
 .section-insight .team-card .team-title {
@@ -1331,10 +1336,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .team-card .team-title {
-    border-radius: 16px;
-    font-size: 24px;
-    padding: 12px 0;
-    margin-bottom: 28px;
+    border-radius: 13.6px;
+    font-size: 20.4px;
+    padding: 10.2px 0;
+    margin-bottom: 23.8px;
   }
 }
 .section-insight .team-card .team-desc {
@@ -1343,7 +1348,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .team-card .team-desc {
-    padding-left: 20px;
+    padding-left: 17px;
   }
 }
 .section-insight .team-card .team-desc li {
@@ -1366,12 +1371,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .team-card .team-desc li {
-    font-size: 18px;
+    font-size: 15.3px;
   }
   .section-insight .team-card .team-desc li::before {
-    width: 3px;
-    height: 3px;
-    top: 13px;
+    width: 2.55px;
+    height: 2.55px;
+    top: 11.05px;
   }
 }
 .section-insight .insight-connector {
@@ -1387,12 +1392,12 @@ body, html {
 @media (min-width: 1024px) {
   .section-insight .insight-bottom {
     flex-direction: row;
-    margin-top: 40px;
-    gap: 22px;
-    padding: 54px;
+    margin-top: 34px;
+    gap: 18.7px;
+    padding: 45.9px;
     background-color: #F7F7FA;
     border: 1px solid #DFDFE8;
-    border-radius: 24px;
+    border-radius: 20.4px;
   }
 }
 .section-insight .service-card {
@@ -1431,15 +1436,15 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .service-card .service-top {
-    border-radius: 24px;
+    border-radius: 20.4px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2.55px;
     border: 1px solid #DFDFE8;
     background-color: #fff;
     align-items: center;
     justify-content: center;
-    height: 164px;
+    height: 139.4px;
     padding: 0;
   }
   .section-insight .service-card .service-top.v2 {
@@ -1457,7 +1462,7 @@ body, html {
   .section-insight .service-card .service-badge {
     font-weight: 600;
     color: #696969;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 .section-insight .service-card .service-title {
@@ -1470,7 +1475,7 @@ body, html {
   .section-insight .service-card .service-title {
     font-weight: 700;
     color: #000;
-    font-size: 24px;
+    font-size: 20.4px;
   }
 }
 .section-insight .service-card .service-desc {
@@ -1482,7 +1487,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .service-card .service-desc {
-    margin-top: 16px;
+    margin-top: 13.6px;
   }
 }
 .section-insight .service-card .service-desc li {
@@ -1491,7 +1496,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .service-card .service-desc li + li {
-    margin-top: 5px;
+    margin-top: 4.25px;
   }
 }
 .section-insight .service-card .service-desc li::before {
@@ -1506,12 +1511,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-insight .service-card .service-desc li {
-    font-size: 18px;
+    font-size: 15.3px;
   }
   .section-insight .service-card .service-desc li::before {
-    width: 3px;
-    height: 3px;
-    top: 11px;
+    width: 2.55px;
+    height: 2.55px;
+    top: 9.35px;
   }
 }
 
@@ -1521,11 +1526,11 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis {
-    padding-top: 137px;
-    padding-bottom: 137px;
+    padding-top: 116.45px;
+    padding-bottom: 116.45px;
   }
   .section-diagnosis .container {
-    max-width: 1370px;
+    max-width: 1164.5px;
     margin: 0 auto;
   }
 }
@@ -1539,12 +1544,17 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-title {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 27.2px;
+    margin-bottom: 34px;
   }
 }
 .section-diagnosis .diagnosis-top {
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .section-diagnosis .diagnosis-top img {
+    width: 739.5px;
+  }
 }
 .section-diagnosis .arrow-down {
   display: flex;
@@ -1554,7 +1564,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .arrow-down {
-    margin: 20px 0 50px;
+    margin: 17px 0 42.5px;
+  }
+  .section-diagnosis .arrow-down img {
+    width: 134.3px;
   }
 }
 .section-diagnosis .diagnosis-middle {
@@ -1562,7 +1575,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle {
-    margin: 60px 0 30px;
+    margin: 51px 0 25.5px;
   }
 }
 .section-diagnosis .diagnosis-middle .middle-title {
@@ -1576,7 +1589,7 @@ body, html {
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .middle-title {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 25.5px;
   }
 }
 .section-diagnosis .diagnosis-middle .process-steps {
@@ -1628,11 +1641,11 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .process-step {
-    padding-left: 50px;
-    padding-top: 37px !important;
+    padding-left: 42.5px;
+    padding-top: 31.45px !important;
     margin-top: 0 !important;
     border-top: 0 !important;
-    height: 223px;
+    height: 189.55px;
     flex: 1;
     min-width: 0;
   }
@@ -1646,8 +1659,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .process-step .step-number {
-    font-size: 28px;
-    padding-bottom: 20px;
+    font-size: 23.8px;
+    padding-bottom: 17px;
   }
 }
 .section-diagnosis .diagnosis-middle .process-step .step-content {
@@ -1662,8 +1675,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .process-step .step-content .step-title {
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 17px;
+    margin-bottom: 10.2px;
   }
 }
 .section-diagnosis .diagnosis-middle .process-step .step-content .step-desc {
@@ -1675,7 +1688,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-middle .process-step .step-content .step-desc {
-    font-size: 16px;
+    font-size: 13.6px;
   }
 }
 .section-diagnosis .diagnosis-bottom {
@@ -1694,7 +1707,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-bottom .conclusion-text {
-    font-size: 26px;
+    font-size: 22.1px;
   }
 }
 .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content {
@@ -1714,14 +1727,14 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content {
-    padding-top: 48px;
-    margin-top: 54px;
+    padding-top: 40.8px;
+    margin-top: 45.9px;
   }
   .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p {
-    font-size: 24px;
+    font-size: 20.4px;
   }
   .section-diagnosis .diagnosis-bottom .diagnosis-bottom-content p b {
-    font-size: 32px;
+    font-size: 27.2px;
   }
 }
 .section-diagnosis .btn-diagnosis {
@@ -1741,9 +1754,9 @@ body, html {
 @media (min-width: 1024px) {
   .section-diagnosis .btn-diagnosis {
     padding: 0;
-    width: 220px;
-    height: 70px;
-    font-size: 20px;
+    width: 187px;
+    height: 59.5px;
+    font-size: 17px;
     border-radius: 10px;
   }
 }
@@ -1756,14 +1769,19 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 102px;
+    padding-bottom: 102px;
     padding-right: 20px;
   }
 }
 .section-teachers .container {
   max-width: 1370px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .section-teachers .container {
+    max-width: 1164.5px;
+  }
 }
 .section-teachers .teachers-slider {
   padding-right: 20px;
@@ -1800,9 +1818,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card {
-    height: 490px;
-    padding: 35px;
-    border-radius: 24px;
+    height: 416.5px;
+    padding: 29.75px;
+    border-radius: 20.4px;
   }
 }
 .section-teachers .teacher-card .teacher-name {
@@ -1815,9 +1833,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-name {
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 17px;
+    font-size: 23.8px;
+    margin-bottom: 17px;
+    padding-bottom: 14.45px;
   }
 }
 .section-teachers .teacher-card .teacher-desc li {
@@ -1840,12 +1858,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc li {
-    font-size: 17px;
+    font-size: 14.45px;
   }
   .section-teachers .teacher-card .teacher-desc li::before {
-    top: 9px;
-    width: 3px;
-    height: 3px;
+    top: 7.65px;
+    width: 2.55px;
+    height: 2.55px;
   }
 }
 .section-teachers .teacher-card .teacher-desc2 {
@@ -1860,8 +1878,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
-    border-radius: 0 0 24px 24px;
-    height: 209px;
+    border-radius: 0 0 20.4px 20.4px;
+    height: 177.65px;
   }
 }
 .section-teachers .teacher-card .teacher-desc2 ul li {
@@ -1885,18 +1903,18 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 ul li {
-    font-size: 15px;
-    padding-left: 7px;
+    font-size: 12.75px;
+    padding-left: 5.95px;
   }
   .section-teachers .teacher-card .teacher-desc2 ul li::before {
-    top: 10px;
-    width: 3px;
-    height: 3px;
+    top: 8.5px;
+    width: 2.55px;
+    height: 2.55px;
   }
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
-    padding: 28px 32px;
+    padding: 23.8px 27.2px;
   }
 }
 .section-teachers .teacher-card .avatar {
@@ -1907,8 +1925,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .avatar {
-    bottom: 40px;
-    right: 40px;
+    bottom: 34px;
+    right: 34px;
   }
 }
 .section-teachers .teacher-card .avatar img {
@@ -1917,8 +1935,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .avatar img {
-    width: 90px;
-    height: 90px;
+    width: 76.5px;
+    height: 76.5px;
   }
 }
 .section-teachers {
@@ -1952,11 +1970,11 @@ body, html {
 /* PC - 그리드 노출 */
 @media (min-width: 1024px) {
   .section-teachers .section-title {
-    font-size: 50px;
-    margin-bottom: 28px;
+    font-size: 42.5px;
+    margin-bottom: 23.8px;
   }
   .section-teachers .section-title {
-    margin-bottom: 58px;
+    margin-bottom: 49.3px;
   }
 }
 .section-subscription {
@@ -1965,8 +1983,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 59.5px;
+    padding-bottom: 59.5px;
     background-image: url("../images/bg-subscription-pc.png");
   }
 }
@@ -1980,7 +1998,8 @@ body, html {
 @media (min-width: 1024px) {
   .section-subscription .container {
     flex-direction: row;
-    gap: 0 26px;
+    gap: 0 22.1px;
+    max-width: 1164.5px;
   }
 }
 .section-subscription .contact,
@@ -1995,7 +2014,7 @@ body, html {
   .section-subscription .contact,
   .section-subscription .newletter {
     width: 50%;
-    padding: 48px 50px;
+    padding: 40.8px 42.5px;
   }
 }
 .section-subscription .section-title {
@@ -2006,8 +2025,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .section-title {
-    font-size: 32px;
-    line-height: 33px;
+    font-size: 27.2px;
+    line-height: 28.05px;
   }
 }
 .section-subscription .section-desc {
@@ -2019,9 +2038,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .section-desc {
-    font-size: 20px;
-    line-height: 33px;
-    margin-top: 12px;
+    font-size: 17px;
+    line-height: 28.05px;
+    margin-top: 10.2px;
   }
 }
 .section-subscription .newsletter-form {
@@ -2034,7 +2053,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .newsletter-form .agree {
-    gap: 8px;
+    gap: 6.8px;
   }
 }
 .section-subscription .newsletter-form .agree input {
@@ -2045,8 +2064,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .newsletter-form .agree input {
-    width: 18px;
-    height: 18px;
+    width: 15.3px;
+    height: 15.3px;
   }
 }
 .section-subscription .newsletter-form .agree label {
@@ -2056,7 +2075,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .newsletter-form .agree label {
-    font-size: 14px;
+    font-size: 11.9px;
     line-height: 1;
   }
 }
@@ -2068,7 +2087,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .newsletter-form .fields {
-    padding-top: 20px;
+    padding-top: 17px;
   }
 }
 .section-subscription .newsletter-form .fields input {
@@ -2087,9 +2106,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .newsletter-form .fields input {
-    height: 50px;
-    font-size: 18px;
-    padding: 0 20px;
+    height: 42.5px;
+    font-size: 15.3px;
+    padding: 0 17px;
   }
 }
 .section-subscription .btn-primary {
@@ -2110,9 +2129,9 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .btn-primary {
-    width: 110px;
-    height: 50px;
-    font-size: 18px;
+    width: 93.5px;
+    height: 42.5px;
+    font-size: 15.3px;
   }
 }
 .section-subscription .contact .actions {
@@ -2120,7 +2139,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-subscription .contact .actions {
-    margin-top: 60px;
+    margin-top: 51px;
   }
 }
 
