@@ -28,6 +28,11 @@
 
   .diagnosis-top {
     text-align: center;
+    @media (min-width: 1024px) {
+      img{
+        width: scale85(870px);
+      }
+    }
   }
 
 
@@ -40,6 +45,9 @@
     
     @media (min-width: 1024px) {
       margin: scale85(20px) 0 scale85(50px);
+      img{
+        width: scale85(158px);
+      }
     }
   }
 
