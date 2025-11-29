@@ -14,7 +14,7 @@
     max-width: 1370px;
     margin: 0 auto;
     @media (min-width: 1024px) {
-      max-width: scale85(1370px);
+      max-width: 1164px;
     }
   }
   .teachers-slider{
@@ -48,7 +48,7 @@
     position: relative;
     @media (min-width: 1024px) {
       height: scale85(490px);
-      padding: scale85(35px);
+      padding: scale85(30px);
       border-radius: scale85(24px);
 
     }
@@ -86,11 +86,11 @@
           border-radius: 50%;
         }
         @media (min-width: 1024px) {
-          font-size: scale85(17px);
+          font-size: 16px;
           &::before {
             top: scale85(9px);
-            width: scale85(3px);
-            height: scale85(3px);
+            width: 2px;
+            height: 2px;
           }
         }
       }
@@ -129,18 +129,18 @@
             border-radius: 50%;
           }
           @media (min-width: 1024px) {
-            font-size: scale85(15px);
+            font-size: scale85(16px);
             padding-left: scale85(7px);
             &::before {
               top: scale85(10px);
-              width: scale85(3px);
-              height: scale85(3px);
+              width: 2px;
+              height: 2px;
             }
           }
         }
       }
       @media (min-width: 1024px) {
-        padding: scale85(28px) scale85(32px);
+        padding: scale85(28px) scale85(27px);
       }
     }
 
