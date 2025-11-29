@@ -273,7 +273,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .header-container {
-    height: 86.7px;
+    height: 102px;
   }
 }
 .header .header-buttons {
@@ -299,7 +299,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .util-links {
-    gap: 0 17px;
+    gap: 0 20px;
   }
   .header .util-links.d-none {
     display: flex;
@@ -324,10 +324,10 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .link-blank {
-    font-size: 15.3px;
-    gap: 0 8.5px;
-    height: 37.4px;
-    width: 119px;
+    font-size: 18px;
+    gap: 0 10px;
+    height: 44px;
+    width: 140px;
   }
 }
 .header a.home-icon {
@@ -338,8 +338,8 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header a.home-icon {
-    width: 13.6px;
-    height: 13.6px;
+    width: 16px;
+    height: 16px;
   }
 }
 .header .logo a {
@@ -349,12 +349,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .header .logo a {
-    font-size: 20.4px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1440px) {
   .header .logo a {
-    font-size: 30.6px;
+    font-size: 36px;
   }
 }
 .header .btn-menu {
@@ -411,7 +411,7 @@ body, html {
     visibility: visible;
     transition: none;
     display: flex;
-    gap: 0 43.35px;
+    gap: 0 51px;
   }
   .header .drawer .link-blank {
     display: flex;
@@ -454,7 +454,7 @@ body, html {
   .header .drawer .gnb {
     padding-top: 0;
     display: flex;
-    gap: 0 23.8px;
+    gap: 0 28px;
   }
   .header .drawer .gnb li + li {
     margin-top: 0;
@@ -462,22 +462,21 @@ body, html {
 }
 @media (min-width: 1240px) {
   .header .drawer .gnb {
-    gap: 0 40.8px;
+    gap: 0 48px;
   }
 }
 .header .drawer .gnb a {
   font-weight: 500;
   font-size: 18px;
   line-height: 33px;
-  letter-spacing: -2%;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   color: rgb(18, 18, 18);
 }
 @media (min-width: 1024px) {
   .header .drawer .gnb a {
-    font-size: 15.3px;
-    line-height: 27.2px;
+    font-size: 18px;
+    line-height: 32px;
     text-align: left;
     color: #fff;
   }
@@ -774,7 +773,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-training .container {
-    max-width: 1164.5px;
+    max-width: 1164px;
   }
 }
 .section-training .training-content + .training-content {
@@ -928,7 +927,7 @@ body, html {
   }
 }
 .training-card .training-desc {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   height: 84px;
   line-height: 136%;
@@ -1106,7 +1105,7 @@ body, html {
   .section-solution .mtd-process {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
   }
 }
 .section-solution .process-card {
@@ -1819,7 +1818,7 @@ body, html {
 @media (min-width: 1024px) {
   .section-teachers .teacher-card {
     height: 416.5px;
-    padding: 29.75px;
+    padding: 25.5px;
     border-radius: 20.4px;
   }
 }
@@ -1858,12 +1857,12 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc li {
-    font-size: 14.45px;
+    font-size: 16px;
   }
   .section-teachers .teacher-card .teacher-desc li::before {
     top: 7.65px;
-    width: 2.55px;
-    height: 2.55px;
+    width: 2px;
+    height: 2px;
   }
 }
 .section-teachers .teacher-card .teacher-desc2 {
@@ -1903,18 +1902,18 @@ body, html {
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 ul li {
-    font-size: 12.75px;
+    font-size: 13.6px;
     padding-left: 5.95px;
   }
   .section-teachers .teacher-card .teacher-desc2 ul li::before {
     top: 8.5px;
-    width: 2.55px;
-    height: 2.55px;
+    width: 2px;
+    height: 2px;
   }
 }
 @media (min-width: 1024px) {
   .section-teachers .teacher-card .teacher-desc2 {
-    padding: 23.8px 27.2px;
+    padding: 23.8px 22.95px;
   }
 }
 .section-teachers .teacher-card .avatar {

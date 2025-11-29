@@ -583,11 +583,11 @@
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 20
+          spaceBetween: 18
         },
         1240: {
           slidesPerView: 5,
-          spaceBetween: 20
+          spaceBetween: 18
         }
       },
       navigation: {
