@@ -911,7 +911,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card {
-    height: 295px;
+    height: 255px;
   }
 }
 .training-card .training-name {
