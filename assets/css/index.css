@@ -911,7 +911,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .training-card {
-    height: 280px;
+    height: 295px;
   }
 }
 .training-card .training-name {
@@ -1038,11 +1038,6 @@ body, html {
   border-color: #07B7D1 !important;
   color: #07B7D1 !important;
 }
-@media (min-width: 1024px) {
-  .training-content-3 .training-card {
-    height: 290px;
-  }
-}
 
 .training-content-4 .training-card {
   background: linear-gradient(180deg, rgba(7, 183, 209, 0.15) 0%, rgba(7, 183, 209, 0.08) 20%, rgba(7, 183, 209, 0.03) 35%, #FFFFFF 40%, #FFFFFF 100%);
@@ -1057,11 +1052,6 @@ body, html {
   font-weight: 700 !important;
   border-color: #07B7D1 !important;
   color: #07B7D1 !important;
-}
-@media (min-width: 1024px) {
-  .training-content-4 .training-card {
-    height: 290px;
-  }
 }
 
 .section-solution {
